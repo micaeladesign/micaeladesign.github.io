@@ -37,7 +37,7 @@
   const words = [
     { text: "vedette", x: 383, y: 62, size: 14 },
     { text: "voraz", x: 461, y: 482, size: 30 },
-    { text: "del mar", x: 532.5, y: 62, size: 14 }
+    { text: "del mar", x: 539, y: 62, size: 14 }
   ];
 
   const READABLE_PX = 13;

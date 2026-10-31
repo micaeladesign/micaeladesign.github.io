@@ -202,6 +202,27 @@ h1 {
 }
 
 
+/* Pespunte y atraques del delantal */
+
+.topstitch {
+  fill: none;
+  stroke: #E9DFC6;
+  stroke-opacity: 0.85;
+  stroke-width: 1.4;
+  stroke-dasharray: 5 3.2;
+  stroke-linecap: round;
+}
+
+
+.bartack {
+  fill: none;
+  stroke: #E9DFC6;
+  stroke-opacity: 0.8;
+  stroke-width: 2.2;
+  stroke-dasharray: 1.2 1;
+}
+
+
 /* Las palabras son texto vectorial: se mantienen nítidas con cualquier zoom */
 
 .stitch {

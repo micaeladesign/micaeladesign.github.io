@@ -56,9 +56,10 @@
 
 
     <!-- OBJETO 1: DELANTAL
-         El delantal es un SVG: la foto de base (assets/delantal-base.jpg), la estrella
-         recortada (assets/patricio-estrella.png) y las palabras como texto vectorial,
-         así se ven nítidas con cualquier nivel de zoom. El zoom vive en delantal.js. -->
+         El delantal está dibujado de cero en SVG: forma, costuras y tiras son vectores,
+         y la tela es una textura de jean chica que se repite (assets/denim-tile.jpg),
+         así nada se pixela con el zoom. La estrella está en alta (assets/patricio-estrella.webp)
+         y las palabras son texto. El zoom vive en delantal.js. -->
 
     <section class="object" aria-labelledby="delantal-title">
 
@@ -80,15 +81,87 @@
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true">
 
-            <image href="assets/delantal-base.jpg" x="0" y="0" width="930" height="1220" />
+            <defs>
 
-            <image href="assets/patricio-estrella.png" x="281" y="528" width="360" height="341" />
+              <!-- Tela: una muestra de jean de 64 × 64 que se repite -->
+              <pattern id="denim" patternUnits="userSpaceOnUse" width="64" height="64">
+                <image href="assets/denim-tile.jpg" width="64" height="64" />
+              </pattern>
+
+              <!-- Volumen: los bordes un poco más oscuros, como tela que cae -->
+              <linearGradient id="fold" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0" stop-color="#0B1430" stop-opacity="0.28" />
+                <stop offset="0.12" stop-color="#0B1430" stop-opacity="0.06" />
+                <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.05" />
+                <stop offset="0.88" stop-color="#0B1430" stop-opacity="0.06" />
+                <stop offset="1" stop-color="#0B1430" stop-opacity="0.28" />
+              </linearGradient>
+
+              <linearGradient id="fall" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#0B1430" stop-opacity="0" />
+                <stop offset="1" stop-color="#0B1430" stop-opacity="0.14" />
+              </linearGradient>
+
+              <!-- Cinta de algodón de las tiras: azul marino con rayado fino -->
+              <pattern id="webbing" patternUnits="userSpaceOnUse" width="4" height="2.4">
+                <rect width="4" height="2.4" fill="#2B3142" />
+                <rect width="4" height="0.9" fill="#343B4F" />
+              </pattern>
+
+              <path
+                id="apron-shape"
+                d="M352 112 H570
+                   C 610 250 700 430 812 488
+                   Q 820 492 820 500
+                   V 1194 Q 820 1202 812 1202
+                   H 110 Q 102 1202 102 1194
+                   V 500 Q 102 492 110 488
+                   C 222 430 312 250 352 112 Z" />
+
+            </defs>
+
+
+            <!-- Tiras del cuello -->
+            <g class="strap-group">
+              <rect x="371" y="8" width="24" height="110" fill="url(#webbing)" />
+              <rect x="527" y="8" width="24" height="110" fill="url(#webbing)" />
+              <path d="M372.5 8 V118 M393.5 8 V118 M528.5 8 V118 M549.5 8 V118" stroke="#1E2330" stroke-width="1" fill="none" />
+            </g>
+
+            <!-- Tiras de la cintura -->
+            <g fill="none" stroke-linecap="butt">
+              <path d="M110 498 Q 40 498 30 540 V 1030" stroke="#2B3142" stroke-width="18" />
+              <path d="M812 498 Q 882 498 892 540 V 1030" stroke="#2B3142" stroke-width="18" />
+              <path d="M110 498 Q 40 498 30 540 V 1030 M812 498 Q 882 498 892 540 V 1030" stroke="url(#webbing)" stroke-width="16" />
+            </g>
+
+            <!-- Cuerpo del delantal -->
+            <use href="#apron-shape" fill="url(#denim)" />
+            <use href="#apron-shape" fill="url(#fold)" />
+            <use href="#apron-shape" fill="url(#fall)" />
+            <use href="#apron-shape" fill="none" stroke="#1F2C52" stroke-opacity="0.55" stroke-width="1.5" />
+
+            <!-- Pespunte: hilo claro a 9 unidades del borde -->
+            <path
+              class="topstitch"
+              d="M358 121 H564
+                 C 602 254 690 436 803 496
+                 V 1185 Q 803 1193 795 1193
+                 H 127 Q 119 1193 119 1185
+                 V 496
+                 C 232 436 320 254 358 121 Z" />
+
+            <!-- Atraques donde se cosen las tiras -->
+            <path class="bartack" d="M374 116 H392 M530 116 H548 M106 512 V528 M816 512 V528" />
+
+            <!-- Estampa: Patricio -->
+            <image href="assets/patricio-estrella.webp" x="281" y="528" width="360" height="341" />
 
             <!-- Palabras bordadas. data-word = el orden en el verso. -->
 
             <text class="stitch strap" data-word="0" transform="translate(383 62) rotate(-90)">vedette</text>
 
-            <text class="stitch strap" data-word="2" transform="translate(532.5 62) rotate(-90)">del mar</text>
+            <text class="stitch strap" data-word="2" transform="translate(539 62) rotate(-90)">del mar</text>
 
             <text class="stitch front" data-word="1" x="461" y="492">voraz</text>
 
