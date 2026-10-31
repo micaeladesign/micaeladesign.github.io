@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&family=Lora:ital,wght@1,400..600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&family=Cookie&display=swap');
 
 
 /* Mismos tokens que style.css del sitio principal */
@@ -13,8 +13,7 @@
   --color-surface-container: #F7F7F8;
   --color-outline-variant: #EAEAEE;
 
-  /* Propio de Bitácora del mar: el hilo del bordado y el rojo de Patricio */
-  --color-thread: #F6F2EA;
+  /* Propio de Bitácora del mar: el rojo de Patricio */
   --color-patricio: #C2401F;
 }
 
@@ -226,28 +225,39 @@ h1 {
 /* Las palabras son texto vectorial: se mantienen nítidas con cualquier zoom */
 
 .stitch {
-  font-family: "Lora", Georgia, serif;
-  font-style: italic;
-  font-weight: 500;
-
-  fill: var(--color-thread);
+  font-family: "Cookie", "Brush Script MT", cursive;
+  font-weight: 400;
 
   text-anchor: middle;
   dominant-baseline: central;
+
+  /* El trazo, con la misma textura, engorda la letra como un hilo grueso */
+  stroke-linejoin: round;
+  stroke-linecap: round;
+
+  filter: url(#raised);
 
   text-rendering: geometricPrecision;
 }
 
 
 .stitch.strap {
-  font-size: 14px;
-  letter-spacing: 0.02em;
+  font-size: 19px;
+  letter-spacing: 0.01em;
+
+  fill: url(#thread-strap);
+  stroke: url(#thread-strap);
+  stroke-width: 0.25;
 }
 
 
 .stitch.front {
-  font-size: 30px;
+  font-size: 44px;
   dominant-baseline: alphabetic;
+
+  fill: url(#thread-front);
+  stroke: url(#thread-front);
+  stroke-width: 0.5;
 }
 
 
@@ -326,9 +336,8 @@ h1 {
   margin: 0;
   min-height: 32px;
 
-  font-family: "Lora", Georgia, serif;
-  font-style: italic;
-  font-size: 20px;
+  font-family: "Cookie", "Brush Script MT", cursive;
+  font-size: 28px;
 }
 
 

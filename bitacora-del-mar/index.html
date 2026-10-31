@@ -118,6 +118,23 @@
                    V 500 Q 102 492 110 488
                    C 222 430 312 250 352 112 Z" />
 
+              <!-- Hilo bordado: puntadas cortas en diagonal, como punto tallo.
+                   Cada puntada es un óvalo con su brillo; dos tamaños, frente y tiras. -->
+              <pattern id="thread-front" patternUnits="userSpaceOnUse" width="1.4" height="2.4" patternTransform="rotate(35)">
+                <rect width="1.4" height="2.4" fill="#8F221D" />
+                <ellipse cx="0.7" cy="1.2" rx="0.62" ry="1.22" fill="#D9473A" /><ellipse cx="0.54" cy="0.85" rx="0.17" ry="0.5" fill="#F7A493" fill-opacity="0.75" /><ellipse cx="0" cy="0" rx="0.62" ry="1.22" fill="#D9473A" /><ellipse cx="-0.16" cy="-0.35" rx="0.17" ry="0.5" fill="#F7A493" fill-opacity="0.75" /><ellipse cx="0" cy="2.4" rx="0.62" ry="1.22" fill="#D9473A" /><ellipse cx="-0.16" cy="2.05" rx="0.17" ry="0.5" fill="#F7A493" fill-opacity="0.75" /><ellipse cx="1.4" cy="0" rx="0.62" ry="1.22" fill="#D9473A" /><ellipse cx="1.24" cy="-0.35" rx="0.17" ry="0.5" fill="#F7A493" fill-opacity="0.75" /><ellipse cx="1.4" cy="2.4" rx="0.62" ry="1.22" fill="#D9473A" /><ellipse cx="1.24" cy="2.05" rx="0.17" ry="0.5" fill="#F7A493" fill-opacity="0.75" />
+              </pattern>
+
+              <pattern id="thread-strap" patternUnits="userSpaceOnUse" width="0.84" height="1.44" patternTransform="rotate(35)">
+                <rect width="0.84" height="1.44" fill="#9A2620" />
+                <ellipse cx="0.42" cy="0.72" rx="0.372" ry="0.732" fill="#E25444" /><ellipse cx="0.324" cy="0.51" rx="0.102" ry="0.3" fill="#F8AC9C" fill-opacity="0.75" /><ellipse cx="0" cy="0" rx="0.372" ry="0.732" fill="#E25444" /><ellipse cx="-0.096" cy="-0.21" rx="0.102" ry="0.3" fill="#F8AC9C" fill-opacity="0.75" /><ellipse cx="0" cy="1.44" rx="0.372" ry="0.732" fill="#E25444" /><ellipse cx="-0.096" cy="1.23" rx="0.102" ry="0.3" fill="#F8AC9C" fill-opacity="0.75" /><ellipse cx="0.84" cy="0" rx="0.372" ry="0.732" fill="#E25444" /><ellipse cx="0.744" cy="-0.21" rx="0.102" ry="0.3" fill="#F8AC9C" fill-opacity="0.75" /><ellipse cx="0.84" cy="1.44" rx="0.372" ry="0.732" fill="#E25444" /><ellipse cx="0.744" cy="1.23" rx="0.102" ry="0.3" fill="#F8AC9C" fill-opacity="0.75" />
+              </pattern>
+
+              <!-- Relieve: el hilo apenas levantado sobre la tela -->
+              <filter id="raised" x="-10%" y="-20%" width="120%" height="140%">
+                <feDropShadow dx="0.35" dy="0.6" stdDeviation="0.35" flood-color="#0B1430" flood-opacity="0.55" />
+              </filter>
+
             </defs>
 
 
@@ -157,13 +174,14 @@
             <!-- Estampa: Patricio -->
             <image href="assets/patricio-estrella.webp" x="281" y="528" width="360" height="341" />
 
-            <!-- Palabras bordadas. data-word = el orden en el verso. -->
+            <!-- Palabras bordadas a mano: cursiva de trazo parejo (Cookie) rellena con
+                 textura de puntadas y un poco de relieve. data-word = el orden en el verso. -->
 
             <text class="stitch strap" data-word="0" transform="translate(383 62) rotate(-90)">vedette</text>
 
             <text class="stitch strap" data-word="2" transform="translate(539 62) rotate(-90)">del mar</text>
 
-            <text class="stitch front" data-word="1" x="461" y="492">voraz</text>
+            <text class="stitch front" data-word="1" x="461" y="496">voraz</text>
 
           </svg>
 
