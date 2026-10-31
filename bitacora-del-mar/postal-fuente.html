@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <!-- FUENTE DE LA POSTAL
+       Este archivo es el "molde" de assets/postal-patricio.png.
+       Mide 1800 × 1200 px (postal de 15 × 10 cm a 300 dpi).
+       Si cambiás un texto acá, hay que volver a exportar el PNG
+       (captura de pantalla de la página a 1800 × 1200). -->
+
+  <title>Postal de Patricio (fuente)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&family=Lora:ital,wght@1,400..700&display=swap">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 1800px;
+      height: 1200px;
+      overflow: hidden;
+    }
+
+    body {
+      background: #FFFFFF;
+      color: #111111;
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .postal {
+      position: relative;
+
+      width: 1800px;
+      height: 1200px;
+
+      padding: 96px;
+
+      display: grid;
+      grid-template-columns: 900px 1fr;
+      gap: 72px;
+      align-items: center;
+
+      background: #FDFCFA;
+    }
+
+    /* Filete fino, como el borde de una postal impresa */
+    .postal::before {
+      content: "";
+      position: absolute;
+      inset: 40px;
+      border: 2px solid #EAEAEE;
+      pointer-events: none;
+    }
+
+    .postal-star {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .postal-star img {
+      width: 860px;
+      height: auto;
+      display: block;
+    }
+
+    .postal-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding-left: 64px;
+
+      border-left: 2px solid #EAEAEE;
+    }
+
+    .postal-eyebrow {
+      margin: auto 0 40px;
+
+      font-size: 26px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #666666;
+    }
+
+    .postal-title {
+      margin: 0;
+
+      font-size: 64px;
+      line-height: 1.15;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+
+    .postal-verse {
+      margin: 72px 0 0;
+
+      font-family: "Lora", serif;
+      font-style: italic;
+      font-size: 96px;
+      line-height: 1.12;
+      font-weight: 500;
+      color: #C2401F;
+    }
+
+    .postal-credits {
+      margin: auto 0 0;
+
+      font-size: 24px;
+      line-height: 1.5;
+      color: #666666;
+    }
+
+    .postal-credits em {
+      font-style: italic;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="postal">
+
+    <div class="postal-star">
+      <img src="assets/patricio-estrella.png" alt="">
+    </div>
+
+    <div class="postal-text">
+
+      <p class="postal-eyebrow">Bitácora del mar</p>
+
+      <h1 class="postal-title">Recuerdo de mi primera expedición bajo el mar</h1>
+
+      <p class="postal-verse">vedette<br>voraz<br>del mar</p>
+
+      <p class="postal-credits">
+        Patricio, <em>Hippasteria phrygiana</em><br>
+        Cañón submarino de Mar del Plata<br>
+        Ilustración: Vanesa Bettinelli
+      </p>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
