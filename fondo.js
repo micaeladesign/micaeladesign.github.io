@@ -67,12 +67,16 @@
         label: "Zoom",
         in: "Acercar",
         out: "Alejar",
-        reset: "Ver el delantal entero",
+        reset: "Ver el objeto entero",
         hint: "Acercate: hay palabras bordadas en el delantal.",
+        hintDetail: "Acercate para ver los detalles.",
         hintFound: "Las encontraste todas.",
         hintOne: "Falta una palabra. Probá alejarte y volver a mirar.",
         hintMany: "Faltan {n} palabras.",
-        alt: "Delantal de jean azul con la estrella Patricio estampada. Tiene tres palabras bordadas: voraz en el frente, vedette en la tira izquierda y del mar en la tira derecha. Usá los botones o el pellizco para acercarte."
+        alt: {
+          delantal: "Delantal de jean azul con la estrella Patricio estampada. Tiene tres palabras bordadas: voraz en el frente, vedette en la tira izquierda y del mar en la tira derecha. Usá los botones o el pellizco para acercarte.",
+          mate: "Mate enlozado antiguo, color crema con borde azul, con yerba y bombilla. En el medio, la estrella Patricio y arriba, en arco, la frase sensible a la perturbación. Usá los botones o el pellizco para acercarte."
+        }
       },
       thumbAlt: "Mockup de {obj} de {animal}",
       postalAlt: "Postal de {animal}: la ilustración, el nombre del animal, Fondo, el título Recuerdo de mi primera expedición bajo el mar y la fecha {date}."
@@ -115,12 +119,16 @@
         label: "Zoom",
         in: "Zoom in",
         out: "Zoom out",
-        reset: "See the whole apron",
+        reset: "See the whole object",
         hint: "Zoom in: there are embroidered words on the apron.",
+        hintDetail: "Zoom in to see the details.",
         hintFound: "You found them all.",
         hintOne: "One word left. Try zooming out and looking again.",
         hintMany: "{n} words left.",
-        alt: "Blue denim apron with the Patricio starfish printed on it. It has three embroidered words: voraz on the front, vedette on the left strap and del mar on the right strap. Use the buttons or pinch to zoom in."
+        alt: {
+          delantal: "Blue denim apron with the Patricio starfish printed on it. It has three embroidered words: voraz on the front, vedette on the left strap and del mar on the right strap. Use the buttons or pinch to zoom in.",
+          mate: "Old enamel mate, cream with a blue rim, with yerba and a bombilla (metal straw). In the middle, the Patricio starfish and, above it in an arc, the phrase sensible a la perturbación (sensitive to disturbance). Use the buttons or pinch to zoom in."
+        }
       },
       thumbAlt: "{animal} {obj} mockup",
       postalAlt: "{animal} postcard: the illustration, the animal's name, Fondo, the title Recuerdo de mi primera expedición bajo el mar and the date {date}."
@@ -141,8 +149,22 @@
       species: "Hippasteria phrygiana",
       date: "26-07-2025",
       items: [
-        { id: "delantal", es: "Delantal de cocina", en: "Kitchen apron", kind: "apron", thumb: "fondo/assets/thumbs/delantal.webp" },
-        { id: "mate", es: "Mate", en: "Mate" },
+        {
+          id: "delantal", es: "Delantal de cocina", en: "Kitchen apron",
+          kind: "zoom", thumb: "fondo/assets/thumbs/delantal.webp",
+          svg: "fondo/assets/delantal-svg.html", ratio: 930 / 1220,
+          // Palabras bordadas que se descubren con el zoom (x, y y tamaño en el dibujo)
+          words: [
+            { text: "voraz", x: 461, y: 478, size: 46 },
+            { text: "vedette", x: 383, y: 62, size: 20 },
+            { text: "del mar", x: 539, y: 62, size: 20 }
+          ]
+        },
+        {
+          id: "mate", es: "Mate", en: "Mate",
+          kind: "zoom", thumb: "fondo/assets/thumbs/mate.webp",
+          svg: "fondo/assets/mate-svg.html", ratio: 800 / 760
+        },
         { id: "postal", es: "Postal", en: "Postcard", kind: "postal", thumb: "fondo/assets/thumbs/postal-patricio.webp", file: "fondo/assets/postales/postal-patricio.png" }
       ]
     },
@@ -190,6 +212,25 @@
 
   const EXPLICACIONES = {
 
+    "patricio/mate": {
+      es: {
+        paragraphs: [
+          "*¿Por qué “sensible a la perturbación”?* Es un término técnico real y está bien aplicado a esta estrella.",
+          "Sale del índice AMBI (Borja y otros, 2000), que mide la salud del fondo marino según qué animales viven ahí. AMBI ordena las especies del fondo en cinco grupos, desde las más delicadas hasta las oportunistas que proliferan en aguas degradadas. *Hippasteria phrygiana* está en el primero, “muy sensible a la perturbación”.",
+          "Eso significa que vive en fondos sanos y es de las primeras en desaparecer cuando el ambiente se altera, sobre todo por exceso de materia orgánica y contaminación. Por eso su presencia indica un fondo marino en buen estado."
+        ],
+        source: "Fuente: WoRMS, Hippasteria phrygiana; Borja, Franco y Pérez (2000), índice AMBI."
+      },
+      en: {
+        paragraphs: [
+          "*Why “sensible a la perturbación” (sensitive to disturbance)?* It is a real technical term, and it applies correctly to this sea star.",
+          "It comes from the AMBI index (Borja et al., 2000), which measures the health of the seabed according to which animals live there. AMBI sorts seabed species into five groups, from the most delicate to the opportunists that thrive in degraded waters. *Hippasteria phrygiana* is in the first one, “very sensitive to disturbance”.",
+          "This means it lives on healthy seabeds and is among the first to disappear when the environment changes, especially from excess organic matter and pollution. That is why its presence signals a seabed in good condition."
+        ],
+        source: "Source: WoRMS, Hippasteria phrygiana; Borja, Franco & Pérez (2000), AMBI index."
+      }
+    },
+
     "patricio/delantal": {
       es: {
         paragraphs: [
@@ -213,9 +254,6 @@
   // ------------------------------------------------------------
 
   let lang = "es";
-
-  let apronMarkup = null;      // el SVG del delantal, se descarga la primera vez que se abre
-  let apronRequest = null;
 
   const dialog = document.createElement("dialog");
 
@@ -388,18 +426,22 @@
   }
 
 
-  function apronHtml() {
+  function zoomHtml(item) {
 
     const z = t().zoom;
 
-    return `
-      <div class="apron-wrap">
+    const slots = item.words
+      ? `<p class="apron-found" aria-hidden="true">${item.words.map((w, i) => `<span class="slot" data-slot="${i}">${escapeHtml(w.text)}</span>`).join("")}</p>`
+      : "";
 
-        <div class="apron-stage" tabindex="0" role="img" aria-label="${escapeHtml(z.alt)}">
-          ${apronMarkup}
+    return `
+      <div class="zoom-wrap" style="--ratio: ${item.ratio}">
+
+        <div class="zoom-stage" tabindex="0" role="img" aria-label="${escapeHtml(z.alt[item.id] || "")}">
+          ${svgCache[item.svg]}
         </div>
 
-        <div class="apron-controls" role="group" aria-label="${escapeHtml(z.label)}">
+        <div class="zoom-controls" role="group" aria-label="${escapeHtml(z.label)}">
           <button type="button" class="zoom-in" aria-label="${escapeHtml(z.in)}">+</button>
           <button type="button" class="zoom-out" aria-label="${escapeHtml(z.out)}">−</button>
           <button type="button" class="zoom-reset" aria-label="${escapeHtml(z.reset)}">
@@ -407,13 +449,9 @@
           </button>
         </div>
 
-        <p class="apron-hint" aria-live="polite">${escapeHtml(z.hint)}</p>
+        <p class="zoom-hint" aria-live="polite">${escapeHtml(item.words ? z.hint : z.hintDetail)}</p>
 
-        <p class="apron-found" aria-hidden="true">
-          <span class="slot" data-slot="0">voraz</span>
-          <span class="slot" data-slot="1">vedette</span>
-          <span class="slot" data-slot="2">del mar</span>
-        </p>
+        ${slots}
 
       </div>`;
   }
@@ -421,8 +459,8 @@
 
   function mediaHtml(animal, item) {
 
-    if (item.kind === "apron") {
-      return `<div class="dialog-media">${apronHtml()}</div>`;
+    if (item.kind === "zoom") {
+      return `<div class="dialog-media">${zoomHtml(item)}</div>`;
     }
 
     if (item.kind === "postal") {
@@ -465,19 +503,23 @@
   }
 
 
-  function loadApron() {
+  // Los SVG de los objetos se descargan la primera vez que se abren
+  const svgCache = {};
+  const svgRequests = {};
 
-    if (apronMarkup) return Promise.resolve();
+  function loadSvg(path) {
 
-    if (!apronRequest) {
+    if (svgCache[path]) return Promise.resolve();
 
-      apronRequest = fetch("fondo/assets/delantal-svg.html")
+    if (!svgRequests[path]) {
+
+      svgRequests[path] = fetch(path)
         .then((response) => response.text())
-        .then((markup) => { apronMarkup = markup; })
-        .catch(() => { apronRequest = null; });
+        .then((markup) => { svgCache[path] = markup; })
+        .catch(() => { delete svgRequests[path]; });
     }
 
-    return apronRequest;
+    return svgRequests[path];
   }
 
 
@@ -489,9 +531,9 @@
 
     if (!item) return;
 
-    if (item.kind === "apron") {
-      await loadApron();
-      if (!apronMarkup) return;
+    if (item.kind === "zoom") {
+      await loadSvg(item.svg);
+      if (!svgCache[item.svg]) return;
     }
 
     dialog.innerHTML = `
@@ -508,9 +550,9 @@
 
     dialog.scrollTop = 0;
 
-    if (item.kind === "apron" && window.FondoDelantal) {
+    if (item.kind === "zoom" && window.FondoZoom) {
 
-      window.FondoDelantal.init(dialog.querySelector(".apron-wrap"), t().zoom);
+      window.FondoZoom.init(dialog.querySelector(".zoom-wrap"), t().zoom, { words: item.words });
     }
   }
 

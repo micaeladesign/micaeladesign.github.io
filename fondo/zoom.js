@@ -1,5 +1,8 @@
 // --------------------------------
-// DELANTAL DE PATRICIO: zoom para descubrir las palabras
+// ZOOM DE LOS OBJETOS DE FONDO (delantal, mate, ...)
+//
+// Sirve para cualquier objeto dibujado en SVG. Opcionalmente, una lista
+// de palabras escondidas que se "descubren" al hacer zoom (el delantal).
 //
 // El zoom cambia el viewBox del SVG (no escala una imagen),
 // así el texto se vuelve a dibujar en cada nivel y queda nítido.
@@ -12,25 +15,26 @@
 (function () {
 
   // Arma el zoom sobre un delantal ya insertado en la página.
-  //   root: el contenedor que tiene .apron-stage, los botones y las palabras a descubrir
+  //   root: el contenedor que tiene .zoom-stage, los botones y las palabras a descubrir
   //   t:    textos en el idioma actual { hintFound, hintOne, hintMany }
-  function init(root, t) {
+  //   options.words: palabras a descubrir [{ x, y, size }] en unidades del dibujo
+  function init(root, t, options) {
 
-  const stage = root.querySelector(".apron-stage");
-  const svg = root.querySelector(".apron-svg");
+  const stage = root.querySelector(".zoom-stage");
+  const svg = root.querySelector(".zoom-svg");
 
   if (!stage || !svg) return;
 
   const zoomInButton = root.querySelector(".zoom-in");
   const zoomOutButton = root.querySelector(".zoom-out");
   const zoomResetButton = root.querySelector(".zoom-reset");
-  const hint = root.querySelector(".apron-hint");
+  const hint = root.querySelector(".zoom-hint");
   const slots = root.querySelectorAll(".slot");
 
 
-  // Tamaño del dibujo (el mismo que el viewBox inicial)
-  const WIDTH = 930;
-  const HEIGHT = 1220;
+  // Tamaño del dibujo: el viewBox con el que viene el SVG
+  const WIDTH = svg.viewBox.baseVal.width;
+  const HEIGHT = svg.viewBox.baseVal.height;
 
   const MIN_SCALE = 1;
   const MAX_SCALE = 5;
@@ -39,11 +43,7 @@
 
   // Las palabras: dónde están y qué tamaño tienen en el dibujo.
   // Se "descubren" cuando hubo zoom, están en pantalla y se leen a 13 px o más.
-  const words = [
-    { text: "voraz", x: 461, y: 478, size: 46 },
-    { text: "vedette", x: 383, y: 62, size: 20 },
-    { text: "del mar", x: 539, y: 62, size: 20 }
-  ];
+  const words = (options && options.words) || [];
 
   const READABLE_PX = 13;
   const DISCOVERY_SCALE = 1.5;
@@ -456,6 +456,6 @@
 
   }
 
-  window.FondoDelantal = { init: init };
+  window.FondoZoom = { init: init };
 
 })();

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@300..400&display=swap');
+
 /* ============================================================
    FONDO — la tienda de souvenirs
    Usa los mismos tokens de color que style.css.
@@ -200,10 +202,8 @@
 }
 
 
-.item-thumb--apron img {
-  height: 100%;
-  width: auto;
-  padding: 10px 0;
+.item-thumb--zoom img {
+  padding: 14px;
 }
 
 
@@ -432,10 +432,10 @@
 
 
 /* --------------------------------
-   DELANTAL (zoom para descubrir las palabras)
+   OBJETOS CON ZOOM (delantal, mate...)
 -------------------------------- */
 
-.apron-wrap {
+.zoom-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -444,11 +444,12 @@
 }
 
 
-.apron-stage {
+.zoom-stage {
   position: relative;
 
-  width: min(100%, 460px, calc(64vh * 930 / 1220));
-  aspect-ratio: 930 / 1220;
+  /* --ratio = ancho / alto del dibujo (lo pone fondo.js) */
+  width: min(100%, 460px, calc(64vh * var(--ratio, 0.76)));
+  aspect-ratio: var(--ratio, 0.76);
 
   overflow: hidden;
 
@@ -459,30 +460,30 @@
 
   cursor: zoom-in;
 
-  /* Los gestos (arrastrar, pellizcar) los maneja fondo/delantal.js */
+  /* Los gestos (arrastrar, pellizcar) los maneja fondo/zoom.js */
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
 }
 
 
-.apron-stage:focus-visible {
+.zoom-stage:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 4px;
 }
 
 
-.apron-stage.is-zoomed {
+.zoom-stage.is-zoomed {
   cursor: grab;
 }
 
 
-.apron-stage.is-dragging {
+.zoom-stage.is-dragging {
   cursor: grabbing;
 }
 
 
-.apron-stage > svg {
+.zoom-stage > svg {
   display: block;
   width: 100%;
   height: 100%;
@@ -507,6 +508,19 @@
   stroke-opacity: 0.8;
   stroke-width: 2.2;
   stroke-dasharray: 1.2 1;
+}
+
+
+/* Mate: la frase en arco, en la cursiva de las postales */
+
+.mate-phrase {
+  font-family: "Playwrite AR", cursive;
+  font-size: 28px;
+  font-weight: 400;
+
+  fill: #B23A1C;
+  letter-spacing: 0.01em;
+  text-anchor: middle;
 }
 
 
@@ -536,7 +550,7 @@
 }
 
 
-.apron-controls {
+.zoom-controls {
   display: flex;
   gap: 8px;
 
@@ -544,7 +558,7 @@
 }
 
 
-.apron-controls button {
+.zoom-controls button {
   width: 44px;
   height: 44px;
 
@@ -568,19 +582,19 @@
 }
 
 
-.apron-controls button:hover {
+.zoom-controls button:hover {
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
 
 
-.apron-controls button:focus-visible {
+.zoom-controls button:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
 }
 
 
-.apron-controls button:disabled {
+.zoom-controls button:disabled {
   opacity: 0.35;
   cursor: default;
   color: var(--color-on-background);
@@ -588,7 +602,7 @@
 }
 
 
-.apron-hint {
+.zoom-hint {
   margin: 16px 0 4px;
 
   font-size: 14px;
