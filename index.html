@@ -1,15 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Micaela Cañal — Conversational UX Designer</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Micaela Cañal, Conversational UX Designer: conversational experiences and AI- and agent-based systems, from Kombi at Volkswagen Argentina to Ele, a linguistics chatbot.">
+
+  <meta name="author" content="Micaela Cañal">
+
+
+  <!-- OPEN GRAPH (la tarjeta que se ve al compartir el link en LinkedIn, WhatsApp, etc.) -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Micaela Cañal — Conversational UX Designer">
+  <meta
+    property="og:description"
+    content="Conversational experiences and AI- and agent-based systems, from Kombi at Volkswagen Argentina to Ele, a linguistics chatbot.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_AR">
+
+ <meta property="og:url" content="https://micaeladesign.github.io/micaeladesign.github.io/">
+ <meta property="og:image" content="https://micaeladesign.github.io/micaeladesign.github.io/assets/og-image.png">
+ <meta property="og:image:width" content="1200">
+ <meta property="og:image:height" content="630">
+
+
+  <!-- FAVICON: un monograma "MC" provisorio con el azul del sitio. Para usar el tuyo: assets/favicon.png -->
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233157D5'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EMC%3C/text%3E%3C/svg%3E">
+
+
+  <!-- TIPOGRAFÍA: DM Sans (se carga desde style.css; esto solo la hace llegar más rápido) -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-  <h1>Micaela Cañal</h1>
-  <p>Conversational UX Designer</p>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <!-- MAIN NAVIGATION -->
+
+    <nav class="main-nav" aria-label="Main">
+
+      <a
+        href="#home"
+        data-section="home"
+        id="nav-home">
+        Home
+      </a>
+
+      <a
+        href="#about"
+        data-section="about"
+        id="nav-about">
+        About
+      </a>
+
+      <a
+        href="#work"
+        data-section="work"
+        id="nav-work">
+        Work
+      </a>
+
+      <a
+        href="#contact"
+        data-section="contact"
+        id="nav-contact">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <!-- LANGUAGE SWITCHER -->
+
+    <div class="language-switcher" role="group" aria-label="Language">
+
+      <button
+        id="lang-en"
+        class="active"
+        type="button"
+        lang="en"
+        aria-pressed="true">
+        English
+      </button>
+
+      <button
+        id="lang-es"
+        type="button"
+        lang="es"
+        aria-pressed="false">
+        Español
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main>
+
+
+    <!-- HOME -->
+
+    <section
+      id="home"
+      class="page-section active">
+
+      <p
+        class="eyebrow"
+        id="portfolio-label">
+        MICAELA CAÑAL — PORTFOLIO
+      </p>
+
+
+      <h1 id="home-title">
+        Hello
+      </h1>
+
+
+      <p id="home-text">
+        Explore my background, experience, and approach as a Conversational UX Designer.
+      </p>
+
+
+      <div class="conversation-options home-options">
+
+        <a
+          href="#about"
+          class="conversation-choice"
+          id="home-about-choice">
+          Get to know me
+        </a>
+
+        <a
+          href="#work"
+          class="conversation-choice"
+          id="home-work-choice">
+          See my work
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+
+    <section
+      id="about"
+      class="page-section">
+
+      <h1 id="about-title">
+        Conversational UX Designer
+      </h1>
+
+
+      <!-- Este texto se cambia de idioma desde script.js (content.en.aboutHtml / content.es.aboutHtml) -->
+
+      <div id="about-text">
+
+        <p class="about-tagline">From words<br>to conversations</p>
+
+        <p><strong>I’m Micaela Cañal.</strong></p>
+
+        <p>I wrote my first story when I was six, and I’ve never stopped.</p>
+
+        <p>I studied <strong>Linguistics</strong> at the University of Buenos Aires and earned a master’s in <strong>Narrative Journalism</strong> at the University of San Martín.</p>
+
+        <p>I bring a research methodology and a curious spirit into the world of design.</p>
+
+        <p>I design <strong>conversational experiences and AI- and agent-based systems.</strong> I want to understand what people need, what the business needs, and what technology can actually do, so we land on a solution that makes sense.</p>
+
+      </div>
+      <a
+        id="resume-link"
+        href="assets/cv-micaela-canal-en.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View my CV
+      </a>
+
+      <div class="conversation-options">
+
+        <a
+          href="#work"
+          class="conversation-choice"
+          id="about-work-choice">
+          See my work
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- WORK -->
+
+    <section
+      id="work"
+      class="page-section">
+
+      <h1 id="work-title">
+        See my work
+      </h1>
+
+
+      <p
+        class="work-intro"
+        id="work-intro">
+        Choose one to discover what I've been up to.
+      </p>
+
+
+      <div class="conversation-options">
+
+        <a
+          href="#kombi"
+          class="conversation-choice">
+          Kombi
+        </a>
+
+        <a
+          href="#ele"
+          class="conversation-choice">
+          Ele
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- KOMBI
+         El contenido de este caso (en español e inglés) se arma desde script.js:
+         content.en.kombi y content.es.kombi. Para editar textos, hacelo ahí. -->
+
+    <section
+      id="kombi"
+      class="page-section">
+    </section>
+
+
+
+    <!-- ELE
+         El contenido de este caso (en español e inglés) se arma desde script.js:
+         content.en.ele y content.es.ele. El chat vive en ele-chatbot.js. -->
+
+    <section
+      id="ele"
+      class="page-section">
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section
+      id="contact"
+      class="page-section">
+
+      <h1 id="contact-title">
+        Let’s talk
+      </h1>
+
+
+      <p id="contact-text">
+        I’d love to hear from you.
+      </p>
+
+     <div id="contact-links">
+
+     <a
+      id="contact-email"
+      href="mailto:micaelacanal7@gmail.com">
+      micaelacanal7@gmail.com
+     </a>
+
+     <a
+      id="contact-linkedin"
+      href="https://www.linkedin.com/in/micaelaca%C3%B1al/"
+      target="_blank"
+      rel="noopener noreferrer">
+      LinkedIn
+     </a>
+
+</div>
+    </section>
+
+
+  </main>
+
+
+  <script src="script.js"></script>
+  <script src="ele-chatbot.js"></script>
 
 </body>
+
 </html>
