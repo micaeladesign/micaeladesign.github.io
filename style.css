@@ -1,0 +1,1217 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&display=swap');
+
+
+:root {
+  --color-background: #FFFFFF;
+  --color-on-background: #111111;
+
+  --color-on-surface-variant: #666666;
+
+  --color-outline: #D0D0D0;
+
+  --color-primary: #3157D5;
+  --color-on-primary: #FFFFFF;
+
+  --color-primary-container: #E9EEFF;
+  --color-on-primary-container: #15285F;
+
+  /* Los tres tonos que ya usaba el chat, ahora con nombre de token */
+  --color-surface-container: #F7F7F8;
+  --color-outline-variant: #EAEAEE;
+  --color-secondary-container: #DCEEFB;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 24px;
+
+  font-family: "DM Sans", sans-serif;
+
+  background: var(--color-background);
+  color: var(--color-on-background);
+
+  line-height: 1.5;
+}
+
+
+/* Mejor corte de líneas: títulos equilibrados, sin palabras sueltas al final */
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+strong {
+  font-weight: 600;
+}
+
+
+/* --------------------------------
+   HEADER
+-------------------------------- */
+
+header {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto 24px;
+  padding-bottom: 8px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 0 24px;
+
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+
+/* --------------------------------
+   LANGUAGE SWITCHER
+-------------------------------- */
+
+.language-switcher {
+  display: flex;
+  gap: 8px;
+
+  margin: 0 0 0 auto;
+}
+
+
+.language-switcher button {
+  min-height: 44px;
+
+  padding: 10px 4px;
+
+  border: 0;
+  background: transparent;
+
+  color: var(--color-on-background);
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+
+  cursor: pointer;
+
+  transition:
+    color 150ms ease,
+    text-decoration-color 150ms ease;
+}
+
+
+.language-switcher button:hover {
+  color: var(--color-primary);
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+.language-switcher button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+
+.language-switcher button.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+
+/* --------------------------------
+   MAIN NAVIGATION
+-------------------------------- */
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px 16px;
+
+  margin: 0;
+}
+
+
+.main-nav a {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 44px;
+
+  padding: 10px 4px;
+
+  color: var(--color-on-background);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  transition:
+    color 150ms ease,
+    text-decoration-color 150ms ease;
+}
+
+
+.main-nav a:hover {
+  color: var(--color-primary);
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+.main-nav a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+
+.main-nav a.active {
+  color: var(--color-primary);
+
+  font-weight: 600;
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+/* --------------------------------
+   MAIN
+-------------------------------- */
+
+main {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+
+/* --------------------------------
+   PAGE SECTIONS
+-------------------------------- */
+
+.page-section {
+  display: none;
+
+  min-height: 70vh;
+
+  padding: 48px 0 80px;
+}
+
+
+.page-section.active {
+  display: block;
+}
+
+
+/* --------------------------------
+   HOME
+-------------------------------- */
+
+#home {
+  padding-top: 24px;
+}
+
+
+#portfolio-label {
+  margin: 0 0 32px 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 18px;
+  line-height: 24px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+}
+
+
+#home-title {
+  max-width: 900px;
+
+  margin: 0;
+
+  color: var(--color-on-background);
+
+  font-size: clamp(72px, 10vw, 120px);
+  line-height: 0.98;
+
+  font-weight: 400;
+
+  letter-spacing: -0.04em;
+}
+
+
+#home-text {
+  max-width: 560px;
+
+  margin: 40px 0 0 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 20px;
+  line-height: 32px;
+}
+
+
+/* --------------------------------
+   CONVERSATIONAL OPTIONS
+-------------------------------- */
+
+.conversation-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+
+.conversation-choice {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  min-height: 44px;
+
+  padding: 10px 0;
+
+  color: var(--color-on-background);
+
+  font-family: inherit;
+
+  font-size: 18px;
+  line-height: 28px;
+
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition:
+    color 150ms ease,
+    gap 150ms ease;
+}
+
+
+.conversation-choice::after {
+  content: "→";
+
+  color: var(--color-primary);
+
+  transition:
+    transform 150ms ease;
+}
+
+
+.conversation-choice:hover {
+  color: var(--color-primary);
+}
+
+
+.conversation-choice:hover::after {
+  transform: translateX(4px);
+}
+
+
+.conversation-choice:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 6px;
+}
+
+
+/* --------------------------------
+   PILL BUTTONS
+   Un solo estilo para: CV, podcast, video y opciones del chat
+-------------------------------- */
+
+.ele-link-pill,
+#resume-link,
+.ele-chat-option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  min-height: 44px;
+
+  margin: 0;
+  padding: 10px 18px;
+
+  border: 1px solid var(--color-outline);
+  border-radius: 999px;
+
+  background: var(--color-background);
+  color: var(--color-on-background);
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease;
+}
+
+
+/* El hover solo en dispositivos con mouse (en el celular queda "pegado") */
+@media (hover: hover) {
+
+  .ele-link-pill:hover,
+  #resume-link:hover,
+  .ele-chat-option:hover {
+    background: var(--color-primary-container);
+    border-color: var(--color-primary);
+    color: var(--color-on-primary-container);
+  }
+
+}
+
+
+.ele-link-pill:focus-visible,
+#resume-link:focus-visible,
+.ele-chat-option:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+
+/* --------------------------------
+   ABOUT
+-------------------------------- */
+
+#about-title {
+  max-width: 1000px;
+
+  margin: 0 0 28px 0;
+
+  color: var(--color-on-background);
+
+  font-size: clamp(2.5rem, 1.2rem + 5.6vw, 5rem);
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: -0.04em;
+}
+
+
+#about-text {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--color-on-background);
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+#about-text strong {
+  font-weight: 600;
+}
+
+
+.about-tagline {
+  color: var(--color-on-surface-variant);
+}
+
+
+/* --------------------------------
+   WORK
+-------------------------------- */
+
+#work-title {
+  max-width: 1000px;
+
+  margin: 0 0 24px 0;
+
+  color: var(--color-on-background);
+
+  font-size: clamp(2.5rem, 1.2rem + 5.6vw, 5rem);
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: -0.04em;
+}
+
+
+.work-intro {
+  max-width: 650px;
+
+  margin: 0 0 24px 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+/* --------------------------------
+   CASE STUDIES (Kombi y Ele)
+-------------------------------- */
+
+#kombi h2,
+#ele h2 {
+  max-width: 1000px;
+
+  margin: 0 0 16px 0;
+
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+
+  font-weight: 400;
+
+  letter-spacing: -0.03em;
+}
+
+
+/* Mismo tamaño y ritmo de lectura que About (18/28) */
+#kombi p,
+#ele p {
+  max-width: 650px;
+
+  margin: 0 0 20px 0;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+#kombi h3,
+#ele h3 {
+  margin: 48px 0 16px 0;
+
+  font-size: 24px;
+  line-height: 32px;
+
+  font-weight: 500;
+}
+
+
+#kombi h4 {
+  margin: 32px 0 12px 0;
+
+  font-size: 18px;
+  line-height: 28px;
+
+  font-weight: 600;
+}
+
+
+/* Cierre de cada caso: una línea fina separa el contenido del próximo paso */
+#kombi .conversation-options,
+#ele .conversation-options {
+  margin-top: 56px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--color-outline-variant);
+}
+
+
+/* --------------------------------
+   KOMBI IMAGES
+-------------------------------- */
+
+.kombi-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+
+  max-width: 1100px;
+  margin-bottom: 16px;
+}
+
+#kombi .kombi-heading h2 {
+  margin-bottom: 0;
+
+  /* Deja que el título se achique y no empuje al logo fuera de la pantalla */
+  min-width: 0;
+}
+
+.kombi-logo {
+  display: block;
+  width: 130px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.kombi-stage-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
+  gap: 40px;
+  align-items: start;
+
+  max-width: 1200px;
+}
+
+.kombi-stage-text {
+  min-width: 0;
+}
+
+.kombi-stage-text p {
+  max-width: 650px;
+}
+
+.kombi-stage-image {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+
+  margin: 0;
+  justify-self: end;
+}
+
+
+/* --------------------------------
+   CONTACT
+-------------------------------- */
+
+#contact-title {
+  max-width: 900px;
+
+  margin: 0 0 24px 0;
+
+  color: var(--color-on-background);
+
+  font-size: clamp(2.5rem, 1.2rem + 5.6vw, 5rem);
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: -0.04em;
+}
+
+
+#contact-text {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+#contact-links a {
+  color: var(--color-primary);
+}
+
+
+/* --------------------------------
+   RESPONSIVE
+-------------------------------- */
+
+@media (min-width: 600px) {
+
+  body {
+    padding: 40px;
+  }
+
+
+  header,
+  main {
+    max-width: 1200px;
+  }
+
+
+  .main-nav {
+    gap: 16px;
+  }
+
+
+  .main-nav a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
+  #portfolio-label {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+
+  #home-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+
+  .page-section {
+    padding-top: 40px;
+    padding-bottom: 96px;
+  }
+
+
+  #about-text,
+  #work-text,
+  .work-intro,
+  #contact-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+}
+
+
+/* --------------------------------
+   LARGE SCREENS
+-------------------------------- */
+
+@media (min-width: 840px) {
+
+  body {
+    padding: 48px;
+  }
+
+
+  header,
+  main {
+    max-width: 1200px;
+  }
+
+
+  #home {
+    padding-top: 24px;
+  }
+
+
+  #portfolio-label {
+    margin-bottom: 32px;
+  }
+
+
+  #home-title {
+    font-size: clamp(80px, 9vw, 120px);
+  }
+
+
+  #home-text {
+    margin-top: 40px;
+  }
+
+
+  .page-section {
+    min-height: 60vh;
+
+    padding-top: 48px;
+    padding-bottom: 120px;
+  }
+
+}
+
+
+/* --------------------------------
+   EXTRA LARGE SCREENS
+-------------------------------- */
+
+@media (min-width: 1200px) {
+
+  body {
+    padding: 56px;
+  }
+
+
+  header,
+  main {
+    max-width: 1400px;
+  }
+
+
+  #home-title {
+    font-size: 120px;
+  }
+
+}
+
+
+/* --------------------------------
+   REDUCED PHOTOS
+-------------------------------- */
+
+@media (max-width: 599px) {
+  .kombi-heading {
+    gap: 16px;
+  }
+
+  .kombi-logo {
+    width: 84px;
+  }
+
+  .kombi-stage-image {
+    max-width: 100%;
+  }
+
+  .kombi-stage-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .kombi-stage-image {
+    max-width: 280px;
+    justify-self: start;
+  }
+}
+
+
+/* --------------------------------
+   REDUCED MOTION
+-------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+
+}
+
+
+/* --------------------------------
+   KOMBI IMAGE LIGHTBOX
+-------------------------------- */
+
+.kombi-stage-image {
+  cursor: zoom-in;
+}
+
+.kombi-stage-image:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.kombi-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  padding: 48px 24px;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgb(0 0 0 / 85%);
+}
+
+.kombi-lightbox.is-open {
+  display: flex;
+}
+
+.kombi-lightbox-image {
+  display: block;
+
+  max-width: min(90vw, 700px);
+  max-height: 85vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
+
+.kombi-lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+
+  width: 44px;
+  height: 44px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: transparent;
+  color: #FFFFFF;
+
+  font-family: inherit;
+  font-size: 32px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.kombi-lightbox-close:hover {
+  background: rgb(255 255 255 / 15%);
+}
+
+.kombi-lightbox-close:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 3px;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+@media (max-width: 599px) {
+  .kombi-lightbox {
+    padding: 48px 12px;
+  }
+
+  .kombi-lightbox-image {
+    max-width: 96vw;
+    max-height: 82vh;
+  }
+}
+
+
+/* --------------------------------
+   ELE PHOTO GALLERIES
+-------------------------------- */
+
+.ele-museum-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1100px;
+  margin: 24px 0 32px;
+  align-items: start;
+}
+
+.ele-museum-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.ele-festival-gallery {
+  max-width: 720px;
+  margin: 24px 0 32px;
+}
+
+.ele-festival-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 599px) {
+  .ele-museum-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ele-museum-gallery img {
+    max-width: 100%;
+  }
+}
+
+
+/* --------------------------------
+   ELE HEADING AND LOGO
+-------------------------------- */
+
+.ele-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+
+  max-width: 1100px;
+  margin-bottom: 16px;
+}
+
+#ele .ele-heading h2 {
+  margin-bottom: 0;
+
+  /* Deja que el título se achique y no empuje al logo fuera de la pantalla */
+  min-width: 0;
+}
+
+.ele-logo {
+  display: block;
+  width: 84px;
+  height: 84px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+@media (max-width: 599px) {
+  .ele-heading {
+    gap: 16px;
+  }
+
+  .ele-logo {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+
+/* --------------------------------
+   ELE EXTERNAL LINK PILLS
+   (el aspecto del botón está en PILL BUTTONS)
+-------------------------------- */
+
+.ele-external-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0 32px;
+}
+
+.ele-link-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.ele-link-arrow {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+#resume-link::after {
+  content: "\2197";
+  content: "\2197" / "";
+
+  color: var(--color-primary);
+}
+
+
+/* --------------------------------
+   ELE CHATBOT
+-------------------------------- */
+
+/* Recuadro que contiene toda la experiencia (mensajes + opciones) */
+#ele-chatbot {
+  /* Colores propios del chat: se ajustan acá */
+  --ele-chat-bg: var(--color-surface-container);
+  --ele-chat-border: var(--color-outline-variant);
+  --ele-chat-bubble-bot: var(--color-background);
+  --ele-chat-bubble-user: var(--color-secondary-container);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 100%;
+  max-width: 600px;
+
+  margin: 24px 0 32px;
+  padding: 20px;
+
+  background: var(--ele-chat-bg);
+  border: 1px solid var(--ele-chat-border);
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 4%);
+}
+
+
+/* Zona de mensajes: tiene altura máxima y scroll propio,
+   así el recuadro nunca crece más que las fotos del proyecto. */
+.ele-chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  max-height: min(340px, 50vh);
+  overflow-y: auto;
+
+  /* Aire entre las burbujas y la barra de scroll */
+  padding-right: 8px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #CFCFD6 transparent;
+}
+
+
+/* Cada fila = avatar + burbuja */
+.ele-chat-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Usuario: avatar a la derecha */
+.ele-chat-row--user {
+  flex-direction: row-reverse;
+}
+
+
+.ele-chat-avatar {
+  display: block;
+  flex-shrink: 0;
+
+  width: 32px;
+  height: 32px;
+
+  object-fit: contain;
+
+  /* Descomentá la línea de abajo si querés avatares redondos: */
+  /* border-radius: 50%; */
+}
+
+
+.ele-chat-bubble {
+  min-width: 0;
+  max-width: 85%;
+
+  padding: 10px 14px;
+
+  border-radius: 16px;
+
+  color: var(--color-on-background);
+
+  font-size: 15px;
+  line-height: 22px;
+
+  overflow-wrap: break-word;
+}
+
+/* Ele: burbuja blanca */
+.ele-chat-row--bot .ele-chat-bubble {
+  background: var(--ele-chat-bubble-bot);
+  border: 1px solid var(--ele-chat-border);
+  border-top-left-radius: 4px;
+}
+
+/* Usuario: celeste suave */
+.ele-chat-row--user .ele-chat-bubble {
+  background: var(--ele-chat-bubble-user);
+  border-top-right-radius: 4px;
+}
+
+.ele-chat-bubble strong {
+  font-weight: 600;
+}
+
+
+/* Links dentro de los mensajes de Ele */
+.ele-chat-link {
+  color: var(--color-primary);
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  transition:
+    color 150ms ease;
+}
+
+.ele-chat-link:hover {
+  color: var(--color-on-primary-container);
+}
+
+.ele-chat-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+
+/* Opciones: se acomodan solas al ancho disponible */
+.ele-chat-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ele-chat-options:empty {
+  display: none;
+}
+
+
+/* Las opciones del chat usan el estilo de PILL BUTTONS, un poco más chico en celular */
+.ele-chat-option {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+/* Escritorio: un poco más de aire */
+@media (min-width: 600px) {
+
+  #ele-chatbot {
+    gap: 20px;
+
+    padding: 28px;
+  }
+
+  .ele-chat-messages {
+    gap: 14px;
+
+    max-height: min(380px, 55vh);
+  }
+
+  .ele-chat-row {
+    gap: 10px;
+  }
+
+  .ele-chat-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .ele-chat-bubble {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ele-chat-option {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
