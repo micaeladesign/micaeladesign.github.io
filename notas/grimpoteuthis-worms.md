@@ -1,11 +1,11 @@
-# Grimpoteuthis (pulpo Dumbo): lo que dice WoRMS
+# Grimpoteuthis sp. (pulpo Dumbo): lo que dice WoRMS
 
 Fuente: World Register of Marine Species (WoRMS), AphiaID 138293, consultado el 02/11/2026.
 Cita que pide WoRMS: *MolluscaBase eds. (2026). MolluscaBase. Grimpoteuthis G. C. Robson, 1932. Accessed through: World Register of Marine Species at: https://www.marinespecies.org/aphia.php?p=taxdetails&id=138293 on 2026-11-02*
 
 **Cómo lo leí:** página web (taxdetails) y API oficial (`marinespecies.org/rest/...`). Cada dato lleva entre corchetes de qué sección sale.
 
-**Ojo:** *Grimpoteuthis* es un **género**, no una especie. Agrupa 18 especies aceptadas. Si querés la ficha de una especie puntual (por ejemplo, la que se vio en Argentina), hace falta saber cuál es; WoRMS no tiene ninguna especie de *Grimpoteuthis* registrada en el Atlántico Sur (ver sección 6).
+**Nivel de la ficha:** el ejemplar de la expedición no se identificó hasta especie: quedó registrado como un ejemplar del género *Grimpoteuthis* (lo que en ciencia se escribe *Grimpoteuthis* sp.). Por eso esta ficha es del **género**, que agrupa 18 especies aceptadas. Dato de contexto: WoRMS no tiene ninguna especie de *Grimpoteuthis* registrada en el Atlántico Sur (ver sección 6), así que el registro de la expedición suma información nueva para la zona.
 
 ⭐ = dato curioso o poético para el poema.
 
