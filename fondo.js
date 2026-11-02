@@ -75,7 +75,7 @@
         hintMany: "Faltan {n} palabras.",
         alt: {
           delantal: "Delantal de jean azul con la estrella Patricio estampada. Tiene tres palabras bordadas: voraz en el frente, vedette en la tira izquierda y del mar en la tira derecha. Usá los botones o el pellizco para acercarte.",
-          mate: "Mate enlozado antiguo, color crema con borde azul, con yerba y bombilla. En el medio, la estrella Patricio y arriba, en arco, la frase sensible a la perturbación. Usá los botones o el pellizco para acercarte."
+          mate: "Mate enlozado antiguo, color crema con borde azul. En el medio, la estrella Patricio y arriba, en arco, la frase sensible a la perturbación. Usá los botones o el pellizco para acercarte."
         }
       },
       thumbAlt: "Mockup de {obj} de {animal}",
@@ -127,7 +127,7 @@
         hintMany: "{n} words left.",
         alt: {
           delantal: "Blue denim apron with the Patricio starfish printed on it. It has three embroidered words: voraz on the front, vedette on the left strap and del mar on the right strap. Use the buttons or pinch to zoom in.",
-          mate: "Old enamel mate, cream with a blue rim, with yerba and a bombilla (metal straw). In the middle, the Patricio starfish and, above it in an arc, the phrase sensible a la perturbación (sensitive to disturbance). Use the buttons or pinch to zoom in."
+          mate: "Old enamel mate, cream with a blue rim. In the middle, the Patricio starfish and, above it in an arc, the phrase sensible a la perturbación (sensitive to disturbance). Use the buttons or pinch to zoom in."
         }
       },
       thumbAlt: "{animal} {obj} mockup",
@@ -163,7 +163,7 @@
         {
           id: "mate", es: "Mate", en: "Mate",
           kind: "zoom", thumb: "fondo/assets/thumbs/mate.webp",
-          svg: "fondo/assets/mate-svg.html", ratio: 800 / 760
+          svg: "fondo/assets/mate-svg.html", ratio: 620 / 560
         },
         { id: "postal", es: "Postal", en: "Postcard", kind: "postal", thumb: "fondo/assets/thumbs/postal-patricio.webp", file: "fondo/assets/postales/postal-patricio.png" }
       ]
