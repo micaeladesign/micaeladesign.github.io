@@ -264,20 +264,20 @@
           "*¿Por qué “Madre solo una”?* El 9 de agosto de 2025, a 1.883 metros de profundidad, el robot SuBastian se acercó a una roca del cañón submarino de Mar del Plata. Debajo vivía una langosta patagónica, *Thymops birsteini*, con sus crías: ocho langostitas de pocas semanas de vida.",
           "La madre volvió rápido a su roca, miró de frente a la cámara y atacó al robot una y otra vez con sus tenazas, removiendo hasta el barro del fondo. Mientras tanto, las ocho crías se asomaban a mirar cómo las defendía. En el chat del stream la bautizaron enseguida: “El enfrentamiento del año: ROV contra Mamá Tenazas”.",
           "Los científicos terminaron rápido de tomar su muestra y se alejaron. Un experto del CONICET aclaró que la langosta no sufrió ningún daño y que volvió a su roca a seguir criando a sus pequeños.",
-          "Antes de esas crías, la maternidad ya es larga. La hembra de esta especie lleva hasta 380 huevos pegados bajo la cola, de 1,5 a 1,9 mm cada uno, y el desarrollo dura alrededor de un año.",
+          "Antes de tener crías, la hembra de esta especie lleva hasta 380 huevos pegados bajo la cola, de 1,5 a 1,9 mm cada uno.",
           "WoRMS registra a esta especie en el mar profundo, entre los 122 y los 1.400 metros. Mamá tenazas estaba a 1.883."
         ],
-        source: "Fuentes: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 de agosto de 2025; Laptikhovsky y Reyes (2009), Journal of Natural History 43: 35-46, citado en Wikipedia (cantidad y tamaño de los huevos); SeaLifeBase, Thymops birsteini (desarrollo de un año); WoRMS, Thymops birsteini."
+        source: "Fuentes: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 de agosto de 2025; Laptikhovsky y Reyes (2009), Journal of Natural History 43: 35-46, citado en Wikipedia; WoRMS, Thymops birsteini."
       },
       en: {
         paragraphs: [
           "*Why “Madre solo una” (only one mother)?* On 9 August 2025, 1,883 metres deep, the robot SuBastian approached a rock in the Mar del Plata submarine canyon. Under it lived a Patagonian lobsterette, *Thymops birsteini*, with her young: eight little lobsters a few weeks old.",
           "The mother hurried back to her rock, stared straight into the camera and attacked the robot again and again with her claws, even stirring up the mud on the seabed. Meanwhile, the eight young peeked out to watch her defend them. The stream chat named her right away: “The fight of the year: ROV vs. Mamá Tenazas” (Mama Claws).",
           "The scientists quickly finished taking their sample and moved away. A CONICET expert explained that the lobster was not harmed and went back to her rock to keep raising her young.",
-          "Before those young, motherhood is already long. The female of this species carries up to 380 eggs stuck under her tail, each 1.5 to 1.9 mm, and their development takes about a year.",
+          "Before having young, the female of this species carries up to 380 eggs stuck under her tail, each 1.5 to 1.9 mm.",
           "WoRMS records this species in the deep sea, between 122 and 1,400 metres. Mamá tenazas was at 1,883."
         ],
-        source: "Sources: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 August 2025; Laptikhovsky & Reyes (2009), Journal of Natural History 43: 35-46, as cited in Wikipedia (egg number and size); SeaLifeBase, Thymops birsteini (one-year development); WoRMS, Thymops birsteini."
+        source: "Sources: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 August 2025; Laptikhovsky & Reyes (2009), Journal of Natural History 43: 35-46, as cited in Wikipedia; WoRMS, Thymops birsteini."
       }
     },
 
