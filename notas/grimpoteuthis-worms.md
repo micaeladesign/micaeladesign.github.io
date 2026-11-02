@@ -71,3 +71,30 @@ Biota > Animalia > Mollusca > Cephalopoda > Coleoidea > Octopodiformes > Octopod
 - Hochberg, F.G.; Norman, M.D.; Finn, J.K. (2014). Family Opisthoteuthidae. En: *Cephalopods of the world*, vol. 3. FAO, p. 256.
 - Verhoeff, T. J. & O'Shea, S. (2022). New records and two new species of *Grimpoteuthis*... *Molluscan Research* 42. https://doi.org/10.1080/13235818.2022.2035889
 - O'Shea, S. (1999). The marine fauna of New Zealand: Octopoda. *NIWA Biodiversity Memoir* 112. (descripción de *Enigmatiteuthis*)
+
+## 10. Otras fuentes: National Geographic (leídas el 02/11/2026)
+Estas no son de WoRMS. Copio la frase original en inglés y al lado la traducción, que es mía.
+
+**[NG-1]** National Geographic, ficha "Dumbo Octopus Facts": https://www.nationalgeographic.com/animals/invertebrates/facts/dumbo-octopus
+- ⭐ "often called the cutest octopus in the world": "a menudo llamado el pulpo más tierno del mundo".
+- ⭐ Las aletas "protrude like ears": "sobresalen como orejas". Por eso el nombre de Dumbo, el elefante.
+- Tamaño: "generally around eight inches": en general, unos 20 cm.
+- Cuerpo: brazos relativamente cortos, cuerpo en forma de campana, color pálido y "tendency to hover over the seafloor": tendencia a quedarse flotando sobre el fondo.
+- ⭐ Profundidad: "up to 13,000 feet below the surface" (unos 4000 m) y "the deepest-living octopuses known": los pulpos que viven a mayor profundidad que se conocen.
+- ⭐ Comida: "snails, worms, and other creatures they hoover up from the ocean floor": caracoles, gusanos y otros bichos que "aspiran" del fondo.
+- Cirros: filamentos finos que salen de las ventosas. "The role of cirri is not known, but it's thought to have something to do with feeding": no se sabe para qué sirven; se cree que tienen que ver con comer.
+- ⭐ Nado: aletean sus aletas fuertes, en vez de usar chorro de agua como otros pulpos. La membrana entre los brazos los ayuda a nadar.
+
+**[NG-2]** National Geographic, "Mesmerizing, rare dumbo octopus filmed in the deep sea", 25/10/2018: https://www.nationalgeographic.com/animals/article/dumbo-octopus-monterey-seamount-news
+(Es sobre un Dumbo filmado en California, no en Argentina.)
+- ⭐ Lo describen como "a ghostly creature with pale skin, bulging eyes, and what looked like translucent wings": "una criatura fantasmal, de piel pálida, ojos saltones y algo que parecían alas translúcidas".
+- ⭐ "spend much of their lives suspended just above the seafloor. This is where they lay their eggs and hunt for prey such as crustaceans, bivalves, and worms": pasan gran parte de su vida suspendidos justo encima del fondo; ahí ponen los huevos y cazan crustáceos, bivalvos y gusanos.
+- ⭐ La membrana entre los brazos es "not unlike an umbrella": "como un paraguas". Contraerla les da un impulso rápido para escapar de depredadores como atunes y tiburones.
+- También pueden caminar por el fondo con los brazos.
+- ⭐ Pueden cambiar el color de la piel, pero "dumbos don't produce ink": no tienen tinta. Algunos tienen los brazos con espinas filosas como defensa.
+- La mayoría mide entre 20 y 30 cm (8 a 12 pulgadas); algunos superan 1,80 m (6 pies).
+
+**[CONICET]** "Descubren 57 nuevas especies en los cañones submarinos de Argentina": https://www.conicet.gov.ar/descubren-57-nuevas-especies-en-los-canones-submarinos-de-argentina/
+- No habla del Dumbo, pero sí de la campaña donde apareció: Talud Continental IV, en el cañón submarino Mar del Plata, en agosto de 2025, a bordo del buque R/V Falkor (too) del Schmidt Ocean Institute. Duró 21 días, el robot SuBastian bajó hasta 3900 m y la transmisión tuvo cerca de 22 millones de visualizaciones.
+
+**Pendiente:** la profundidad exacta del Dumbo del cañón. Los diarios dicen 2379 m o 3781 m y no pude abrir la página de Schmidt Ocean para confirmarlo.
