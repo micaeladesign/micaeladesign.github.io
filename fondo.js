@@ -181,7 +181,7 @@
         {
           id: "gorra", es: "Gorra", en: "Cap",
           kind: "zoom", thumb: "fondo/assets/thumbs/gorra.webp",
-          svg: "fondo/assets/gorra-svg.html", ratio: 1305 / 1206
+          svg: "fondo/assets/gorra-svg.html", ratio: 1305 / 1205
         },
         { id: "postal", es: "Postal", en: "Postcard", kind: "postal", thumb: "fondo/assets/thumbs/postal-batatita.webp", file: "fondo/assets/postales/postal-batatita.png" }
       ]

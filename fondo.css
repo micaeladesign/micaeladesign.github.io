@@ -693,19 +693,3 @@
   }
 
 }
-
-
-/* Gorra de Batatita: la frase bordada en imprenta, con la letra del portfolio */
-
-.gorra-phrase {
-  font-family: "DM Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-
-  fill: url(#gorra-satin);
-  stroke: #4A1458;
-  stroke-width: 0.8;
-  paint-order: stroke;
-  text-anchor: middle;
-}
