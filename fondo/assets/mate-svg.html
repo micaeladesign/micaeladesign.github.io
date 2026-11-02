@@ -1,124 +1,19 @@
-<svg class="zoom-svg mate-svg" viewBox="0 0 620 560" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<svg class="zoom-svg mate-svg" viewBox="0 0 1416 1111" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 <defs>
-  <!-- Esmalte crema: volumen de jarro redondo, luz desde arriba a la izquierda -->
-  <linearGradient id="m-body" gradientUnits="userSpaceOnUse" x1="144" x2="576" y1="0" y2="0">
-    <stop offset="0" stop-color="#A8925A"/>
-    <stop offset="0.05" stop-color="#C7B077"/>
-    <stop offset="0.16" stop-color="#E4D29E"/>
-    <stop offset="0.28" stop-color="#F3E6BC"/>
-    <stop offset="0.36" stop-color="#F9F0D3"/>
-    <stop offset="0.48" stop-color="#F2E4B8"/>
-    <stop offset="0.68" stop-color="#E3CF98"/>
-    <stop offset="0.84" stop-color="#CBB276"/>
-    <stop offset="0.94" stop-color="#B49B5F"/>
-    <stop offset="1" stop-color="#C2AA74"/>
-  </linearGradient>
-  <linearGradient id="m-vert" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="210" y2="664">
-    <stop offset="0" stop-color="#3B2E14" stop-opacity="0.30"/>
-    <stop offset="0.07" stop-color="#3B2E14" stop-opacity="0.06"/>
-    <stop offset="0.2" stop-color="#3B2E14" stop-opacity="0"/>
-    <stop offset="0.72" stop-color="#3B2E14" stop-opacity="0"/>
-    <stop offset="1" stop-color="#3B2E14" stop-opacity="0.32"/>
-  </linearGradient>
-  <linearGradient id="m-blue" gradientUnits="userSpaceOnUse" x1="192" x2="528" y1="0" y2="0">
-    <stop offset="0" stop-color="#0E1A33"/>
-    <stop offset="0.25" stop-color="#2A4072"/>
-    <stop offset="0.36" stop-color="#4C66A0"/>
-    <stop offset="0.5" stop-color="#2C4374"/>
-    <stop offset="0.85" stop-color="#18264A"/>
-    <stop offset="1" stop-color="#0D1730"/>
-  </linearGradient>
-  <linearGradient id="m-inside" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="176" y2="244">
-    <stop offset="0" stop-color="#E6D6A6"/>
-    <stop offset="0.45" stop-color="#CDB884"/>
-    <stop offset="0.8" stop-color="#7D6B43"/>
-    <stop offset="1" stop-color="#4E4229"/>
-  </linearGradient>
-  <linearGradient id="m-inside-side" gradientUnits="userSpaceOnUse" x1="202" x2="518" y1="0" y2="0">
-    <stop offset="0" stop-color="#2E2412" stop-opacity="0.35"/>
-    <stop offset="0.35" stop-color="#2E2412" stop-opacity="0"/>
-    <stop offset="0.75" stop-color="#2E2412" stop-opacity="0.05"/>
-    <stop offset="1" stop-color="#2E2412" stop-opacity="0.4"/>
-  </linearGradient>
-  <linearGradient id="m-handle" gradientUnits="userSpaceOnUse" x1="528" x2="698" y1="0" y2="0">
-    <stop offset="0" stop-color="#9E8752"/>
-    <stop offset="0.35" stop-color="#E2CF9A"/>
-    <stop offset="0.6" stop-color="#F1E3B6"/>
-    <stop offset="0.85" stop-color="#C9B075"/>
-    <stop offset="1" stop-color="#A68F58"/>
-  </linearGradient>
-  <filter id="m-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.2"/></filter>
-  <filter id="m-blur4" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
-  <filter id="m-blur10" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
-  <filter id="m-blur18" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
-  <!-- Textura muy sutil del esmalte (ondulado y poros) -->
-  <filter id="m-grain" x="0" y="0" width="100%" height="100%">
-    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.02" numOctaves="3" seed="4" result="n"/>
-    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.25  0 0 0 0 0.19  0 0 0 0 0.08  0 0 0 0.55 -0.2"/>
-  </filter>
-  <clipPath id="m-body-clip"><path d="M 204 210 C 132 290 122 520 192 630 A 168 34 0 0 0 528 630 C 598 520 588 290 516 210 Z"/></clipPath>
-  <path id="mate-arc" d="M 214 470 A 150 150 0 1 1 506 470"/>
+  <!-- Curvas suaves que siguen la panza del jarro -->
+  <path id="mate-line-top" d="M 470 318 Q 708 352 946 318" />
+  <path id="mate-line-bottom" d="M 380 955 Q 708 992 1036 955" />
 </defs>
-<g transform="translate(-110 -150)">
 
-<!-- Sombra de contacto sobre la mesa -->
-<ellipse cx="378" cy="670" rx="228" ry="22" fill="#1E1A14" opacity="0.16" filter="url(#m-blur18)"/>
-<ellipse cx="366" cy="662" rx="162" ry="9" fill="#1E1A14" opacity="0.45" filter="url(#m-blur4)"/>
+<!-- El mate enlozado con Patricio -->
+<image href="fondo/assets/mate.webp" x="0" y="0" width="1416" height="1111" />
 
-<!-- Asa -->
-<g>
-  <path d="M 542 262 C 676 236 710 330 698 410 C 686 492 640 538 538 524
-           L 542 492 C 620 500 654 466 662 408 C 670 346 648 284 546 298 Z" fill="url(#m-handle)"/>
-  <!-- reflejo a lo largo del asa -->
-  <path d="M 588 266 C 666 270 688 340 680 410" fill="none" stroke="#FFFBEA" stroke-opacity="0.8" stroke-width="5" stroke-linecap="round" filter="url(#m-soft)"/>
-  <!-- borde interno en sombra -->
-  <path d="M 558 300 C 648 288 670 346 662 408 C 654 466 620 498 552 492" fill="none" stroke="#6E5C34" stroke-opacity="0.45" stroke-width="4" filter="url(#m-soft)"/>
-  <!-- borde azul del asa -->
-  <path d="M 542 262 C 676 236 710 330 698 410 C 686 492 640 538 538 524" fill="none" stroke="url(#m-blue)" stroke-width="6"/>
+<!-- La frase, como calcomanía: "sensible" arriba, "a la perturbación" abajo -->
+<g class="mate-phrase">
+  <text style="font-size: 62px"><textPath href="#mate-line-top" startOffset="50%">sensible</textPath></text>
+  <text style="font-size: 52px"><textPath href="#mate-line-bottom" startOffset="50%">a la perturbación</textPath></text>
 </g>
 
-<!-- Cuerpo -->
-<path d="M 204 210 C 132 290 122 520 192 630 A 168 34 0 0 0 528 630 C 598 520 588 290 516 210 Z" fill="url(#m-body)"/>
-<g clip-path="url(#m-body-clip)">
-  <rect x="100" y="150" width="560" height="560" filter="url(#m-grain)" opacity="0.28"/>
-  <rect x="100" y="150" width="560" height="560" fill="url(#m-vert)"/>
-  <!-- sombra que deja el asa sobre el cuerpo -->
-  <ellipse cx="568" cy="395" rx="26" ry="150" fill="#3B2E14" opacity="0.22" filter="url(#m-blur10)"/>
-  <!-- pintitas del esmalte -->
-  <g fill="#5A4A2A" opacity="0.28"><circle cx="289.5" cy="279.1" r="0.9"/><circle cx="189.0" cy="442.7" r="0.7"/><circle cx="183.2" cy="430.7" r="0.4"/><circle cx="333.5" cy="244.7" r="0.5"/><circle cx="329.8" cy="566.4" r="0.5"/><circle cx="249.3" cy="481.7" r="1.1"/><circle cx="390.8" cy="383.6" r="1.1"/><circle cx="178.6" cy="579.8" r="0.6"/><circle cx="217.7" cy="265.1" r="0.6"/><circle cx="486.5" cy="291.8" r="0.8"/><circle cx="415.6" cy="373.3" r="0.8"/><circle cx="185.1" cy="240.3" r="0.5"/><circle cx="432.2" cy="396.7" r="0.6"/><circle cx="394.2" cy="407.6" r="0.6"/><circle cx="477.8" cy="512.1" r="0.6"/><circle cx="389.8" cy="438.2" r="1.0"/><circle cx="451.8" cy="337.4" r="1.1"/><circle cx="207.2" cy="392.7" r="0.9"/><circle cx="220.8" cy="422.8" r="0.4"/><circle cx="427.3" cy="539.9" r="0.8"/><circle cx="510.2" cy="348.3" r="0.9"/><circle cx="397.7" cy="461.5" r="0.7"/><circle cx="496.0" cy="616.5" r="0.7"/><circle cx="425.7" cy="240.8" r="0.9"/><circle cx="418.9" cy="637.1" r="1.0"/><circle cx="273.8" cy="379.0" r="0.9"/><circle cx="169.0" cy="411.2" r="0.5"/><circle cx="206.8" cy="240.1" r="0.9"/><circle cx="211.7" cy="320.2" r="0.7"/><circle cx="508.6" cy="249.2" r="0.7"/><circle cx="379.8" cy="590.4" r="1.0"/><circle cx="505.6" cy="333.3" r="0.7"/><circle cx="303.5" cy="590.8" r="1.1"/><circle cx="220.4" cy="289.9" r="0.6"/><circle cx="253.3" cy="421.1" r="0.8"/><circle cx="265.1" cy="216.7" r="0.7"/><circle cx="307.7" cy="455.7" r="1.1"/><circle cx="436.2" cy="434.1" r="0.8"/><circle cx="430.5" cy="237.9" r="1.0"/><circle cx="472.0" cy="586.7" r="1.0"/><circle cx="317.0" cy="384.6" r="0.5"/><circle cx="413.7" cy="241.5" r="0.4"/><circle cx="243.5" cy="284.0" r="0.6"/><circle cx="181.0" cy="215.1" r="0.5"/><circle cx="200.6" cy="369.5" r="0.4"/><circle cx="509.7" cy="476.0" r="0.5"/><circle cx="260.9" cy="362.6" r="0.7"/><circle cx="209.1" cy="575.8" r="1.1"/><circle cx="346.4" cy="420.6" r="0.5"/><circle cx="200.9" cy="360.6" r="0.6"/><circle cx="491.5" cy="283.6" r="0.4"/><circle cx="540.4" cy="439.5" r="0.5"/><circle cx="377.3" cy="226.5" r="0.8"/><circle cx="551.4" cy="581.9" r="0.9"/><circle cx="264.4" cy="370.8" r="0.5"/><circle cx="468.8" cy="441.4" r="0.9"/><circle cx="291.9" cy="309.8" r="1.0"/><circle cx="554.0" cy="577.4" r="1.0"/><circle cx="487.3" cy="529.4" r="0.6"/><circle cx="367.1" cy="366.1" r="0.4"/><circle cx="171.2" cy="333.8" r="0.6"/><circle cx="437.0" cy="621.5" r="0.7"/><circle cx="534.8" cy="634.9" r="1.1"/><circle cx="305.9" cy="308.7" r="0.6"/><circle cx="238.7" cy="301.9" r="0.8"/><circle cx="520.1" cy="572.2" r="0.7"/><circle cx="421.2" cy="554.8" r="0.5"/><circle cx="424.2" cy="601.7" r="0.9"/><circle cx="460.1" cy="418.2" r="0.5"/><circle cx="475.7" cy="356.3" r="1.0"/><circle cx="548.7" cy="383.2" r="0.7"/><circle cx="538.7" cy="523.0" r="0.5"/><circle cx="210.8" cy="279.2" r="1.0"/><circle cx="482.6" cy="277.1" r="1.0"/><circle cx="552.1" cy="494.3" r="0.6"/><circle cx="379.5" cy="270.7" r="0.4"/><circle cx="548.4" cy="491.1" r="0.8"/><circle cx="533.4" cy="399.4" r="1.0"/><circle cx="490.5" cy="304.7" r="0.6"/><circle cx="277.2" cy="317.2" r="0.8"/><circle cx="263.7" cy="393.1" r="0.5"/><circle cx="524.0" cy="365.4" r="0.7"/><circle cx="393.3" cy="599.3" r="0.7"/><circle cx="527.1" cy="428.2" r="0.8"/><circle cx="369.4" cy="222.9" r="0.7"/><circle cx="233.2" cy="216.7" r="1.0"/><circle cx="228.9" cy="416.2" r="0.9"/><circle cx="382.6" cy="353.5" r="0.8"/><circle cx="382.2" cy="548.3" r="0.5"/><circle cx="384.1" cy="320.6" r="0.6"/><circle cx="468.9" cy="430.8" r="0.8"/><circle cx="464.0" cy="602.8" r="0.7"/><circle cx="405.0" cy="429.9" r="0.8"/><circle cx="437.1" cy="407.2" r="0.8"/><circle cx="351.2" cy="615.1" r="0.9"/><circle cx="510.6" cy="615.4" r="0.6"/><circle cx="383.8" cy="615.9" r="1.0"/><circle cx="214.9" cy="266.7" r="0.7"/><circle cx="189.0" cy="317.3" r="0.5"/><circle cx="427.8" cy="548.2" r="1.0"/><circle cx="221.8" cy="519.4" r="0.9"/><circle cx="217.2" cy="590.2" r="1.1"/><circle cx="247.8" cy="619.8" r="0.7"/><circle cx="354.9" cy="635.7" r="1.0"/><circle cx="224.6" cy="398.4" r="0.8"/><circle cx="295.6" cy="298.2" r="0.6"/><circle cx="448.9" cy="223.3" r="0.8"/><circle cx="336.2" cy="222.7" r="0.6"/><circle cx="409.6" cy="432.7" r="0.4"/><circle cx="554.0" cy="550.1" r="1.1"/><circle cx="201.9" cy="327.9" r="0.4"/><circle cx="471.6" cy="329.9" r="0.5"/><circle cx="328.9" cy="602.4" r="1.0"/><circle cx="263.4" cy="278.5" r="1.0"/><circle cx="388.2" cy="512.7" r="0.5"/><circle cx="183.0" cy="507.5" r="0.7"/><circle cx="189.0" cy="613.8" r="0.8"/><circle cx="480.7" cy="250.6" r="1.0"/><circle cx="186.6" cy="581.7" r="0.7"/><circle cx="295.7" cy="450.1" r="1.0"/><circle cx="267.1" cy="269.9" r="0.8"/><circle cx="255.4" cy="261.5" r="0.5"/><circle cx="180.2" cy="300.8" r="0.6"/><circle cx="282.0" cy="537.8" r="0.6"/><circle cx="360.0" cy="290.6" r="0.6"/><circle cx="167.3" cy="321.4" r="0.4"/><circle cx="453.2" cy="449.2" r="0.5"/><circle cx="349.9" cy="612.2" r="0.5"/><circle cx="487.6" cy="398.7" r="0.7"/><circle cx="493.8" cy="382.1" r="0.8"/><circle cx="435.1" cy="632.5" r="0.6"/><circle cx="492.9" cy="515.4" r="0.8"/><circle cx="321.9" cy="362.7" r="0.4"/><circle cx="211.9" cy="245.1" r="0.9"/><circle cx="262.2" cy="284.4" r="0.5"/><circle cx="496.5" cy="585.0" r="0.9"/><circle cx="272.8" cy="317.9" r="0.6"/><circle cx="343.8" cy="282.0" r="0.7"/><circle cx="265.3" cy="623.8" r="1.1"/><circle cx="378.8" cy="318.9" r="1.1"/></g>
-
-  <!-- Calcomanía: Patricio y la frase, bajo el vidriado -->
-  <image href="fondo/assets/patricio-estrella.webp" x="252" y="368" width="216" height="205" style="mix-blend-mode: multiply" opacity="0.96"/>
-  <text class="mate-phrase" style="mix-blend-mode: multiply"><textPath href="#mate-arc" startOffset="50%">sensible a la perturbación</textPath></text>
-
-  <!-- Banda azul de la base -->
-  <path d="M 174 606 A 186 36 0 0 0 546 606 L 640 720 L 80 720 Z" fill="url(#m-blue)"/>
-  <path d="M 196 638 A 168 34 0 0 0 330 674" fill="none" stroke="#9FB2DA" stroke-opacity="0.55" stroke-width="3" filter="url(#m-soft)"/>
-
-  <!-- Brillos del vidriado: reflejo de ventana -->
-  <path d="M 206 280 C 192 360 192 470 208 570" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="12" stroke-linecap="round" filter="url(#m-blur4)"/>
-  <path d="M 206 292 C 196 370 196 460 208 540" fill="none" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="3.5" stroke-linecap="round" filter="url(#m-soft)"/>
-  <path d="M 236 280 C 228 350 228 440 238 510" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="7" stroke-linecap="round" filter="url(#m-blur4)"/>
-  <!-- luz rebotada en el borde derecho -->
-  <path d="M 562 300 C 576 380 574 480 534 600" fill="none" stroke="#F4E6BE" stroke-opacity="0.5" stroke-width="6" filter="url(#m-blur4)"/>
-</g>
-
-<!-- Boca: interior esmaltado y labio azul enrollado -->
-<ellipse cx="360" cy="212" rx="144" ry="26" fill="url(#m-inside)"/>
-<ellipse cx="360" cy="212" rx="144" ry="26" fill="url(#m-inside-side)"/>
-<path d="M 216 212 A 144 26 0 0 1 504 212" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="3" filter="url(#m-soft)"/>
-<path fill-rule="evenodd" fill="url(#m-blue)" d="
-  M 202 210 A 158 34 0 1 0 518 210 A 158 34 0 1 0 202 210 Z
-  M 216 212 A 144 26 0 1 0 504 212 A 144 26 0 1 0 216 212 Z"/>
-<!-- reflejo sobre el labio -->
-<path d="M 220 224 A 148 30 0 0 0 390 246" fill="none" stroke="#C9D6F2" stroke-opacity="0.75" stroke-width="3" stroke-linecap="round" filter="url(#m-soft)"/>
-<path d="M 242 188 A 138 26 0 0 1 380 179" fill="none" stroke="#9FB2DA" stroke-opacity="0.45" stroke-width="2" stroke-linecap="round" filter="url(#m-soft)"/>
-
-<!-- Saltaduras del enlozado: hierro negro, borde blanco y un poco de óxido -->
-<path d="M 212.9 217.6 L 210.5 219.9 L 207.1 219.3 L 203.6 218.7 L 202.1 215.8 L 203.6 212.8 L 207.4 212.1 L 211.2 212.0 L 212.0 215.0 Z" transform="translate(208 216) scale(1.6) translate(-208 -216)" fill="#8C5A2E" opacity="0.35" filter="url(#m-soft)"/><path d="M 212.9 217.6 L 210.5 219.9 L 207.1 219.3 L 203.6 218.7 L 202.1 215.8 L 203.6 212.8 L 207.4 212.1 L 211.2 212.0 L 212.0 215.0 Z" transform="translate(208 216) scale(1.22) translate(-208 -216)" fill="#F7F1E2" opacity="0.9"/><path d="M 212.9 217.6 L 210.5 219.9 L 207.1 219.3 L 203.6 218.7 L 202.1 215.8 L 203.6 212.8 L 207.4 212.1 L 211.2 212.0 L 212.0 215.0 Z" fill="#26201B"/><path d="M 212.9 217.6 L 210.5 219.9 L 207.1 219.3 L 203.6 218.7 L 202.1 215.8 L 203.6 212.8 L 207.4 212.1 L 211.2 212.0 L 212.0 215.0 Z" transform="translate(209.05 216.7) scale(0.5) translate(-208 -216)" fill="#6E3A1C" opacity="0.8"/>
-<path d="M 479.7 245.6 L 477.3 245.5 L 474.8 244.9 L 474.9 242.9 L 475.8 241.3 L 477.5 240.0 L 480.0 240.6 L 482.3 242.0 L 482.0 244.4 Z" transform="translate(478 243) scale(1.6) translate(-478 -243)" fill="#8C5A2E" opacity="0.35" filter="url(#m-soft)"/><path d="M 479.7 245.6 L 477.3 245.5 L 474.8 244.9 L 474.9 242.9 L 475.8 241.3 L 477.5 240.0 L 480.0 240.6 L 482.3 242.0 L 482.0 244.4 Z" transform="translate(478 243) scale(1.22) translate(-478 -243)" fill="#F7F1E2" opacity="0.9"/><path d="M 479.7 245.6 L 477.3 245.5 L 474.8 244.9 L 474.9 242.9 L 475.8 241.3 L 477.5 240.0 L 480.0 240.6 L 482.3 242.0 L 482.0 244.4 Z" fill="#26201B"/><path d="M 479.7 245.6 L 477.3 245.5 L 474.8 244.9 L 474.9 242.9 L 475.8 241.3 L 477.5 240.0 L 480.0 240.6 L 482.3 242.0 L 482.0 244.4 Z" transform="translate(478.75 243.5) scale(0.5) translate(-478 -243)" fill="#6E3A1C" opacity="0.8"/>
-<g clip-path="url(#m-body-clip)"><path d="M 547.7 540.9 L 545.5 543.5 L 541.9 544.6 L 537.9 543.7 L 537.3 540.6 L 538.1 538.1 L 539.9 535.0 L 543.5 537.0 L 547.1 537.8 Z" transform="translate(542 540) scale(1.6) translate(-542 -540)" fill="#8C5A2E" opacity="0.35" filter="url(#m-soft)"/><path d="M 547.7 540.9 L 545.5 543.5 L 541.9 544.6 L 537.9 543.7 L 537.3 540.6 L 538.1 538.1 L 539.9 535.0 L 543.5 537.0 L 547.1 537.8 Z" transform="translate(542 540) scale(1.22) translate(-542 -540)" fill="#F7F1E2" opacity="0.9"/><path d="M 547.7 540.9 L 545.5 543.5 L 541.9 544.6 L 537.9 543.7 L 537.3 540.6 L 538.1 538.1 L 539.9 535.0 L 543.5 537.0 L 547.1 537.8 Z" fill="#26201B"/><path d="M 547.7 540.9 L 545.5 543.5 L 541.9 544.6 L 537.9 543.7 L 537.3 540.6 L 538.1 538.1 L 539.9 535.0 L 543.5 537.0 L 547.1 537.8 Z" transform="translate(542.9 540.6) scale(0.5) translate(-542 -540)" fill="#6E3A1C" opacity="0.8"/>
-<path d="M 238.1 641.4 L 237.2 639.1 L 235.1 637.0 L 237.0 634.6 L 240.4 634.4 L 243.4 635.2 L 245.0 637.6 L 242.8 639.5 L 241.1 641.3 Z" transform="translate(240 638) scale(1.6) translate(-240 -638)" fill="#8C5A2E" opacity="0.35" filter="url(#m-soft)"/><path d="M 238.1 641.4 L 237.2 639.1 L 235.1 637.0 L 237.0 634.6 L 240.4 634.4 L 243.4 635.2 L 245.0 637.6 L 242.8 639.5 L 241.1 641.3 Z" transform="translate(240 638) scale(1.22) translate(-240 -638)" fill="#F7F1E2" opacity="0.9"/><path d="M 238.1 641.4 L 237.2 639.1 L 235.1 637.0 L 237.0 634.6 L 240.4 634.4 L 243.4 635.2 L 245.0 637.6 L 242.8 639.5 L 241.1 641.3 Z" fill="#26201B"/><path d="M 238.1 641.4 L 237.2 639.1 L 235.1 637.0 L 237.0 634.6 L 240.4 634.4 L 243.4 635.2 L 245.0 637.6 L 242.8 639.5 L 241.1 641.3 Z" transform="translate(240.75 638.5) scale(0.5) translate(-240 -638)" fill="#6E3A1C" opacity="0.8"/>
-<path d="M 432.6 657.8 L 430.7 659.2 L 428.0 658.8 L 426.2 657.1 L 426.6 655.0 L 427.9 653.1 L 430.7 653.0 L 432.9 654.1 L 432.9 656.0 Z" transform="translate(430 656) scale(1.6) translate(-430 -656)" fill="#8C5A2E" opacity="0.35" filter="url(#m-soft)"/><path d="M 432.6 657.8 L 430.7 659.2 L 428.0 658.8 L 426.2 657.1 L 426.6 655.0 L 427.9 653.1 L 430.7 653.0 L 432.9 654.1 L 432.9 656.0 Z" transform="translate(430 656) scale(1.22) translate(-430 -656)" fill="#F7F1E2" opacity="0.9"/><path d="M 432.6 657.8 L 430.7 659.2 L 428.0 658.8 L 426.2 657.1 L 426.6 655.0 L 427.9 653.1 L 430.7 653.0 L 432.9 654.1 L 432.9 656.0 Z" fill="#26201B"/><path d="M 432.6 657.8 L 430.7 659.2 L 428.0 658.8 L 426.2 657.1 L 426.6 655.0 L 427.9 653.1 L 430.7 653.0 L 432.9 654.1 L 432.9 656.0 Z" transform="translate(430.6 656.4) scale(0.5) translate(-430 -656)" fill="#6E3A1C" opacity="0.8"/></g>
-</g>
+<!-- Los brillos del esmalte pasan por encima de la frase -->
+<image href="fondo/assets/mate-brillos.webp" x="0" y="0" width="1416" height="1111" opacity="0.5" />
 </svg>
