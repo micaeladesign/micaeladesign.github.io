@@ -1,0 +1,681 @@
+/* ============================================================
+   FONDO — la tienda de souvenirs
+   Usa los mismos tokens de color que style.css.
+   El contenido de la página vive en fondo.js.
+   ============================================================ */
+
+:root {
+  --fondo-shelf: #E4E4E8;
+  --fondo-patricio: #C2401F;
+}
+
+
+/* --------------------------------
+   TEXTO DEL CASO (mismo ritmo que Kombi y Ele)
+-------------------------------- */
+
+#fondo h2 {
+  max-width: 1000px;
+
+  margin: 0 0 16px 0;
+
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+
+#fondo h3 {
+  margin: 48px 0 16px 0;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+#fondo .fondo-text p {
+  max-width: 650px;
+
+  margin: 0 0 20px 0;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+#fondo .fondo-enter {
+  margin-top: 8px;
+
+  border: 0;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+
+#fondo .conversation-options {
+  margin-top: 56px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--color-outline-variant);
+}
+
+
+/* --------------------------------
+   LA TIENDA: un recuadro gris grande, un estante por animal
+-------------------------------- */
+
+.fondo-store {
+  max-width: 1100px;
+
+  margin: 24px 0 0;
+  padding: 24px 20px 8px;
+
+  background: var(--color-surface-container);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 24px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 4%);
+
+  /* Para que "Entrar a la tienda" no deje el título pegado al borde de la pantalla */
+  scroll-margin-top: 24px;
+}
+
+
+.shelf {
+  margin: 0 0 32px;
+}
+
+
+.shelf-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+
+  margin: 0 4px 16px;
+}
+
+
+.shelf-name {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+.shelf-meta {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-on-surface-variant);
+}
+
+
+/* Fila de objetos: en la compu entran todos; en el celular se desliza de costado */
+.shelf-row {
+  display: flex;
+  gap: 16px;
+
+  margin: 0;
+  padding: 4px 4px 12px;
+
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.shelf-board {
+  height: 10px;
+
+  background: var(--fondo-shelf);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+}
+
+
+.item {
+  flex: 0 0 min(280px, 70%);
+
+  scroll-snap-align: start;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+  color: inherit;
+
+  font-family: inherit;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+.item-thumb {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 280px;
+
+  background: var(--color-background);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+
+.item-thumb img {
+  display: block;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: contain;
+}
+
+
+.item-thumb--postal img {
+  width: 100%;
+  height: auto;
+}
+
+
+.item-thumb--apron img {
+  height: 100%;
+  width: auto;
+  padding: 10px 0;
+}
+
+
+/* Objeto cuyo mockup todavía no está: un lugar vacío en el estante */
+.item-thumb--empty {
+  flex-direction: column;
+  gap: 6px;
+
+  border-style: dashed;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+.item-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  padding: 0 4px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+
+.item-label::after {
+  content: "+";
+
+  color: var(--color-primary);
+  font-size: 20px;
+  line-height: 1;
+}
+
+
+@media (hover: hover) {
+
+  .item:hover .item-thumb {
+    border-color: var(--color-primary);
+    transform: translateY(-3px);
+  }
+
+}
+
+
+.item:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+  border-radius: 16px;
+}
+
+
+/* --------------------------------
+   PANEL DE UN OBJETO
+-------------------------------- */
+
+.fondo-dialog {
+  width: min(960px, calc(100% - 24px));
+  max-height: calc(100dvh - 24px);
+
+  padding: 0;
+
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 24px;
+
+  background: var(--color-background);
+  color: var(--color-on-background);
+
+  overflow: auto;
+}
+
+
+.fondo-dialog::backdrop {
+  background: rgb(17 17 17 / 45%);
+}
+
+
+.dialog-bar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 16px 20px 16px 28px;
+
+  background: var(--color-background);
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+
+.dialog-title {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+
+.dialog-close {
+  width: 44px;
+  height: 44px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-outline);
+  border-radius: 50%;
+
+  background: var(--color-background);
+  color: var(--color-on-background);
+
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+.dialog-close:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+
+.dialog-close:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+
+.dialog-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+
+  padding: 24px 28px 32px;
+}
+
+
+@media (min-width: 840px) {
+
+  .dialog-body {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+  }
+
+}
+
+
+.dialog-text p {
+  margin: 0 0 16px;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+.dialog-text .pending {
+  color: var(--color-on-surface-variant);
+  font-style: italic;
+}
+
+
+.dialog-text .source {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-on-surface-variant);
+}
+
+
+.dialog-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.postal-figure {
+  margin: 0 0 16px;
+  width: 100%;
+}
+
+
+.postal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.06), 0 8px 24px rgba(17, 17, 17, 0.08);
+}
+
+
+.dialog-media--empty .empty-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  aspect-ratio: 4 / 3;
+
+  border: 1px dashed var(--color-outline);
+  border-radius: 16px;
+
+  color: var(--color-on-surface-variant);
+  font-size: 16px;
+}
+
+
+.fondo-download {
+  margin-top: 8px;
+}
+
+
+/* --------------------------------
+   DELANTAL (zoom para descubrir las palabras)
+-------------------------------- */
+
+.apron-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+
+.apron-stage {
+  position: relative;
+
+  width: min(100%, 460px, calc(64vh * 930 / 1220));
+  aspect-ratio: 930 / 1220;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 8px;
+
+  background: var(--color-background);
+
+  cursor: zoom-in;
+
+  /* Los gestos (arrastrar, pellizcar) los maneja fondo/delantal.js */
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.apron-stage:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+
+.apron-stage.is-zoomed {
+  cursor: grab;
+}
+
+
+.apron-stage.is-dragging {
+  cursor: grabbing;
+}
+
+
+.apron-stage > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Pespunte y atraques del delantal */
+
+.topstitch {
+  fill: none;
+  stroke: #E9DFC6;
+  stroke-opacity: 0.85;
+  stroke-width: 1.4;
+  stroke-dasharray: 5 3.2;
+  stroke-linecap: round;
+}
+
+
+.bartack {
+  fill: none;
+  stroke: #E9DFC6;
+  stroke-opacity: 0.8;
+  stroke-width: 2.2;
+  stroke-dasharray: 1.2 1;
+}
+
+
+/* Bordado a mano: hilo blanco de algodón, puntada por puntada */
+
+.embroidery path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+.embroidery .thread {
+  stroke: #F1ECE1;
+}
+
+
+.embroidery .thread-shadow {
+  stroke: #0B1430;
+  stroke-opacity: 0.45;
+}
+
+
+.embroidery .thread-shine {
+  stroke: #FFFFFF;
+  stroke-opacity: 0.85;
+}
+
+
+.apron-controls {
+  display: flex;
+  gap: 8px;
+
+  margin-top: 12px;
+}
+
+
+.apron-controls button {
+  width: 44px;
+  height: 44px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-outline);
+  border-radius: 50%;
+
+  background: var(--color-background);
+  color: var(--color-on-background);
+
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: color 150ms ease, border-color 150ms ease, opacity 150ms ease;
+}
+
+
+.apron-controls button:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+
+.apron-controls button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+
+.apron-controls button:disabled {
+  opacity: 0.35;
+  cursor: default;
+  color: var(--color-on-background);
+  border-color: var(--color-outline-variant);
+}
+
+
+.apron-hint {
+  margin: 16px 0 4px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  color: var(--color-on-surface-variant);
+}
+
+
+/* Las tres palabras arrancan como huecos y se completan al descubrirlas */
+
+.apron-found {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 12px;
+
+  margin: 0;
+  min-height: 32px;
+
+  font-style: italic;
+  font-size: 18px;
+}
+
+
+.slot {
+  position: relative;
+
+  color: transparent;
+
+  transition: color 400ms ease;
+}
+
+
+.slot::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+
+  border-bottom: 1px solid var(--color-outline);
+
+  transition: opacity 400ms ease;
+}
+
+
+.slot.found {
+  color: var(--fondo-patricio);
+}
+
+
+.slot.found::after {
+  opacity: 0;
+}
+
+
+@media (max-width: 599px) {
+
+  .fondo-store {
+    padding: 20px 14px 4px;
+    border-radius: 20px;
+  }
+
+  .item-thumb {
+    height: 220px;
+  }
+
+  .dialog-body {
+    padding: 20px 18px 28px;
+  }
+
+  .dialog-bar {
+    padding-left: 18px;
+  }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .slot,
+  .slot::after,
+  .item-thumb {
+    transition: none;
+  }
+
+}

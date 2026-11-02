@@ -11,16 +11,21 @@
 
 (function () {
 
-  const stage = document.getElementById("apron-stage");
-  const svg = document.getElementById("apron-svg");
+  // Arma el zoom sobre un delantal ya insertado en la página.
+  //   root: el contenedor que tiene .apron-stage, los botones y las palabras a descubrir
+  //   t:    textos en el idioma actual { hintFound, hintOne, hintMany }
+  function init(root, t) {
+
+  const stage = root.querySelector(".apron-stage");
+  const svg = root.querySelector(".apron-svg");
 
   if (!stage || !svg) return;
 
-  const zoomInButton = document.getElementById("zoom-in");
-  const zoomOutButton = document.getElementById("zoom-out");
-  const zoomResetButton = document.getElementById("zoom-reset");
-  const hint = document.getElementById("apron-hint");
-  const slots = document.querySelectorAll(".slot");
+  const zoomInButton = root.querySelector(".zoom-in");
+  const zoomOutButton = root.querySelector(".zoom-out");
+  const zoomResetButton = root.querySelector(".zoom-reset");
+  const hint = root.querySelector(".apron-hint");
+  const slots = root.querySelectorAll(".slot");
 
 
   // Tamaño del dibujo (el mismo que el viewBox inicial)
@@ -434,19 +439,23 @@
 
     if (missing === 0) {
 
-      hint.innerHTML = 'Las encontraste todas. El verso completo viaja en <a href="#postal">la postal</a>.';
+      hint.textContent = t.hintFound;
 
     } else if (found.size > 0) {
 
-      hint.textContent = missing === 1
-        ? "Falta una palabra. Probá alejarte y volver a mirar."
-        : `Faltan ${missing} palabras.`;
+      hint.textContent = missing === 1 ? t.hintOne : t.hintMany.replace("{n}", missing);
     }
   }
 
 
   render();
 
-  window.addEventListener("resize", render);
+  window.addEventListener("resize", function () {
+    if (stage.isConnected) render();
+  });
+
+  }
+
+  window.FondoDelantal = { init: init };
 
 })();
