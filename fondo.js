@@ -267,7 +267,7 @@
           "Antes de esas crías, la maternidad ya es larga. La hembra de esta especie lleva hasta 380 huevos pegados bajo la cola, de 1,5 a 1,9 mm cada uno, y el desarrollo dura alrededor de un año.",
           "WoRMS registra a esta especie en el mar profundo, entre los 122 y los 1.400 metros. Mamá tenazas estaba a 1.883."
         ],
-        source: "Fuentes: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 de agosto de 2025; Laptikhovsky y Reyes (2009), citado en Wikipedia y SeaLifeBase; WoRMS, Thymops birsteini."
+        source: "Fuentes: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 de agosto de 2025; Laptikhovsky y Reyes (2009), Journal of Natural History 43: 35-46, citado en Wikipedia (cantidad y tamaño de los huevos); SeaLifeBase, Thymops birsteini (desarrollo de un año); WoRMS, Thymops birsteini."
       },
       en: {
         paragraphs: [
@@ -277,7 +277,7 @@
           "Before those young, motherhood is already long. The female of this species carries up to 380 eggs stuck under her tail, each 1.5 to 1.9 mm, and their development takes about a year.",
           "WoRMS records this species in the deep sea, between 122 and 1,400 metres. Mamá tenazas was at 1,883."
         ],
-        source: "Sources: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 August 2025; Laptikhovsky & Reyes (2009), as cited in Wikipedia and SeaLifeBase; WoRMS, Thymops birsteini."
+        source: "Sources: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 August 2025; Laptikhovsky & Reyes (2009), Journal of Natural History 43: 35-46, as cited in Wikipedia (egg number and size); SeaLifeBase, Thymops birsteini (one-year development); WoRMS, Thymops birsteini."
       }
     },
 
