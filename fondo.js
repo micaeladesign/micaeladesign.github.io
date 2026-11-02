@@ -78,6 +78,7 @@
           mate: "Mate enlozado antiguo, amarillo clarito con bordes naranjas y dos asas. En el medio, la estrella Patricio; arriba dice sensible y abajo, a la perturbación. Usá los botones o el pellizco para acercarte.",
           iman: "Imán de madera en forma de corazón con Batatita en violeta. Arriba dice pies ambulacrales y abajo, 4 hileras. Usá los botones o el pellizco para acercarte.",
           remera: "Remera negra con el pulpo Dumbo en rosa y amarillo. Arriba a la izquierda dice cuerpo encima y abajo a la derecha, devora. Usá los botones o el pellizco para acercarte.",
+          taza: "Taza blanca con el interior y el asa rosas. Dice Madre solo una, y abajo está Mamá tenazas, una langosta en rosa y naranja. Usá los botones o el pellizco para acercarte.",
           gorra: "Gorra negra de gabardina lavada con Batatita bordada en violeta. Debajo, también bordado en violeta, dice sobre barro y arena. Usá los botones o el pellizco para acercarte."
         }
       },
@@ -133,6 +134,7 @@
           mate: "Old enamel mate, pale yellow with orange edges and two handles. In the middle, the Patricio starfish; above it reads sensible and below, a la perturbación (sensitive to disturbance). Use the buttons or pinch to zoom in.",
           iman: "Heart-shaped wooden magnet with Batatita in purple. Above it reads pies ambulacrales (tube feet) and below, 4 hileras (4 rows). Use the buttons or pinch to zoom in.",
           remera: "Black T-shirt with the dumbo octopus in pink and yellow. Top left it reads cuerpo encima (body on top) and bottom right, devora (devours). Use the buttons or pinch to zoom in.",
+          taza: "White mug with a pink inside and handle. It reads Madre solo una (only one mother), and below is Mamá tenazas, a lobster in pink and orange. Use the buttons or pinch to zoom in.",
           gorra: "Washed black cap with Batatita embroidered in purple. Below it, also embroidered in purple, it reads sobre barro y arena (on mud and sand). Use the buttons or pinch to zoom in."
         }
       },
@@ -214,9 +216,14 @@
     {
       id: "mama-tenazas",
       name: "Mamá tenazas",
+      species: "Thymops birsteini",
       date: "09-08-2025",
       items: [
-        { id: "iman", es: "Imán", en: "Magnet" },
+        {
+          id: "taza", es: "Taza", en: "Mug",
+          kind: "zoom", thumb: "fondo/assets/thumbs/taza.webp",
+          svg: "fondo/assets/taza-svg.html", ratio: 1
+        },
         { id: "buzo", es: "Buzo con capucha", en: "Hoodie" },
         { id: "postal", es: "Postal", en: "Postcard", kind: "postal", thumb: "fondo/assets/thumbs/postal-mama-tenazas.webp", file: "fondo/assets/postales/postal-mama-tenazas.png" }
       ]
@@ -248,6 +255,27 @@
           "This means it lives on healthy seabeds and is among the first to disappear when the environment changes, especially from excess organic matter and pollution. That is why its presence signals a seabed in good condition."
         ],
         source: "Source: WoRMS, Hippasteria phrygiana; Borja, Franco & Pérez (2000), AMBI index."
+      }
+    },
+
+    "mama-tenazas/taza": {
+      es: {
+        paragraphs: [
+          "*¿Por qué “Madre solo una”?* El 9 de agosto de 2025, a 1.883 metros de profundidad, el robot SuBastian se acercó a una roca del cañón submarino de Mar del Plata. Debajo vivía una langosta patagónica, *Thymops birsteini*, con sus crías: ocho langostitas de pocas semanas de vida.",
+          "La madre volvió rápido a su roca, miró de frente a la cámara y atacó al robot una y otra vez con sus tenazas, removiendo hasta el barro del fondo. Mientras tanto, las ocho crías se asomaban a mirar cómo las defendía. En el chat del stream la bautizaron enseguida: “El enfrentamiento del año: ROV contra Mamá Tenazas”.",
+          "Los científicos terminaron rápido de tomar su muestra y se alejaron. Un experto del CONICET aclaró que la langosta no sufrió ningún daño y que volvió a su roca a seguir criando a sus pequeños.",
+          "WoRMS registra a esta especie en el mar profundo, entre los 122 y los 1.400 metros. Mamá tenazas estaba a 1.883."
+        ],
+        source: "Fuentes: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 de agosto de 2025; WoRMS, Thymops birsteini."
+      },
+      en: {
+        paragraphs: [
+          "*Why “Madre solo una” (only one mother)?* On 9 August 2025, 1,883 metres deep, the robot SuBastian approached a rock in the Mar del Plata submarine canyon. Under it lived a Patagonian lobsterette, *Thymops birsteini*, with her young: eight little lobsters a few weeks old.",
+          "The mother hurried back to her rock, stared straight into the camera and attacked the robot again and again with her claws, even stirring up the mud on the seabed. Meanwhile, the eight young peeked out to watch her defend them. The stream chat named her right away: “The fight of the year: ROV vs. Mamá Tenazas” (Mama Claws).",
+          "The scientists quickly finished taking their sample and moved away. A CONICET expert explained that the lobster was not harmed and went back to her rock to keep raising her young.",
+          "WoRMS records this species in the deep sea, between 122 and 1,400 metres. Mamá tenazas was at 1,883."
+        ],
+        source: "Sources: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 August 2025; WoRMS, Thymops birsteini."
       }
     },
 
