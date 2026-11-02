@@ -5,7 +5,7 @@ Cita que pide WoRMS: *MolluscaBase eds. (2026). MolluscaBase. Grimpoteuthis G. C
 
 **Cómo lo leí:** página web (taxdetails) y API oficial (`marinespecies.org/rest/...`). Cada dato lleva entre corchetes de qué sección sale.
 
-**Nivel de la ficha:** el ejemplar de la expedición no se identificó hasta especie: quedó registrado como un ejemplar del género *Grimpoteuthis* (lo que en ciencia se escribe *Grimpoteuthis* sp.). Por eso esta ficha es del **género**, que agrupa 18 especies aceptadas. Dato de contexto: WoRMS no tiene ninguna especie de *Grimpoteuthis* registrada en el Atlántico Sur (ver sección 6), así que el registro de la expedición suma información nueva para la zona.
+**Nivel de la ficha:** el ejemplar de la expedición no se identificó hasta especie: quedó registrado como un ejemplar del género *Grimpoteuthis* (lo que en ciencia se escribe *Grimpoteuthis* sp.). Por eso esta ficha es del **género**, que agrupa 18 especies aceptadas. Dato de contexto: WoRMS no tiene ninguna especie de *Grimpoteuthis* registrada en el Atlántico Sur (ver sección 6).
 
 ⭐ = dato curioso o poético para el poema.
 
