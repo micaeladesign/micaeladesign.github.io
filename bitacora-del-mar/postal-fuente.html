@@ -35,7 +35,8 @@
       proyecto: "Fondo",
       titulo: "Recuerdo de mi primera expedición bajo el mar",
       fecha: "26-07-2025",
-      verso: "voraz vedette del mar",
+      // Cada \n es un salto de línea
+      verso: "voraz\nvedette\ndel mar",
 
       nombre: "Patricio",
       ilustracion: "assets/patricio-estrella.png",
@@ -115,15 +116,16 @@
     }
 
     .nombre {
-      margin: 40px 0 0;
+      margin: 0 0 28px;
 
-      font-size: 52px;
+      font-size: 76px;
+      line-height: 1;
       font-weight: 500;
       letter-spacing: -0.01em;
     }
 
     .ilustradora {
-      margin: 8px 0 0;
+      margin: 24px 0 0;
 
       font-size: 24px;
       color: var(--muted);
@@ -174,19 +176,22 @@
       font-variant-numeric: tabular-nums;
     }
 
+    /* El verso va corrido al costado, como una nota escrita a mano */
     .verso {
-      margin: 96px 0 0;
+      align-self: flex-end;
+
+      margin: 72px 40px 0 0;
 
       color: var(--ink);
-      text-wrap: balance;
+      white-space: pre-line;
     }
 
     /* Verso manuscrito: cursiva escolar argentina, como escrito a mano en el dorso */
     body:not([data-verso="imprenta"]) .verso {
       font-family: "Playwrite AR", cursive;
       font-weight: 300;
-      font-size: 48px;
-      line-height: 1.9;
+      font-size: 40px;
+      line-height: 1.75;
     }
 
     /* Verso de imprenta: la misma letra del título */
@@ -237,8 +242,8 @@
 
 
     <div class="lado-ilustracion">
-      <img data-campo="ilustracion" alt="">
       <p class="nombre" data-campo="nombre"></p>
+      <img data-campo="ilustracion" alt="">
       <p class="ilustradora">Ilustración: <span data-campo="ilustradora"></span></p>
     </div>
 
