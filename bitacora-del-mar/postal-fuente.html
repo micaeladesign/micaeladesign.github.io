@@ -69,7 +69,9 @@
         nombre: "Mamá tenazas",
         fecha: "09-08-2025",
         ilustracion: "assets/mama-tenazas.png",
-        color: COLORES.rosa
+        color: COLORES.rosa,
+        // Opcional: ancho máximo de la ilustración (por defecto 620)
+        anchoIlustracion: 720
       }
     };
 
@@ -129,6 +131,7 @@
     /* Lado de la ilustración */
 
     .lado-ilustracion {
+      min-width: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -145,7 +148,7 @@
     }
 
     .nombre {
-      margin: 0 0 28px;
+      margin: 0 0 64px;
 
       font-size: 76px;
       line-height: 1;
@@ -275,6 +278,9 @@
     });
 
     document.body.style.setProperty("--accent", POSTAL.color);
+    if (POSTAL.anchoIlustracion) {
+      document.querySelector(".lado-ilustracion img").style.maxWidth = POSTAL.anchoIlustracion + "px";
+    }
     document.querySelector(".crayon-stroke").setAttribute("stroke", POSTAL.color);
 
   </script>
