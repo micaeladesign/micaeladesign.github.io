@@ -75,7 +75,8 @@
         hintMany: "Faltan {n} palabras.",
         alt: {
           delantal: "Delantal de jean azul con la estrella Patricio estampada. Tiene tres palabras bordadas: voraz en el frente, vedette en la tira izquierda y del mar en la tira derecha. Usá los botones o el pellizco para acercarte.",
-          mate: "Mate enlozado antiguo, amarillo clarito con bordes naranjas y dos asas. En el medio, la estrella Patricio; arriba dice sensible y abajo, a la perturbación. Usá los botones o el pellizco para acercarte."
+          mate: "Mate enlozado antiguo, amarillo clarito con bordes naranjas y dos asas. En el medio, la estrella Patricio; arriba dice sensible y abajo, a la perturbación. Usá los botones o el pellizco para acercarte.",
+          gorra: "Gorra negra de gabardina lavada con Batatita bordada en violeta. Debajo, también bordado en violeta, dice sobre barro y arena. Usá los botones o el pellizco para acercarte."
         }
       },
       thumbAlt: "Mockup de {obj} de {animal}",
@@ -127,7 +128,8 @@
         hintMany: "{n} words left.",
         alt: {
           delantal: "Blue denim apron with the Patricio starfish printed on it. It has three embroidered words: voraz on the front, vedette on the left strap and del mar on the right strap. Use the buttons or pinch to zoom in.",
-          mate: "Old enamel mate, pale yellow with orange edges and two handles. In the middle, the Patricio starfish; above it reads sensible and below, a la perturbación (sensitive to disturbance). Use the buttons or pinch to zoom in."
+          mate: "Old enamel mate, pale yellow with orange edges and two handles. In the middle, the Patricio starfish; above it reads sensible and below, a la perturbación (sensitive to disturbance). Use the buttons or pinch to zoom in.",
+          gorra: "Washed black cap with Batatita embroidered in purple. Below it, also embroidered in purple, it reads sobre barro y arena (on mud and sand). Use the buttons or pinch to zoom in."
         }
       },
       thumbAlt: "{animal} {obj} mockup",
@@ -172,10 +174,15 @@
     {
       id: "batatita",
       name: "Batatita",
+      species: "Benthodytes violeta",
       date: "29-07-2025",
       items: [
         { id: "taza", es: "Taza", en: "Mug" },
-        { id: "gorra", es: "Gorra", en: "Cap" },
+        {
+          id: "gorra", es: "Gorra", en: "Cap",
+          kind: "zoom", thumb: "fondo/assets/thumbs/gorra.webp",
+          svg: "fondo/assets/gorra-svg.html", ratio: 1305 / 1206
+        },
         { id: "postal", es: "Postal", en: "Postcard", kind: "postal", thumb: "fondo/assets/thumbs/postal-batatita.webp", file: "fondo/assets/postales/postal-batatita.png" }
       ]
     },
@@ -228,6 +235,25 @@
           "This means it lives on healthy seabeds and is among the first to disappear when the environment changes, especially from excess organic matter and pollution. That is why its presence signals a seabed in good condition."
         ],
         source: "Source: WoRMS, Hippasteria phrygiana; Borja, Franco & Pérez (2000), AMBI index."
+      }
+    },
+
+    "batatita/gorra": {
+      es: {
+        paragraphs: [
+          "*¿Por qué “sobre barro y arena”?* Batatita es un pepino de mar, pariente de las estrellas. Su especie, *Benthodytes violeta*, vive en el cañón submarino de Mar del Plata, entre los 1.508 y los 1.950 metros de profundidad. Los científicos que la describieron la encontraron en el borde del cañón, sobre fondos mezclados de *arena y barro*.",
+          "Y no solo vive sobre ese fondo: se cree que se lo come. Todos los ejemplares que estudiaron tenían sedimento del fondo en el tubo digestivo. Por eso, y por sus tentáculos en forma de escudo, los autores piensan que se alimenta de lo que se deposita en el fondo. Nadie la vio comer: es una deducción a partir de lo que tenía adentro.",
+          "La especie se describió en 2014 y fue el primer pepino de mar registrado en el cañón de Mar del Plata."
+        ],
+        source: "Fuente: Martinez, M. I., Solís-Marín, F. A. y Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6. También WoRMS, Benthodytes violeta."
+      },
+      en: {
+        paragraphs: [
+          "*Why “sobre barro y arena” (on mud and sand)?* Batatita is a sea cucumber, a relative of sea stars. Its species, *Benthodytes violeta*, lives in the Mar del Plata submarine canyon, between 1,508 and 1,950 metres deep. The scientists who described it found it on the edge of the canyon, on mixed *sand and mud* bottoms.",
+          "And it does not just live on that seabed: it is thought to eat it. Every specimen they studied had seabed sediment in its gut. Because of that, and its shield-shaped tentacles, the authors think it feeds on what settles on the bottom. Nobody has seen it eat: it is an inference from what was inside it.",
+          "The species was described in 2014, and it was the first sea cucumber recorded in the Mar del Plata canyon."
+        ],
+        source: "Source: Martinez, M. I., Solís-Marín, F. A. & Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6. Also WoRMS, Benthodytes violeta."
       }
     },
 
