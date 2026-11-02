@@ -203,6 +203,7 @@
 
 
 .item-thumb--zoom img {
+  box-sizing: border-box;
   padding: 14px;
 }
 

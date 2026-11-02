@@ -76,6 +76,7 @@
         alt: {
           delantal: "Delantal de jean azul con la estrella Patricio estampada. Tiene tres palabras bordadas: voraz en el frente, vedette en la tira izquierda y del mar en la tira derecha. Usá los botones o el pellizco para acercarte.",
           mate: "Mate enlozado antiguo, amarillo clarito con bordes naranjas y dos asas. En el medio, la estrella Patricio; arriba dice sensible y abajo, a la perturbación. Usá los botones o el pellizco para acercarte.",
+          iman: "Imán de madera en forma de corazón con Batatita en violeta. Arriba dice pies ambulacrales y abajo, 4 hileras. Usá los botones o el pellizco para acercarte.",
           gorra: "Gorra negra de gabardina lavada con Batatita bordada en violeta. Debajo, también bordado en violeta, dice sobre barro y arena. Usá los botones o el pellizco para acercarte."
         }
       },
@@ -129,6 +130,7 @@
         alt: {
           delantal: "Blue denim apron with the Patricio starfish printed on it. It has three embroidered words: voraz on the front, vedette on the left strap and del mar on the right strap. Use the buttons or pinch to zoom in.",
           mate: "Old enamel mate, pale yellow with orange edges and two handles. In the middle, the Patricio starfish; above it reads sensible and below, a la perturbación (sensitive to disturbance). Use the buttons or pinch to zoom in.",
+          iman: "Heart-shaped wooden magnet with Batatita in purple. Above it reads pies ambulacrales (tube feet) and below, 4 hileras (4 rows). Use the buttons or pinch to zoom in.",
           gorra: "Washed black cap with Batatita embroidered in purple. Below it, also embroidered in purple, it reads sobre barro y arena (on mud and sand). Use the buttons or pinch to zoom in."
         }
       },
@@ -177,7 +179,11 @@
       species: "Benthodytes violeta",
       date: "29-07-2025",
       items: [
-        { id: "taza", es: "Taza", en: "Mug" },
+        {
+          id: "iman", es: "Imán", en: "Magnet",
+          kind: "zoom", thumb: "fondo/assets/thumbs/iman.webp",
+          svg: "fondo/assets/iman-svg.html", ratio: 1230 / 1278
+        },
         {
           id: "gorra", es: "Gorra", en: "Cap",
           kind: "zoom", thumb: "fondo/assets/thumbs/gorra.webp",
@@ -235,6 +241,27 @@
           "This means it lives on healthy seabeds and is among the first to disappear when the environment changes, especially from excess organic matter and pollution. That is why its presence signals a seabed in good condition."
         ],
         source: "Source: WoRMS, Hippasteria phrygiana; Borja, Franco & Pérez (2000), AMBI index."
+      }
+    },
+
+    "batatita/iman": {
+      es: {
+        paragraphs: [
+          "*Benthodytes violeta* tiene cuatro hileras de *pies ambulacrales* en la panza. Son sus piecitos: pies en la panza que le sirven para deambular por el fondo. La palabra viene del latín *ambulare*, caminar, la misma raíz de “deambular”.",
+          "Tiene 16 tentáculos en un solo círculo, todos de 2 mm y con forma de escudo. En el lomo lleva ocho pares de apéndices, de 1 a 3 mm, que ocupan solo la mitad delantera del cuerpo. Y donde el lomo se junta con la panza, sus bordes son festoneados, con forma de volado.",
+          "Por dentro tiene dos vesículas de Poli en forma de gota, de 30 y 10 mm, y una gónada ramificada con dos penachos. No se le encontraron árboles respiratorios.",
+          "Su “esqueleto” son los *osículos*, espículas microscópicas repartidas por el cuerpo, los tentáculos y la gónada. Tienen forma de barrotes, de 200 a 400 µm, y de cruces de tres o cuatro brazos, de 120 a 310 µm. La cruz principal llega a 700 µm, apenas más de medio milímetro, y tiene en el centro una saliente dividida en dos."
+        ],
+        source: "Fuente: Martinez, M. I., Solís-Marín, F. A. y Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6."
+      },
+      en: {
+        paragraphs: [
+          "*Benthodytes violeta* has four rows of *tube feet* (in Spanish, *pies ambulacrales*) on its belly. They are its little feet: feet on its belly that it uses to wander around the seabed. *Ambulacral* comes from the Latin *ambulare*, to walk, the same root as “amble”.",
+          "It has 16 tentacles in a single ring, all 2 mm long and shaped like shields. On its back it carries eight pairs of appendages, 1 to 3 mm long, only on the front half of the body. And where its back meets its belly, the edges are scalloped, like a ruffle.",
+          "Inside, it has two drop-shaped Polian vesicles, 30 and 10 mm long, and a branched gonad with two tufts. No respiratory trees were found.",
+          "Its “skeleton” is made of *ossicles*, microscopic spicules spread through the body, the tentacles and the gonad. They are shaped like rods, 200 to 400 µm long, and like crosses with three or four arms, 120 to 310 µm. The main cross reaches 700 µm, just over half a millimetre, and has a central projection split in two."
+        ],
+        source: "Source: Martinez, M. I., Solís-Marín, F. A. & Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6."
       }
     },
 
