@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&display=swap');
 
 
 /* Mismos tokens que style.css del sitio principal */
@@ -222,43 +222,31 @@ h1 {
 }
 
 
-/* Las palabras son texto vectorial: se mantienen nítidas con cualquier zoom */
+/* Bordado a mano: hilo blanco de algodón, puntada por puntada */
 
-.stitch {
-  font-family: "Cookie", "Brush Script MT", cursive;
-  font-weight: 400;
-
-  text-anchor: middle;
-  dominant-baseline: central;
-
-  /* El trazo, con la misma textura, engorda la letra como un hilo grueso */
-  stroke-linejoin: round;
+.embroidery path {
+  fill: none;
   stroke-linecap: round;
-
-  filter: url(#raised);
-
-  text-rendering: geometricPrecision;
+  stroke-linejoin: round;
 }
 
 
-.stitch.strap {
-  font-size: 19px;
-  letter-spacing: 0.01em;
-
-  fill: url(#thread-strap);
-  stroke: url(#thread-strap);
-  stroke-width: 0.25;
+.embroidery .thread {
+  stroke: #F1ECE1;
 }
 
 
-.stitch.front {
-  font-size: 44px;
-  dominant-baseline: alphabetic;
-
-  fill: url(#thread-front);
-  stroke: url(#thread-front);
-  stroke-width: 0.5;
+.embroidery .thread-shadow {
+  stroke: #0B1430;
+  stroke-opacity: 0.45;
 }
+
+
+.embroidery .thread-shine {
+  stroke: #FFFFFF;
+  stroke-opacity: 0.85;
+}
+
 
 
 .apron-controls {
@@ -336,8 +324,8 @@ h1 {
   margin: 0;
   min-height: 32px;
 
-  font-family: "Cookie", "Brush Script MT", cursive;
-  font-size: 28px;
+  font-style: italic;
+  font-size: 18px;
 }
 
 
