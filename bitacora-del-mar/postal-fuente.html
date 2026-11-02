@@ -5,19 +5,48 @@
 
   <meta charset="UTF-8">
 
-  <!-- FUENTE DE LA POSTAL
-       Este archivo es el "molde" de assets/postal-patricio.png.
-       Mide 1800 × 1200 px (postal de 15 × 10 cm a 300 dpi).
-       Si cambiás un texto acá, hay que volver a exportar el PNG
-       (captura de pantalla de la página a 1800 × 1200). -->
+  <!-- PLANTILLA DE POSTAL — FONDO
+       Sirve para todos los recuerdos de Fondo. Para una postal nueva solo se cambia
+       el bloque POSTAL de acá abajo (textos, ilustración y color) y se exporta.
 
-  <title>Postal de Patricio (fuente)</title>
+       Mide 1800 × 1200 px (15 × 10 cm a 300 dpi).
+       Exportar: abrir este archivo y hacer una captura de 1800 × 1200,
+       o con Playwright (ver herramientas/exportar-postal.js).
+
+       Versión del verso: agregá ?verso=imprenta a la dirección para la
+       versión con la misma letra del título; sin nada, sale manuscrita. -->
+
+  <title>Postal de Fondo (plantilla)</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&family=Lora:ital,wght@1,400..700&display=swap">
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&family=Playwrite+AR:wght@300..400&display=swap">
+
+
+  <script>
+
+    // ---------------------------------------------
+    // LO ÚNICO QUE CAMBIA DE UNA POSTAL A OTRA
+    // ---------------------------------------------
+
+    const POSTAL = {
+      proyecto: "Fondo",
+      titulo: "Recuerdo de mi primera expedición bajo el mar",
+      fecha: "26-07-2025",
+      verso: "voraz vedette del mar",
+
+      nombre: "Patricio",
+      ilustracion: "assets/patricio-estrella.png",
+      ilustradora: "Vanesa Bettinelli",
+
+      // Color del borde de crayón y del nombre del proyecto
+      color: "#EE7A2B"
+    };
+
+  </script>
+
 
   <style>
 
@@ -34,8 +63,13 @@
     }
 
     body {
-      background: #FFFFFF;
-      color: #111111;
+      --accent: #EE7A2B;
+      --ink: #111111;
+      --muted: #8A8A8A;
+      --paper: #FFFDF9;
+
+      background: var(--paper);
+      color: var(--ink);
       font-family: "DM Sans", sans-serif;
     }
 
@@ -45,86 +79,121 @@
       width: 1800px;
       height: 1200px;
 
-      padding: 96px;
+      padding: 130px 150px 120px;
 
       display: grid;
-      grid-template-columns: 900px 1fr;
-      gap: 72px;
-      align-items: center;
-
-      background: #FDFCFA;
+      grid-template-columns: 1fr 2px 1fr;
+      gap: 0 100px;
     }
 
-    /* Filete fino, como el borde de una postal impresa */
-    .postal::before {
-      content: "";
+
+    /* Borde de crayón (SVG con filtro: trazo tembloroso y grano de cera) */
+
+    .crayon {
       position: absolute;
-      inset: 40px;
-      border: 2px solid #EAEAEE;
+      inset: 0;
+      width: 1800px;
+      height: 1200px;
       pointer-events: none;
     }
 
-    .postal-star {
+
+    /* Lado de la ilustración */
+
+    .lado-ilustracion {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
     }
 
-    .postal-star img {
-      width: 860px;
-      height: auto;
+    .lado-ilustracion img {
+      width: 600px;
+      height: 520px;
+      object-fit: contain;
       display: block;
     }
 
-    .postal-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100%;
-      padding-left: 64px;
+    .nombre {
+      margin: 40px 0 0;
 
-      border-left: 2px solid #EAEAEE;
-    }
-
-    .postal-eyebrow {
-      margin: auto 0 40px;
-
-      font-size: 26px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #666666;
-    }
-
-    .postal-title {
-      margin: 0;
-
-      font-size: 64px;
-      line-height: 1.15;
+      font-size: 52px;
       font-weight: 500;
       letter-spacing: -0.01em;
     }
 
-    .postal-verse {
-      margin: 72px 0 0;
-
-      font-family: "Lora", serif;
-      font-style: italic;
-      font-size: 96px;
-      line-height: 1.12;
-      font-weight: 500;
-      color: #C2401F;
-    }
-
-    .postal-credits {
-      margin: auto 0 0;
+    .ilustradora {
+      margin: 8px 0 0;
 
       font-size: 24px;
-      line-height: 1.5;
-      color: #666666;
+      color: var(--muted);
     }
 
-    .postal-credits em {
-      font-style: italic;
+
+    /* Separador fino, como el dorso de una postal */
+
+    .separador {
+      background: #ECEAE6;
+      margin: 40px 0;
+    }
+
+
+    /* Lado del texto */
+
+    .lado-texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .proyecto {
+      margin: 0 0 28px;
+
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .titulo {
+      margin: 0;
+
+      font-size: 62px;
+      line-height: 1.12;
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      text-wrap: balance;
+    }
+
+    .fecha {
+      margin: 24px 0 0;
+
+      font-size: 26px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .verso {
+      margin: 96px 0 0;
+
+      color: var(--ink);
+      text-wrap: balance;
+    }
+
+    /* Verso manuscrito: cursiva escolar argentina, como escrito a mano en el dorso */
+    body:not([data-verso="imprenta"]) .verso {
+      font-family: "Playwrite AR", cursive;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 1.9;
+    }
+
+    /* Verso de imprenta: la misma letra del título */
+    body[data-verso="imprenta"] .verso {
+      font-size: 48px;
+      line-height: 1.25;
+      font-weight: 400;
     }
 
   </style>
@@ -135,27 +204,72 @@
 
   <div class="postal">
 
-    <div class="postal-star">
-      <img src="assets/patricio-estrella.png" alt="">
+    <svg class="crayon" viewBox="0 0 1800 1200" aria-hidden="true">
+      <defs>
+        <filter id="crayon-filter" x="-5%" y="-5%" width="110%" height="110%">
+          <!-- Pulso de la mano: el trazo se mueve un poco -->
+          <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="4" result="pulso" />
+          <feDisplacementMap in="SourceGraphic" in2="pulso" scale="9" xChannelSelector="R" yChannelSelector="G" result="trazo" />
+          <!-- Grano de la cera sobre el papel: un grano fino y manchas de presión más grandes -->
+          <feTurbulence type="fractalNoise" baseFrequency="0.55 0.8" numOctaves="3" seed="11" result="grano" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="5" result="presion" />
+          <feColorMatrix in="grano" type="matrix"
+            values="0 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 0 0
+                    2.6 0 0 0 -0.75" result="cera-fina" />
+          <feColorMatrix in="presion" type="matrix"
+            values="0 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 0 0
+                    2.4 0 0 0 -0.3" result="cera-presion" />
+          <feComposite in="cera-fina" in2="cera-presion" operator="in" result="cera" />
+          <feComposite in="trazo" in2="cera" operator="in" />
+        </filter>
+      </defs>
+
+      <g filter="url(#crayon-filter)" fill="none" stroke-linecap="round" stroke-linejoin="round" class="crayon-stroke">
+        <!-- Dos pasadas, como cuando se repasa con el crayón -->
+        <path d="M58 62 L1744 54 L1740 1142 L60 1146 Z" stroke-width="22" />
+        <path d="M66 56 L1738 64 L1746 1136 L54 1140 L62 70" stroke-width="12" stroke-opacity="0.9" />
+      </g>
+    </svg>
+
+
+    <div class="lado-ilustracion">
+      <img data-campo="ilustracion" alt="">
+      <p class="nombre" data-campo="nombre"></p>
+      <p class="ilustradora">Ilustración: <span data-campo="ilustradora"></span></p>
     </div>
 
-    <div class="postal-text">
+    <div class="separador"></div>
 
-      <p class="postal-eyebrow">Bitácora del mar</p>
-
-      <h1 class="postal-title">Recuerdo de mi primera expedición bajo el mar</h1>
-
-      <p class="postal-verse">vedette<br>voraz<br>del mar</p>
-
-      <p class="postal-credits">
-        Patricio, <em>Hippasteria phrygiana</em><br>
-        Cañón submarino de Mar del Plata<br>
-        Ilustración: Vanesa Bettinelli
-      </p>
-
+    <div class="lado-texto">
+      <p class="proyecto" data-campo="proyecto"></p>
+      <h1 class="titulo" data-campo="titulo"></h1>
+      <p class="fecha" data-campo="fecha"></p>
+      <p class="verso" data-campo="verso"></p>
     </div>
 
   </div>
+
+
+  <script>
+
+    // Vuelca el bloque POSTAL en la página
+    document.querySelectorAll("[data-campo]").forEach(function (el) {
+      const campo = el.dataset.campo;
+      if (campo === "ilustracion") el.src = POSTAL.ilustracion;
+      else el.textContent = POSTAL[campo];
+    });
+
+    document.body.style.setProperty("--accent", POSTAL.color);
+    document.querySelector(".crayon-stroke").setAttribute("stroke", POSTAL.color);
+
+    const verso = new URLSearchParams(location.search).get("verso");
+    if (verso) document.body.dataset.verso = verso;
+
+  </script>
 
 </body>
 

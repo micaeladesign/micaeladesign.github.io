@@ -35,8 +35,8 @@
   // Las palabras: dónde están y qué tamaño tienen en el dibujo.
   // Se "descubren" cuando hubo zoom, están en pantalla y se leen a 13 px o más.
   const words = [
-    { text: "vedette", x: 383, y: 62, size: 20 },
     { text: "voraz", x: 461, y: 478, size: 46 },
+    { text: "vedette", x: 383, y: 62, size: 20 },
     { text: "del mar", x: 539, y: 62, size: 20 }
   ];
 
