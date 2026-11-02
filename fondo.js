@@ -77,6 +77,7 @@
           delantal: "Delantal de jean azul con la estrella Patricio estampada. Tiene tres palabras bordadas: voraz en el frente, vedette en la tira izquierda y del mar en la tira derecha. Usá los botones o el pellizco para acercarte.",
           mate: "Mate enlozado antiguo, amarillo clarito con bordes naranjas y dos asas. En el medio, la estrella Patricio; arriba dice sensible y abajo, a la perturbación. Usá los botones o el pellizco para acercarte.",
           iman: "Imán de madera en forma de corazón con Batatita en violeta. Arriba dice pies ambulacrales y abajo, 4 hileras. Usá los botones o el pellizco para acercarte.",
+          remera: "Remera negra con el pulpo Dumbo en rosa y amarillo. Arriba a la izquierda dice cuerpo encima y abajo a la derecha, devora. Usá los botones o el pellizco para acercarte.",
           gorra: "Gorra negra de gabardina lavada con Batatita bordada en violeta. Debajo, también bordado en violeta, dice sobre barro y arena. Usá los botones o el pellizco para acercarte."
         }
       },
@@ -131,6 +132,7 @@
           delantal: "Blue denim apron with the Patricio starfish printed on it. It has three embroidered words: voraz on the front, vedette on the left strap and del mar on the right strap. Use the buttons or pinch to zoom in.",
           mate: "Old enamel mate, pale yellow with orange edges and two handles. In the middle, the Patricio starfish; above it reads sensible and below, a la perturbación (sensitive to disturbance). Use the buttons or pinch to zoom in.",
           iman: "Heart-shaped wooden magnet with Batatita in purple. Above it reads pies ambulacrales (tube feet) and below, 4 hileras (4 rows). Use the buttons or pinch to zoom in.",
+          remera: "Black T-shirt with the dumbo octopus in pink and yellow. Top left it reads cuerpo encima (body on top) and bottom right, devora (devours). Use the buttons or pinch to zoom in.",
           gorra: "Washed black cap with Batatita embroidered in purple. Below it, also embroidered in purple, it reads sobre barro y arena (on mud and sand). Use the buttons or pinch to zoom in."
         }
       },
@@ -196,9 +198,14 @@
     {
       id: "pulpo-dumbo",
       name: "Pulpo Dumbo",
+      species: "Grimpoteuthis sp.",
       date: "05-08-2025",
       items: [
-        { id: "remera", es: "Remera", en: "T-shirt" },
+        {
+          id: "remera", es: "Remera", en: "T-shirt",
+          kind: "zoom", thumb: "fondo/assets/thumbs/remera.webp",
+          svg: "fondo/assets/remera-svg.html", ratio: 1230 / 1278
+        },
         { id: "toallon", es: "Toallón playero", en: "Beach towel" },
         { id: "postal", es: "Postal", en: "Postcard", kind: "postal", thumb: "fondo/assets/thumbs/postal-pulpo-dumbo.webp", file: "fondo/assets/postales/postal-pulpo-dumbo.png" }
       ]
@@ -241,6 +248,27 @@
           "This means it lives on healthy seabeds and is among the first to disappear when the environment changes, especially from excess organic matter and pollution. That is why its presence signals a seabed in good condition."
         ],
         source: "Source: WoRMS, Hippasteria phrygiana; Borja, Franco & Pérez (2000), AMBI index."
+      }
+    },
+
+    "pulpo-dumbo/remera": {
+      es: {
+        paragraphs: [
+          "*¿Por qué “cuerpo encima, devora”?* El pulpo Dumbo se traga sus presas enteras. Pasa gran parte de su vida suspendido justo encima del fondo, y cuando encuentra algo para comer se le tira encima y se lo traga de una, sin desgarrarlo ni triturarlo como hacen otros pulpos.",
+          "Puede hacerlo porque tiene la rádula, la lengua con dientitos de los moluscos, muy reducida. Esa forma de comer es una particularidad de su género, *Grimpoteuthis*.",
+          "Come gusanos marinos y pequeños crustáceos como copépodos, isópodos y anfípodos. También come bivalvos y caracoles que encuentra en el fondo.",
+          "Los pulpos Dumbo son los que viven a mayor profundidad que se conocen, hasta unos 4.000 metros. Nadan aleteando con dos aletas que sobresalen como orejas, y por eso llevan el nombre del elefante."
+        ],
+        source: "Fuentes: Aquarium of the Pacific, ficha “Dumbo Octopus”; National Geographic, “Dumbo Octopus Facts” y “Mesmerizing, rare dumbo octopus filmed in the deep sea” (2018); WoRMS, Grimpoteuthis."
+      },
+      en: {
+        paragraphs: [
+          "*Why “cuerpo encima, devora” (body on top, devours)?* The dumbo octopus swallows its prey whole. It spends much of its life hovering just above the seabed, and when it finds something to eat it pounces on it and swallows it in one go, without tearing or grinding it like other octopuses do.",
+          "It can do this because its radula, the toothed tongue of molluscs, is greatly reduced. This way of eating is a feature of its genus, *Grimpoteuthis*.",
+          "It eats marine worms and small crustaceans such as copepods, isopods and amphipods. It also eats bivalves and snails it finds on the seabed.",
+          "Dumbo octopuses are the deepest-living octopuses known, down to about 4,000 metres. They swim by flapping two fins that stick out like ears, which is why they are named after the elephant."
+        ],
+        source: "Sources: Aquarium of the Pacific, “Dumbo Octopus” species page; National Geographic, “Dumbo Octopus Facts” and “Mesmerizing, rare dumbo octopus filmed in the deep sea” (2018); WoRMS, Grimpoteuthis."
       }
     },
 
