@@ -80,6 +80,7 @@
           remera: "Remera negra con el pulpo Dumbo en rosa y amarillo. Arriba a la izquierda dice cuerpo encima y abajo a la derecha, devora. Usá los botones o el pellizco para acercarte.",
           taza: "Taza blanca con el interior y el asa rosas. Dice Madre solo una, y abajo está Mamá tenazas, una langosta en rosa y naranja. Usá los botones o el pellizco para acercarte.",
           toallon: "Toallón playero azul con el pulpo Dumbo en rosa y amarillo. Abajo dice cirros que captan. Usá los botones o el pellizco para acercarte.",
+          buzo: "Buzo azul marino con capucha. En el pecho tiene bordada a Mamá tenazas, una langosta roja, y arriba dice robusta y acorazada. Usá los botones o el pellizco para acercarte.",
           gorra: "Gorra negra de gabardina lavada con Batatita bordada en violeta. Debajo, también bordado en violeta, dice sobre barro y arena. Usá los botones o el pellizco para acercarte."
         }
       },
@@ -137,6 +138,7 @@
           remera: "Black T-shirt with the dumbo octopus in pink and yellow. Top left it reads cuerpo encima (body on top) and bottom right, devora (devours). Use the buttons or pinch to zoom in.",
           taza: "White mug with a pink inside and handle. It reads Madre solo una (only one mother), and below is Mamá tenazas, a lobster in pink and orange. Use the buttons or pinch to zoom in.",
           toallon: "Blue beach towel with the dumbo octopus in pink and yellow. Below it reads cirros que captan (cirri that capture). Use the buttons or pinch to zoom in.",
+          buzo: "Navy blue hoodie. On the chest it has Mamá tenazas, a red lobster, embroidered, and above it reads robusta y acorazada (sturdy and armoured). Use the buttons or pinch to zoom in.",
           gorra: "Washed black cap with Batatita embroidered in purple. Below it, also embroidered in purple, it reads sobre barro y arena (on mud and sand). Use the buttons or pinch to zoom in."
         }
       },
@@ -230,7 +232,11 @@
           kind: "zoom", thumb: "fondo/assets/thumbs/taza.webp",
           svg: "fondo/assets/taza-svg.html", ratio: 1
         },
-        { id: "buzo", es: "Buzo con capucha", en: "Hoodie" },
+        {
+          id: "buzo", es: "Buzo con capucha", en: "Hoodie",
+          kind: "zoom", thumb: "fondo/assets/thumbs/buzo.webp",
+          svg: "fondo/assets/buzo-svg.html", ratio: 1089 / 1414
+        },
         { id: "postal", es: "Postal", en: "Postcard", kind: "postal", thumb: "fondo/assets/thumbs/postal-mama-tenazas.webp", file: "fondo/assets/postales/postal-mama-tenazas.png" }
       ]
     }
@@ -282,6 +288,25 @@
           "Cirrate octopuses have other peculiarities. They live between 100 and 7,000 metres deep. They have no ink sac, because in the total darkness of the deep sea ink would be useless as a defence. And inside they have a small cartilage shell, shaped like a U or a V, that gives them shape and supports the fins they swim with."
         ],
         source: "Sources: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (London); Corinne Klein, “Incirrate vs. Cirrate Octopuses”, OctoNation (2022); National Geographic, “Dumbo Octopus Facts”."
+      }
+    },
+
+    "mama-tenazas/buzo": {
+      es: {
+        paragraphs: [
+          "*¿Por qué “robusta y acorazada”?* Mamá tenazas anda con la armadura puesta. Como los demás crustáceos de su grupo, tiene un exoesqueleto sólido: un esqueleto por fuera, hecho de quitina y carbonato de calcio.",
+          "Lo de robusta le viene de familia. *Thymops birsteini* es de los nefrópidos (Nephropidae), la familia de las langostas con pinzas. Las langostas de esta familia suelen tener un cuerpo robusto, antenas largas y un par de pinzas grandes y distintas entre sí, una para triturar y otra para cortar, que usan para comer y para defenderse.",
+          "Con esas pinzas enfrentó al robot SuBastian para defender a sus crías."
+        ],
+        source: "Fuentes: WoRMS, Thymops birsteini (familia Nephropidae; el exoesqueleto es un dato heredado de su grupo); A-Z Animals, “Lobster” (sitio de divulgación, sobre las langostas en general); Infobae, 9 de agosto de 2025."
+      },
+      en: {
+        paragraphs: [
+          "*Why “robusta y acorazada” (sturdy and armoured)?* Mamá tenazas goes around with her armour on. Like the other crustaceans in her group, she has a solid exoskeleton: a skeleton on the outside, made of chitin and calcium carbonate.",
+          "Being sturdy runs in the family. *Thymops birsteini* belongs to Nephropidae, the family of clawed lobsters. Lobsters in this family usually have a sturdy body, long antennae and a prominent pair of unequal claws, a crusher and a cutter, used for feeding and defence.",
+          "Those are the claws she used to face the robot SuBastian and defend her young."
+        ],
+        source: "Sources: WoRMS, Thymops birsteini (family Nephropidae; the exoskeleton is a trait inherited from her group); A-Z Animals, “Lobster” (a popular-science site, about lobsters in general); Infobae, 9 August 2025."
       }
     },
 
