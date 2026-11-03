@@ -79,6 +79,7 @@
           iman: "Imán de madera en forma de corazón con Batatita en violeta. Arriba dice pies ambulacrales y abajo, 4 hileras. Usá los botones o el pellizco para acercarte.",
           remera: "Remera negra con el pulpo Dumbo en rosa y amarillo. Arriba a la izquierda dice cuerpo encima y abajo a la derecha, devora. Usá los botones o el pellizco para acercarte.",
           taza: "Taza blanca con el interior y el asa rosas. Dice Madre solo una, y abajo está Mamá tenazas, una langosta en rosa y naranja. Usá los botones o el pellizco para acercarte.",
+          toallon: "Toallón playero azul con el pulpo Dumbo en rosa y amarillo. Abajo dice cirros que captan. Usá los botones o el pellizco para acercarte.",
           gorra: "Gorra negra de gabardina lavada con Batatita bordada en violeta. Debajo, también bordado en violeta, dice sobre barro y arena. Usá los botones o el pellizco para acercarte."
         }
       },
@@ -135,6 +136,7 @@
           iman: "Heart-shaped wooden magnet with Batatita in purple. Above it reads pies ambulacrales (tube feet) and below, 4 hileras (4 rows). Use the buttons or pinch to zoom in.",
           remera: "Black T-shirt with the dumbo octopus in pink and yellow. Top left it reads cuerpo encima (body on top) and bottom right, devora (devours). Use the buttons or pinch to zoom in.",
           taza: "White mug with a pink inside and handle. It reads Madre solo una (only one mother), and below is Mamá tenazas, a lobster in pink and orange. Use the buttons or pinch to zoom in.",
+          toallon: "Blue beach towel with the dumbo octopus in pink and yellow. Below it reads cirros que captan (cirri that capture). Use the buttons or pinch to zoom in.",
           gorra: "Washed black cap with Batatita embroidered in purple. Below it, also embroidered in purple, it reads sobre barro y arena (on mud and sand). Use the buttons or pinch to zoom in."
         }
       },
@@ -208,7 +210,11 @@
           kind: "zoom", thumb: "fondo/assets/thumbs/remera.webp",
           svg: "fondo/assets/remera-svg.html", ratio: 1230 / 1278
         },
-        { id: "toallon", es: "Toallón playero", en: "Beach towel" },
+        {
+          id: "toallon", es: "Toallón playero", en: "Beach towel",
+          kind: "zoom", thumb: "fondo/assets/thumbs/toallon.webp",
+          svg: "fondo/assets/toallon-svg.html", ratio: 1052 / 1442
+        },
         { id: "postal", es: "Postal", en: "Postcard", kind: "postal", thumb: "fondo/assets/thumbs/postal-pulpo-dumbo.webp", file: "fondo/assets/postales/postal-pulpo-dumbo.png" }
       ]
     },
@@ -255,6 +261,25 @@
           "This means it lives on healthy seabeds and is among the first to disappear when the environment changes, especially from excess organic matter and pollution. That is why its presence signals a seabed in good condition."
         ],
         source: "Source: WoRMS, Hippasteria phrygiana; Borja, Franco & Pérez (2000), AMBI index."
+      }
+    },
+
+    "pulpo-dumbo/toallon": {
+      es: {
+        paragraphs: [
+          "*¿Por qué “cirros que captan”?* El pulpo Dumbo (*Grimpoteuthis*) pertenece al grupo de los pulpos *cirrados*. A lo largo de cada brazo tiene una sola hilera de unas 65 a 68 ventosas y, al lado de ellas, unas pequeñas proyecciones parecidas a pelos: los *cirros*. Los pulpos de aguas menos profundas no los tienen.",
+          "Para qué sirven todavía no se sabe con certeza, pero se cree que tienen que ver con comer. Los científicos del Museo de Historia Natural de Londres piensan que el pulpo Dumbo usa los cirros para ir acercando la comida a la boca, como si la abanicara.",
+          "Por eso come cosas muy chiquitas, de hasta 1 o 2 milímetros: pequeños crustáceos como copépodos, anfípodos e isópodos, caracoles, bivalvos y gusanos marinos."
+        ],
+        source: "Fuentes: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (Londres); National Geographic, “Dumbo Octopus Facts”."
+      },
+      en: {
+        paragraphs: [
+          "*Why “cirros que captan” (cirri that capture)?* The dumbo octopus (*Grimpoteuthis*) belongs to the *cirrate* octopuses. Along each arm it has a single row of about 65 to 68 suckers and, beside them, small hair-like projections: the *cirri*. Octopuses from shallower waters do not have them.",
+          "What they are for is still not known for sure, but they are thought to have something to do with eating. Scientists at the Natural History Museum in London think the dumbo octopus uses its cirri to waft food towards its mouth.",
+          "That is why it eats very small things, up to 1 or 2 millimetres: small crustaceans such as copepods, amphipods and isopods, snails, bivalves and bristle worms."
+        ],
+        source: "Sources: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (London); National Geographic, “Dumbo Octopus Facts”."
       }
     },
 
