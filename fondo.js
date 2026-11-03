@@ -268,18 +268,20 @@
       es: {
         paragraphs: [
           "*¿Por qué “cirros que captan”?* El pulpo Dumbo (*Grimpoteuthis*) pertenece al grupo de los pulpos *cirrados*. A lo largo de cada brazo tiene una sola hilera de unas 65 a 68 ventosas y, al lado de ellas, unas pequeñas proyecciones parecidas a pelos: los *cirros*. Los pulpos de aguas menos profundas no los tienen.",
-          "Para qué sirven todavía no se sabe con certeza, pero se cree que tienen que ver con comer. Los científicos del Museo de Historia Natural de Londres piensan que el pulpo Dumbo usa los cirros para ir acercando la comida a la boca, como si la abanicara.",
-          "Por eso come cosas muy chiquitas, de hasta 1 o 2 milímetros: pequeños crustáceos como copépodos, anfípodos e isópodos, caracoles, bivalvos y gusanos marinos."
+          "Para qué sirven todavía no se sabe con certeza, pero se cree que tienen que ver con comer. Los científicos del Museo de Historia Natural de Londres piensan que el pulpo Dumbo usa los cirros para ir acercando la comida a la boca, como si la abanicara. Con ellos genera una pequeña corriente que lleva gusanos, mariscos y anfípodos hacia su boca.",
+          "Por eso come cosas muy chiquitas, de hasta 1 o 2 milímetros: pequeños crustáceos como copépodos, anfípodos e isópodos, caracoles, bivalvos y gusanos marinos.",
+          "Los cirrados tienen otras particularidades. Viven entre los 100 y los 7.000 metros de profundidad. No tienen bolsa de tinta, porque en la oscuridad total del fondo la tinta no les serviría para defenderse. Y por dentro tienen una pequeña concha de cartílago, con forma de U o de V, que les da forma y sostiene las aletas con las que nadan."
         ],
-        source: "Fuentes: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (Londres); National Geographic, “Dumbo Octopus Facts”."
+        source: "Fuentes: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (Londres); Corinne Klein, “Incirrate vs. Cirrate Octopuses”, OctoNation (2022); National Geographic, “Dumbo Octopus Facts”."
       },
       en: {
         paragraphs: [
           "*Why “cirros que captan” (cirri that capture)?* The dumbo octopus (*Grimpoteuthis*) belongs to the *cirrate* octopuses. Along each arm it has a single row of about 65 to 68 suckers and, beside them, small hair-like projections: the *cirri*. Octopuses from shallower waters do not have them.",
-          "What they are for is still not known for sure, but they are thought to have something to do with eating. Scientists at the Natural History Museum in London think the dumbo octopus uses its cirri to waft food towards its mouth.",
-          "That is why it eats very small things, up to 1 or 2 millimetres: small crustaceans such as copepods, amphipods and isopods, snails, bivalves and bristle worms."
+          "What they are for is still not known for sure, but they are thought to have something to do with eating. Scientists at the Natural History Museum in London think the dumbo octopus uses its cirri to waft food towards its mouth. With them it creates a small current that carries worms, shellfish and amphipods towards its mouth.",
+          "That is why it eats very small things, up to 1 or 2 millimetres: small crustaceans such as copepods, amphipods and isopods, snails, bivalves and bristle worms.",
+          "Cirrate octopuses have other peculiarities. They live between 100 and 7,000 metres deep. They have no ink sac, because in the total darkness of the deep sea ink would be useless as a defence. And inside they have a small cartilage shell, shaped like a U or a V, that gives them shape and supports the fins they swim with."
         ],
-        source: "Sources: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (London); National Geographic, “Dumbo Octopus Facts”."
+        source: "Sources: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (London); Corinne Klein, “Incirrate vs. Cirrate Octopuses”, OctoNation (2022); National Geographic, “Dumbo Octopus Facts”."
       }
     },
 
