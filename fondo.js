@@ -376,16 +376,16 @@
       es: {
         paragraphs: [
           "Mamá tenazas anda con la armadura puesta: tiene un exoesqueleto sólido, un esqueleto por fuera, hecho de quitina y carbonato de calcio.",
-          "Las langostas de su familia, los nefrópidos, suelen tener un cuerpo robusto, antenas largas y dos pinzas distintas: una para triturar y otra para cortar. Con ellas enfrentó al robot para defender a sus crías."
+          "Las langostas de su familia, los nefrópidos, suelen tener un cuerpo robusto, antenas largas y dos pinzas distintas: una para triturar y otra para cortar."
         ],
-        source: "Fuentes: WoRMS, Thymops birsteini (familia Nephropidae; el exoesqueleto es un dato heredado de su grupo); A-Z Animals, “Lobster” (sitio de divulgación, sobre las langostas en general); Infobae, 9 de agosto de 2025."
+        source: "Fuentes: WoRMS, Thymops birsteini (familia Nephropidae; el exoesqueleto es un dato heredado de su grupo); A-Z Animals, “Lobster” (sitio de divulgación, sobre las langostas en general)."
       },
       en: {
         paragraphs: [
           "*“Robusta y acorazada”* means “sturdy and armored.” Mamá tenazas wears her armor at all times: a hard exoskeleton, a skeleton on the outside, made of chitin and calcium carbonate.",
-          "Clawed lobsters (Nephropidae) tend to have stout bodies, long antennae and two different claws, one for crushing and one for cutting. Those are the claws she used to fight off the robot and protect her young."
+          "Clawed lobsters (Nephropidae) tend to have stout bodies, long antennae and two different claws, one for crushing and one for cutting."
         ],
-        source: "Sources: WoRMS, Thymops birsteini (family Nephropidae; the exoskeleton is a trait inherited from her group); A-Z Animals, “Lobster” (a popular-science site, about lobsters in general); Infobae, 9 August 2025."
+        source: "Sources: WoRMS, Thymops birsteini (family Nephropidae; the exoskeleton is a trait inherited from her group); A-Z Animals, “Lobster” (a popular-science site, about lobsters in general)."
       }
     }
 
