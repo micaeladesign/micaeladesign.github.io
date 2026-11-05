@@ -36,19 +36,18 @@
       context: [
         "Desde el 23 de julio hasta el 11 de agosto de 2025, nadie se atrevió a hablar de otra cosa que no fuera la *expedición en Mar del Plata del buque R/V Falkor (too)* del Schmidt Ocean Institute, con la colaboración del CONICET. 20 días de transmisión en vivo por YouTube y Twitch. Casi 18 millones de visualizaciones. Todo un país siguiendo cómo la tripulación bajaba hasta 3.900 metros.",
         "Se cree que descubrieron más de 40 especies marinas nuevas, además de corales de aguas frías.",
-        "En diciembre de 2025, la transmisión ganó el Martín Fierro de Oro de los canales de streaming.",
-        "Tiempo después, la ciencia ya no está en boca de todos. *¿Cómo hacemos para que el efecto del stream perdure?*",
+        "Tiempo después, la ciencia ya no está en boca de todos. *¿Cómo hacemos para que el efecto perdure?*",
         "El stream nos unió: nos hizo parte de algo más grande que nosotros. La comunidad participó en el chat con preguntas, apodos para los animales, chistes y palabras de aliento para la tripulación.",
         "*Necesitamos reconectar con la fascinación y el asombro* del momento para que el vínculo estrecho con la ciencia se mantenga intacto."
       ],
       whatTitle: "¿Qué es Fondo?",
       what: [
-        "Es la *tienda de souvenirs* que permite revivir las *vacaciones al cañón submarino de Mar del Plata* y acercar a las personas a los animales que más quisieron.",
+        "Es una *tienda de souvenirs* que te permite revivir las *vacaciones al cañón submarino de Mar del Plata*.",
         "Reúne *ilustraciones, versos, objetos cotidianos e información* de los animales para recordarnos que la ciencia está en todos lados."
       ],
       roleTitle: "Mi rol",
       role: [
-        "Fondo es un proyecto propio. Lo pensé de punta a punta como producto. Partí de lo que pasó en el chat del stream. Definí el concepto de tienda de souvenirs y qué objetos tenía sentido crear para cada animal. Diseñé la experiencia de interacción y navegación con los objetos. Escribí los versos y las explicaciones científicas, chequeadas con fuentes como WoRMS."
+        "Fondo es un proyecto propio. Lo pensé de punta a punta como producto. Partí de lo que pasó en el chat del stream. Definí el concepto de tienda de souvenirs y qué objetos tenía sentido crear para cada animal. Diseñé la experiencia de interacción y navegación con los objetos. Escribí los versos y las explicaciones científicas."
       ],
       enter: "Entrar a la tienda",
       storeLabel: "Tienda de souvenirs de Fondo",
@@ -92,21 +91,20 @@
       title: "Fondo",
       contextTitle: "Context",
       context: [
-        "From July 23 to August 11, 2025, nobody in Argentina dared to talk about anything else than the *R/V Falkor (too) expedition off Mar del Plata*, run by the Schmidt Ocean Institute with the collaboration of CONICET. 20 days of live streaming on YouTube and Twitch. Almost 18 million views. A whole country following the crew as they went down as far as 3,900 meters.",
-        "They are believed to have discovered more than 40 new marine species, along with cold-water corals.",
-        "In December 2025, the broadcast won the Martín Fierro de Oro for streaming channels.",
-        "Some time later, science is no longer on everyone's lips. *How do we make the effect of the stream last?*",
-        "The stream brought us together: it made us part of something bigger than ourselves. The community took part in the chat with questions, nicknames for the animals, jokes and words of encouragement for the crew.",
-        "*We need to reconnect with the fascination and wonder* of that moment so the close bond with science stays intact."
+        "From July 23 to August 11, 2025, Argentina could hardly talk about anything else: the *Schmidt Ocean Institute's R/V Falkor (too) expedition off Mar del Plata*, run together with CONICET. Twenty days streamed live on YouTube and Twitch. Nearly 18 million views. A whole country watching the crew reach depths of 3,900 meters.",
+        "More than 40 new marine species are thought to have been discovered, along with cold-water corals.",
+        "Time has passed, and science is no longer the talk of the town. *How do we make that feeling last?*",
+        "The stream brought us together and made us part of something bigger than ourselves. People flooded the chat with questions, nicknames for the animals, jokes and words of encouragement for the crew.",
+        "*We need to reconnect with the wonder and fascination* of that moment, so our close bond with science stays alive."
       ],
       whatTitle: "What is Fondo?",
       what: [
-        "It is the *souvenir shop* that lets you relive the *holidays at the Mar del Plata submarine canyon* and brings people closer to the animals they loved most.",
-        "It gathers *illustrations, verses, everyday objects and information* about the animals to remind us that science is everywhere."
+        "It's a *souvenir shop* that lets you relive your *holiday in the Mar del Plata submarine canyon*.",
+        "It brings together *illustrations, verses, everyday objects and facts* about the animals, as a reminder that science is everywhere."
       ],
       roleTitle: "My role",
       role: [
-        "Fondo is a project of my own. I thought it through from start to finish as a product. I started from what happened in the stream chat. I defined the souvenir shop concept and which objects made sense for each animal. I designed the interaction and navigation experience with the objects. I wrote the verses and the scientific explanations, checked against sources such as WoRMS."
+        "Fondo is a personal project, and I took it from concept to finished product. It started with what happened in the stream chat. I came up with the souvenir shop concept and decided which objects made sense for each animal. I designed how people interact with the objects and move between them. I wrote the verses and the scientific explanations."
       ],
       enter: "Enter the shop",
       storeLabel: "Fondo souvenir shop",
