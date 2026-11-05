@@ -293,7 +293,7 @@
       },
       en: {
         paragraphs: [
-          "*“Pies ambulacrales, 4 hileras”* means “tube feet, 4 rows.” Batatita (*Benthodytes violeta*) has four rows of tube feet on its belly, little feet it uses to wander across the seabed.",
+          "*“Pies ambulacrales, 4 hileras”* means “tube feet, 4 rows.” They're the little feet on the belly of Batatita (*Benthodytes violeta*), and it uses them to wander across the seabed.",
           "It also has 16 shield-shaped tentacles, eight pairs of tiny appendages on its back and scalloped edges, like a ruffle. Its “skeleton” is made of ossicles: microscopic spicules shaped like rods and crosses."
         ],
         source: "Source: Martinez, M. I., Solís-Marín, F. A. & Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6."
