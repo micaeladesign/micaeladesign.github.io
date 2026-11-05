@@ -304,7 +304,7 @@
       es: {
         paragraphs: [
           "Batatita es un pepino de mar. Vive en el borde del cañón submarino de Mar del Plata, entre los 1.508 y los 1.950 metros de profundidad, sobre fondos de *arena y barro*.",
-          "Se cree que también se come ese fondo: todos los ejemplares estudiados tenían sedimento en el tubo digestivo. Fue el primer pepino de mar registrado en el cañón."
+          "Se cree que también come ese fondo: todos los ejemplares estudiados tenían sedimento en el tubo digestivo. Fue el primer pepino de mar registrado en el cañón."
         ],
         source: "Fuente: Martinez, M. I., Solís-Marín, F. A. y Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6. También WoRMS, Benthodytes violeta."
       },
