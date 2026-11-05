@@ -74,7 +74,7 @@ const content = {
       "Choose one to discover what I've been up to.",
 
   contactTitle:
-  "Let’s talk",
+  "Let's talk",
 
   contactText:
   "I’d love to hear from you.",
@@ -680,7 +680,7 @@ function renderCaseStudies(language) {
           href="#contact"
           class="conversation-choice"
         >
-          ${language === "en" ? "Contact" : "Contacto"}
+          ${language === "en" ? "Let's talk" : "Charlemos"}
         </a>
 
       </div>
@@ -722,7 +722,7 @@ function renderCaseStudies(language) {
           href="#contact"
           class="conversation-choice"
         >
-          ${language === "en" ? "Contact" : "Contacto"}
+          ${language === "en" ? "Let's talk" : "Charlemos"}
         </a>
 
       </div>
