@@ -321,14 +321,16 @@
       es: {
         paragraphs: [
           "El pulpo Dumbo pasa gran parte de su vida suspendido sobre el fondo. Cuando encuentra algo para comer, se tira encima y lo traga, sin desgarrar a la presa como hacen otros pulpos.",
-          "Come gusanos marinos, pequeños crustáceos, bivalvos y caracoles. Es el pulpo que vive a mayor profundidad que se conoce: hasta unos 4.000 metros."
+          "Come gusanos marinos, pequeños crustáceos, bivalvos y caracoles.",
+          "Vive a unos 4.000 metros de profundidad."
         ],
         source: "Fuentes: Aquarium of the Pacific, ficha “Dumbo Octopus”; National Geographic, “Dumbo Octopus Facts” y “Mesmerizing, rare dumbo octopus filmed in the deep sea” (2018); WoRMS, Grimpoteuthis."
       },
       en: {
         paragraphs: [
           "*“Cuerpo encima, devora”* means “body on top, it devours.” The dumbo octopus spends much of its life hovering just above the seabed. When it finds something to eat, it pounces and swallows it, without tearing its prey apart the way other octopuses do.",
-          "It eats marine worms, small crustaceans, clams and snails. Dumbos are the deepest-living octopuses known, found down to about 4,000 meters."
+          "It eats marine worms, small crustaceans, clams and snails.",
+          "It lives about 4,000 meters deep."
         ],
         source: "Sources: Aquarium of the Pacific, “Dumbo Octopus” species page; National Geographic, “Dumbo Octopus Facts” and “Mesmerizing, rare dumbo octopus filmed in the deep sea” (2018); WoRMS, Grimpoteuthis."
       }
