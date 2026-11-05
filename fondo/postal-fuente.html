@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <!-- PLANTILLA DE POSTAL — FONDO
+       Una sola plantilla para todos los recuerdos de Fondo. Cada postal es una
+       ficha en el bloque POSTALES de acá abajo: nombre, fecha, ilustración y color.
+       Los textos fijos (FONDO, el título y el crédito) están en COMUNES.
+
+       Mide 1800 × 1200 px (15 × 10 cm a 300 dpi).
+       Para ver una postal: postal-fuente.html?postal=batatita
+       Para exportarlas todas: node herramientas/exportar-postal.js -->
+
+  <title>Postal de Fondo (plantilla)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&display=swap">
+
+
+  <script>
+
+    // ---------------------------------------------
+    // LO QUE COMPARTEN TODAS LAS POSTALES
+    // ---------------------------------------------
+
+    const COMUNES = {
+      proyecto: "Fondo",
+      titulo: "Recuerdo de mi primera expedición bajo el mar",
+      ilustradora: "Vanesa Bettinelli"
+    };
+
+    // Colores del borde de crayón y de "FONDO"
+    const COLORES = {
+      naranja: "#EE7A2B",
+      violeta: "#8A4CC2",
+      rosa: "#EC6A93"
+    };
+
+    // ---------------------------------------------
+    // UNA FICHA POR POSTAL
+    // ---------------------------------------------
+
+    const POSTALES = {
+      patricio: {
+        nombre: "Patricio",
+        fecha: "26-07-2025",
+        ilustracion: "assets/patricio-estrella.png",
+        color: COLORES.naranja
+      },
+      batatita: {
+        nombre: "Batatita",
+        fecha: "29-07-2025",
+        ilustracion: "assets/batatita.png",
+        color: COLORES.violeta
+      },
+      "pulpo-dumbo": {
+        nombre: "pulpo Dumbo",
+        fecha: "05-08-2025",
+        ilustracion: "assets/pulpo-dumbo.png",
+        color: COLORES.rosa
+      },
+      "mama-tenazas": {
+        nombre: "Mamá tenazas",
+        fecha: "09-08-2025",
+        ilustracion: "assets/mama-tenazas.png",
+        color: COLORES.rosa,
+        // Opcional: ancho máximo de la ilustración (por defecto 620)
+        anchoIlustracion: 720
+      }
+    };
+
+  </script>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 1800px;
+      height: 1200px;
+      overflow: hidden;
+    }
+
+    body {
+      --accent: #EE7A2B;
+      --ink: #111111;
+      --muted: #8A8A8A;
+      --paper: #FFFDF9;
+
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .postal {
+      position: relative;
+
+      width: 1800px;
+      height: 1200px;
+
+      padding: 130px 150px 120px;
+
+      display: grid;
+      grid-template-columns: 1fr 2px 1fr;
+      gap: 0 100px;
+    }
+
+
+    /* Borde de crayón (SVG con filtro: trazo tembloroso y grano de cera) */
+
+    .crayon {
+      position: absolute;
+      inset: 0;
+      width: 1800px;
+      height: 1200px;
+      pointer-events: none;
+    }
+
+
+    /* Lado de la ilustración */
+
+    .lado-ilustracion {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* La ilustración se ajusta a su forma: alta (estrella) o apaisada (batatita) */
+    .lado-ilustracion img {
+      max-width: 620px;
+      max-height: 520px;
+      width: auto;
+      height: auto;
+      display: block;
+    }
+
+    .nombre {
+      margin: 0 0 64px;
+
+      font-size: 76px;
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+
+    .ilustradora {
+      margin: 24px 0 0;
+
+      font-size: 24px;
+      color: var(--muted);
+    }
+
+
+    /* Separador fino, como el dorso de una postal */
+
+    .separador {
+      background: #ECEAE6;
+      margin: 40px 0;
+    }
+
+
+    /* Lado del texto */
+
+    .lado-texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .proyecto {
+      margin: 0 0 28px;
+
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .titulo {
+      margin: 0;
+
+      font-size: 80px;
+      line-height: 1.08;
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      text-wrap: balance;
+    }
+
+    .fecha {
+      margin: 24px 0 0;
+
+      font-size: 26px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="postal">
+
+    <svg class="crayon" viewBox="0 0 1800 1200" aria-hidden="true">
+      <defs>
+        <filter id="crayon-filter" x="-5%" y="-5%" width="110%" height="110%">
+          <!-- Pulso de la mano: el trazo se mueve un poco -->
+          <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="4" result="pulso" />
+          <feDisplacementMap in="SourceGraphic" in2="pulso" scale="9" xChannelSelector="R" yChannelSelector="G" result="trazo" />
+          <!-- Grano de la cera sobre el papel: un grano fino y manchas de presión más grandes -->
+          <feTurbulence type="fractalNoise" baseFrequency="0.55 0.8" numOctaves="3" seed="11" result="grano" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="5" result="presion" />
+          <feColorMatrix in="grano" type="matrix"
+            values="0 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 0 0
+                    2.6 0 0 0 -0.75" result="cera-fina" />
+          <feColorMatrix in="presion" type="matrix"
+            values="0 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 0 0
+                    2.4 0 0 0 -0.3" result="cera-presion" />
+          <feComposite in="cera-fina" in2="cera-presion" operator="in" result="cera" />
+          <feComposite in="trazo" in2="cera" operator="in" />
+        </filter>
+      </defs>
+
+      <g filter="url(#crayon-filter)" fill="none" stroke-linecap="round" stroke-linejoin="round" class="crayon-stroke">
+        <!-- Dos pasadas, como cuando se repasa con el crayón -->
+        <path d="M58 62 L1744 54 L1740 1142 L60 1146 Z" stroke-width="22" />
+        <path d="M66 56 L1738 64 L1746 1136 L54 1140 L62 70" stroke-width="12" stroke-opacity="0.9" />
+      </g>
+    </svg>
+
+
+    <div class="lado-ilustracion">
+      <p class="nombre" data-campo="nombre"></p>
+      <img data-campo="ilustracion" alt="">
+      <p class="ilustradora">Ilustración: <span data-campo="ilustradora"></span></p>
+    </div>
+
+    <div class="separador"></div>
+
+    <div class="lado-texto">
+      <p class="proyecto" data-campo="proyecto"></p>
+      <h1 class="titulo" data-campo="titulo"></h1>
+      <p class="fecha" data-campo="fecha"></p>
+    </div>
+
+  </div>
+
+
+  <script>
+
+    // Arma la postal elegida (?postal=...) con los textos comunes
+    const id = new URLSearchParams(location.search).get("postal") || "patricio";
+    const POSTAL = Object.assign({}, COMUNES, POSTALES[id]);
+
+    document.querySelectorAll("[data-campo]").forEach(function (el) {
+      const campo = el.dataset.campo;
+      if (campo === "ilustracion") el.src = POSTAL.ilustracion;
+      else el.textContent = POSTAL[campo];
+    });
+
+    document.body.style.setProperty("--accent", POSTAL.color);
+    if (POSTAL.anchoIlustracion) {
+      document.querySelector(".lado-ilustracion img").style.maxWidth = POSTAL.anchoIlustracion + "px";
+    }
+    document.querySelector(".crayon-stroke").setAttribute("stroke", POSTAL.color);
+
+  </script>
+
+</body>
+
+</html>
