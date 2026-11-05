@@ -249,125 +249,52 @@
 
   const EXPLICACIONES = {
 
+    "patricio/delantal": {
+      es: {
+        paragraphs: [
+          "Patricio es una estrella de mar depredadora.",
+          "Como las demás estrellas de mar, no tiene dientes. Se arrastra sobre su presa y usa sus pies ambulacrales para abrir hasta los caparazones más duros. Después saca el estómago por la boca, envuelve la comida y la digiere fuera de su cuerpo. Cuando termina, vuelve a meter el estómago y sigue con la próxima presa."
+        ],
+        source: "Fuentes: WoRMS, Hippasteria phrygiana; Le Bourg (2020); Ask Dr. Universe, “How do starfish eat?”, Washington State University (2022), sobre las estrellas de mar en general."
+      },
+      en: {
+        paragraphs: [
+          "*“Voraz vedette del mar”* means “voracious star of the sea.” Patricio is a predatory sea star.",
+          "Like every other sea star, it has no teeth. It crawls over its prey and uses its tube feet to pry open even the toughest shells. Then it pushes its stomach out through its mouth, wraps it around the food and digests it outside its body. When it's done, it pulls its stomach back in and moves on to the next meal."
+        ],
+        source: "Sources: WoRMS, Hippasteria phrygiana; Le Bourg (2020); Ask Dr. Universe, “How do starfish eat?”, Washington State University (2022), about sea stars in general."
+      }
+    },
+
     "patricio/mate": {
       es: {
         paragraphs: [
-          "*¿Por qué “sensible a la perturbación”?* Es un término técnico real y está bien aplicado a esta estrella.",
-          "Sale del índice AMBI (Borja y otros, 2000), que mide la salud del fondo marino según qué animales viven ahí. AMBI ordena las especies del fondo en cinco grupos, desde las más delicadas hasta las oportunistas que proliferan en aguas degradadas. *Hippasteria phrygiana* está en el primero, “muy sensible a la perturbación”.",
-          "Eso significa que vive en fondos sanos y es de las primeras en desaparecer cuando el ambiente se altera, sobre todo por exceso de materia orgánica y contaminación. Por eso su presencia indica un fondo marino en buen estado."
+          "Patricio es *muy sensible a la perturbación*. Es un término técnico real: sale del índice AMBI (Borja y otros, 2000), que mide la salud del fondo marino según qué animales viven ahí.",
+          "AMBI ordena las especies del fondo en cinco grupos, de las más delicadas a las que proliferan en aguas degradadas. Patricio está en el primero: vive en fondos sanos y es de las primeras en desaparecer cuando el ambiente se altera. Su presencia indica un fondo marino en buen estado."
         ],
         source: "Fuente: WoRMS, Hippasteria phrygiana; Borja, Franco y Pérez (2000), índice AMBI."
       },
       en: {
         paragraphs: [
-          "*Why “sensible a la perturbación” (sensitive to disturbance)?* It is a real technical term, and it applies correctly to this sea star.",
-          "It comes from the AMBI index (Borja et al., 2000), which measures the health of the seabed according to which animals live there. AMBI sorts seabed species into five groups, from the most delicate to the opportunists that thrive in degraded waters. *Hippasteria phrygiana* is in the first one, “very sensitive to disturbance”.",
-          "This means it lives on healthy seabeds and is among the first to disappear when the environment changes, especially from excess organic matter and pollution. That is why its presence signals a seabed in good condition."
+          "*“Sensible a la perturbación”* means “sensitive to disturbance.” It's a real technical term from the AMBI index (Borja et al., 2000), which gauges the health of the seabed by looking at which animals live there.",
+          "AMBI sorts seabed species into five groups, from the most delicate to the opportunists that thrive in polluted water. Patricio belongs to the first: it lives on healthy seabeds and is among the first to vanish when conditions change. Where you find it, the seabed is in good shape."
         ],
         source: "Source: WoRMS, Hippasteria phrygiana; Borja, Franco & Pérez (2000), AMBI index."
-      }
-    },
-
-    "pulpo-dumbo/toallon": {
-      es: {
-        paragraphs: [
-          "*¿Por qué “cirros que captan”?* El pulpo Dumbo (*Grimpoteuthis*) pertenece al grupo de los pulpos *cirrados*. A lo largo de cada brazo tiene una sola hilera de unas 65 a 68 ventosas y, al lado de ellas, unas pequeñas proyecciones parecidas a pelos: los *cirros*. Los pulpos de aguas menos profundas no los tienen.",
-          "Para qué sirven todavía no se sabe con certeza, pero se cree que tienen que ver con comer. Los científicos del Museo de Historia Natural de Londres piensan que el pulpo Dumbo usa los cirros para ir acercando la comida a la boca, como si la abanicara. Con ellos genera una pequeña corriente que lleva gusanos, mariscos y anfípodos hacia su boca.",
-          "Por eso come cosas muy chiquitas, de hasta 1 o 2 milímetros: pequeños crustáceos como copépodos, anfípodos e isópodos, caracoles, bivalvos y gusanos marinos.",
-          "Los cirrados tienen otras particularidades. Viven entre los 100 y los 7.000 metros de profundidad. No tienen bolsa de tinta, porque en la oscuridad total del fondo la tinta no les serviría para defenderse. Y por dentro tienen una pequeña concha de cartílago, con forma de U o de V, que les da forma y sostiene las aletas con las que nadan."
-        ],
-        source: "Fuentes: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (Londres); Corinne Klein, “Incirrate vs. Cirrate Octopuses”, OctoNation (2022); National Geographic, “Dumbo Octopus Facts”."
-      },
-      en: {
-        paragraphs: [
-          "*Why “cirros que captan” (cirri that capture)?* The dumbo octopus (*Grimpoteuthis*) belongs to the *cirrate* octopuses. Along each arm it has a single row of about 65 to 68 suckers and, beside them, small hair-like projections: the *cirri*. Octopuses from shallower waters do not have them.",
-          "What they are for is still not known for sure, but they are thought to have something to do with eating. Scientists at the Natural History Museum in London think the dumbo octopus uses its cirri to waft food towards its mouth. With them it creates a small current that carries worms, shellfish and amphipods towards its mouth.",
-          "That is why it eats very small things, up to 1 or 2 millimetres: small crustaceans such as copepods, amphipods and isopods, snails, bivalves and bristle worms.",
-          "Cirrate octopuses have other peculiarities. They live between 100 and 7,000 metres deep. They have no ink sac, because in the total darkness of the deep sea ink would be useless as a defence. And inside they have a small cartilage shell, shaped like a U or a V, that gives them shape and supports the fins they swim with."
-        ],
-        source: "Sources: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (London); Corinne Klein, “Incirrate vs. Cirrate Octopuses”, OctoNation (2022); National Geographic, “Dumbo Octopus Facts”."
-      }
-    },
-
-    "mama-tenazas/buzo": {
-      es: {
-        paragraphs: [
-          "*¿Por qué “robusta y acorazada”?* Mamá tenazas anda con la armadura puesta. Como los demás crustáceos de su grupo, tiene un exoesqueleto sólido: un esqueleto por fuera, hecho de quitina y carbonato de calcio.",
-          "Lo de robusta le viene de familia. *Thymops birsteini* es de los nefrópidos (Nephropidae), la familia de las langostas con pinzas. Las langostas de esta familia suelen tener un cuerpo robusto, antenas largas y un par de pinzas grandes y distintas entre sí, una para triturar y otra para cortar, que usan para comer y para defenderse.",
-          "Con esas pinzas enfrentó al robot SuBastian para defender a sus crías."
-        ],
-        source: "Fuentes: WoRMS, Thymops birsteini (familia Nephropidae; el exoesqueleto es un dato heredado de su grupo); A-Z Animals, “Lobster” (sitio de divulgación, sobre las langostas en general); Infobae, 9 de agosto de 2025."
-      },
-      en: {
-        paragraphs: [
-          "*Why “robusta y acorazada” (sturdy and armoured)?* Mamá tenazas goes around with her armour on. Like the other crustaceans in her group, she has a solid exoskeleton: a skeleton on the outside, made of chitin and calcium carbonate.",
-          "Being sturdy runs in the family. *Thymops birsteini* belongs to Nephropidae, the family of clawed lobsters. Lobsters in this family usually have a sturdy body, long antennae and a prominent pair of unequal claws, a crusher and a cutter, used for feeding and defence.",
-          "Those are the claws she used to face the robot SuBastian and defend her young."
-        ],
-        source: "Sources: WoRMS, Thymops birsteini (family Nephropidae; the exoskeleton is a trait inherited from her group); A-Z Animals, “Lobster” (a popular-science site, about lobsters in general); Infobae, 9 August 2025."
-      }
-    },
-
-    "mama-tenazas/taza": {
-      es: {
-        paragraphs: [
-          "*¿Por qué “Madre solo una”?* El 9 de agosto de 2025, a 1.883 metros de profundidad, el robot SuBastian se acercó a una roca del cañón submarino de Mar del Plata. Debajo vivía una langosta patagónica, *Thymops birsteini*, con sus crías: ocho langostitas de pocas semanas de vida.",
-          "La madre volvió rápido a su roca, miró de frente a la cámara y atacó al robot una y otra vez con sus tenazas, removiendo hasta el barro del fondo. Mientras tanto, las ocho crías se asomaban a mirar cómo las defendía. En el chat del stream la bautizaron enseguida: “El enfrentamiento del año: ROV contra Mamá Tenazas”.",
-          "Los científicos terminaron rápido de tomar su muestra y se alejaron. Un experto del CONICET aclaró que la langosta no sufrió ningún daño y que volvió a su roca a seguir criando a sus pequeños.",
-          "Antes de tener crías, la hembra de esta especie lleva hasta 380 huevos pegados bajo la cola, de 1,5 a 1,9 mm cada uno.",
-          "WoRMS registra a esta especie en el mar profundo, entre los 122 y los 1.400 metros. Mamá tenazas estaba a 1.883."
-        ],
-        source: "Fuentes: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 de agosto de 2025; Laptikhovsky y Reyes (2009), Journal of Natural History 43: 35-46, citado en Wikipedia; WoRMS, Thymops birsteini."
-      },
-      en: {
-        paragraphs: [
-          "*Why “Madre solo una” (only one mother)?* On 9 August 2025, 1,883 metres deep, the robot SuBastian approached a rock in the Mar del Plata submarine canyon. Under it lived a Patagonian lobsterette, *Thymops birsteini*, with her young: eight little lobsters a few weeks old.",
-          "The mother hurried back to her rock, stared straight into the camera and attacked the robot again and again with her claws, even stirring up the mud on the seabed. Meanwhile, the eight young peeked out to watch her defend them. The stream chat named her right away: “The fight of the year: ROV vs. Mamá Tenazas” (Mama Claws).",
-          "The scientists quickly finished taking their sample and moved away. A CONICET expert explained that the lobster was not harmed and went back to her rock to keep raising her young.",
-          "Before having young, the female of this species carries up to 380 eggs stuck under her tail, each 1.5 to 1.9 mm.",
-          "WoRMS records this species in the deep sea, between 122 and 1,400 metres. Mamá tenazas was at 1,883."
-        ],
-        source: "Sources: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 August 2025; Laptikhovsky & Reyes (2009), Journal of Natural History 43: 35-46, as cited in Wikipedia; WoRMS, Thymops birsteini."
-      }
-    },
-
-    "pulpo-dumbo/remera": {
-      es: {
-        paragraphs: [
-          "*¿Por qué “cuerpo encima, devora”?* El pulpo Dumbo se traga sus presas enteras. Pasa gran parte de su vida suspendido justo encima del fondo, y cuando encuentra algo para comer se le tira encima y se lo traga de una, sin desgarrarlo ni triturarlo como hacen otros pulpos.",
-          "Puede hacerlo porque tiene la rádula, la lengua con dientitos de los moluscos, muy reducida. Esa forma de comer es una particularidad de su género, *Grimpoteuthis*.",
-          "Come gusanos marinos y pequeños crustáceos como copépodos, isópodos y anfípodos. También come bivalvos y caracoles que encuentra en el fondo.",
-          "Los pulpos Dumbo son los que viven a mayor profundidad que se conocen, hasta unos 4.000 metros. Nadan aleteando con dos aletas que sobresalen como orejas, y por eso llevan el nombre del elefante."
-        ],
-        source: "Fuentes: Aquarium of the Pacific, ficha “Dumbo Octopus”; National Geographic, “Dumbo Octopus Facts” y “Mesmerizing, rare dumbo octopus filmed in the deep sea” (2018); WoRMS, Grimpoteuthis."
-      },
-      en: {
-        paragraphs: [
-          "*Why “cuerpo encima, devora” (body on top, devours)?* The dumbo octopus swallows its prey whole. It spends much of its life hovering just above the seabed, and when it finds something to eat it pounces on it and swallows it in one go, without tearing or grinding it like other octopuses do.",
-          "It can do this because its radula, the toothed tongue of molluscs, is greatly reduced. This way of eating is a feature of its genus, *Grimpoteuthis*.",
-          "It eats marine worms and small crustaceans such as copepods, isopods and amphipods. It also eats bivalves and snails it finds on the seabed.",
-          "Dumbo octopuses are the deepest-living octopuses known, down to about 4,000 metres. They swim by flapping two fins that stick out like ears, which is why they are named after the elephant."
-        ],
-        source: "Sources: Aquarium of the Pacific, “Dumbo Octopus” species page; National Geographic, “Dumbo Octopus Facts” and “Mesmerizing, rare dumbo octopus filmed in the deep sea” (2018); WoRMS, Grimpoteuthis."
       }
     },
 
     "batatita/iman": {
       es: {
         paragraphs: [
-          "*Benthodytes violeta* tiene cuatro hileras de *pies ambulacrales* en la panza. Son sus piecitos: pies en la panza que le sirven para deambular por el fondo. La palabra viene del latín *ambulare*, caminar, la misma raíz de “deambular”.",
-          "Tiene 16 tentáculos en un solo círculo, todos de 2 mm y con forma de escudo. En el lomo lleva ocho pares de apéndices, de 1 a 3 mm, que ocupan solo la mitad delantera del cuerpo. Y donde el lomo se junta con la panza, sus bordes son festoneados, con forma de volado.",
-          "Por dentro tiene dos vesículas de Poli en forma de gota, de 30 y 10 mm, y una gónada ramificada con dos penachos. No se le encontraron árboles respiratorios.",
-          "Su “esqueleto” son los *osículos*, espículas microscópicas repartidas por el cuerpo, los tentáculos y la gónada. Tienen forma de barrotes, de 200 a 400 µm, y de cruces de tres o cuatro brazos, de 120 a 310 µm. La cruz principal llega a 700 µm, apenas más de medio milímetro, y tiene en el centro una saliente dividida en dos."
+          "Batatita (*Benthodytes violeta*) tiene cuatro hileras de *pies ambulacrales* en la panza: pies que le sirven para deambular por el fondo. La palabra viene del latín *ambulare*, caminar.",
+          "También tiene 16 tentáculos con forma de escudo, ocho pares de apéndices en el lomo y los bordes festoneados, como un volado. Su “esqueleto” son los osículos, unas espículas microscópicas con forma de barrotes y de cruces."
         ],
         source: "Fuente: Martinez, M. I., Solís-Marín, F. A. y Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6."
       },
       en: {
         paragraphs: [
-          "*Benthodytes violeta* has four rows of *tube feet* (in Spanish, *pies ambulacrales*) on its belly. They are its little feet: feet on its belly that it uses to wander around the seabed. *Ambulacral* comes from the Latin *ambulare*, to walk, the same root as “amble”.",
-          "It has 16 tentacles in a single ring, all 2 mm long and shaped like shields. On its back it carries eight pairs of appendages, 1 to 3 mm long, only on the front half of the body. And where its back meets its belly, the edges are scalloped, like a ruffle.",
-          "Inside, it has two drop-shaped Polian vesicles, 30 and 10 mm long, and a branched gonad with two tufts. No respiratory trees were found.",
-          "Its “skeleton” is made of *ossicles*, microscopic spicules spread through the body, the tentacles and the gonad. They are shaped like rods, 200 to 400 µm long, and like crosses with three or four arms, 120 to 310 µm. The main cross reaches 700 µm, just over half a millimetre, and has a central projection split in two."
+          "*“Pies ambulacrales, 4 hileras”* means “tube feet, 4 rows.” Batatita (*Benthodytes violeta*) has four rows of tube feet on its belly, little feet it uses to wander across the seabed. *Ambulacral* comes from the Latin *ambulare*, to walk.",
+          "It also has 16 shield-shaped tentacles, eight pairs of tiny appendages on its back and scalloped edges, like a ruffle. Its “skeleton” is made of ossicles: microscopic spicules shaped like rods and crosses."
         ],
         source: "Source: Martinez, M. I., Solís-Marín, F. A. & Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6."
       }
@@ -376,39 +303,89 @@
     "batatita/gorra": {
       es: {
         paragraphs: [
-          "*¿Por qué “sobre barro y arena”?* Batatita es un pepino de mar, pariente de las estrellas. Su especie, *Benthodytes violeta*, vive en el cañón submarino de Mar del Plata, entre los 1.508 y los 1.950 metros de profundidad. Los científicos que la describieron la encontraron en el borde del cañón, sobre fondos mezclados de *arena y barro*.",
-          "Y no solo vive sobre ese fondo: se cree que se lo come. Todos los ejemplares que estudiaron tenían sedimento del fondo en el tubo digestivo. Por eso, y por sus tentáculos en forma de escudo, los autores piensan que se alimenta de lo que se deposita en el fondo. Nadie la vio comer: es una deducción a partir de lo que tenía adentro.",
-          "La especie se describió en 2014 y fue el primer pepino de mar registrado en el cañón de Mar del Plata."
+          "Batatita es un pepino de mar. Vive en el borde del cañón submarino de Mar del Plata, entre los 1.508 y los 1.950 metros de profundidad, sobre fondos de *arena y barro*.",
+          "Se cree que también se come ese fondo: todos los ejemplares estudiados tenían sedimento en el tubo digestivo. Fue el primer pepino de mar registrado en el cañón."
         ],
         source: "Fuente: Martinez, M. I., Solís-Marín, F. A. y Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6. También WoRMS, Benthodytes violeta."
       },
       en: {
         paragraphs: [
-          "*Why “sobre barro y arena” (on mud and sand)?* Batatita is a sea cucumber, a relative of sea stars. Its species, *Benthodytes violeta*, lives in the Mar del Plata submarine canyon, between 1,508 and 1,950 metres deep. The scientists who described it found it on the edge of the canyon, on mixed *sand and mud* bottoms.",
-          "And it does not just live on that seabed: it is thought to eat it. Every specimen they studied had seabed sediment in its gut. Because of that, and its shield-shaped tentacles, the authors think it feeds on what settles on the bottom. Nobody has seen it eat: it is an inference from what was inside it.",
-          "The species was described in 2014, and it was the first sea cucumber recorded in the Mar del Plata canyon."
+          "*“Sobre barro y arena”* means “on mud and sand.” Batatita is a sea cucumber that lives on the edge of the Mar del Plata submarine canyon, between 1,508 and 1,950 meters deep, on sandy, muddy bottoms.",
+          "It's thought to eat that seabed too: every specimen studied had sediment in its gut. It was the first sea cucumber ever recorded in the canyon."
         ],
         source: "Source: Martinez, M. I., Solís-Marín, F. A. & Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6. Also WoRMS, Benthodytes violeta."
       }
     },
 
-    "patricio/delantal": {
+    "pulpo-dumbo/remera": {
       es: {
         paragraphs: [
-          "*¿Por qué “voraz”?* Patricio es una estrella de mar depredadora: caza a sus presas, las abre con sus piecitos y se las come con el estómago afuera del cuerpo. Según el registro mundial de especies marinas (WoRMS), en la adultez se alimenta cazando a otros animales.",
-          "Como las demás estrellas de mar, no tiene dientes. Se arrastra sobre su presa y usa sus *pies ambulacrales*, miles de piecitos del tamaño de la cabeza de un alfiler, para abrir hasta los caparazones más duros. Después saca el estómago por la boca, envuelve la comida y la digiere fuera de su cuerpo. Cuando termina, vuelve a meter el estómago y sigue con la próxima presa."
+          "El pulpo Dumbo se *traga sus presas enteras*. Pasa gran parte de su vida suspendido sobre el fondo y, cuando encuentra algo para comer, se le tira encima y se lo traga de una, sin desgarrarlo como otros pulpos.",
+          "Come gusanos marinos, pequeños crustáceos, bivalvos y caracoles. Es el pulpo que vive a mayor profundidad que se conoce: hasta unos 4.000 metros."
         ],
-        source: "Fuentes: WoRMS, Hippasteria phrygiana; Le Bourg (2020); Ask Dr. Universe, “How do starfish eat?”, Washington State University (2022), sobre las estrellas de mar en general."
+        source: "Fuentes: Aquarium of the Pacific, ficha “Dumbo Octopus”; National Geographic, “Dumbo Octopus Facts” y “Mesmerizing, rare dumbo octopus filmed in the deep sea” (2018); WoRMS, Grimpoteuthis."
       },
       en: {
         paragraphs: [
-          "*Why “voraz” (voracious)?* Patricio is a predatory sea star: it hunts its prey, opens it up with its tiny feet and eats it with its stomach outside its body. According to the World Register of Marine Species (WoRMS), adults feed by hunting other animals.",
-          "Like other sea stars, it has no teeth. It crawls over its prey and uses its *tube feet*, thousands of them, each about the size of a pinhead, to pry open even the toughest shells. Then it pushes its stomach out through its mouth, wraps it around the food and digests it outside its body. Once it's done, it pulls its stomach back in and moves on to the next meal."
+          "*“Cuerpo encima, devora”* means “body on top, it devours.” The dumbo octopus swallows its prey whole. It spends much of its life hovering just above the seabed, and when it finds something to eat, it pounces and gulps it down in one go, without tearing it apart like other octopuses do.",
+          "It eats marine worms, small crustaceans, clams and snails. Dumbos are the deepest-living octopuses known, found down to about 4,000 meters."
         ],
-        source: "Sources: WoRMS, Hippasteria phrygiana; Le Bourg (2020); Ask Dr. Universe, “How do starfish eat?”, Washington State University (2022), about sea stars in general."
+        source: "Sources: Aquarium of the Pacific, “Dumbo Octopus” species page; National Geographic, “Dumbo Octopus Facts” and “Mesmerizing, rare dumbo octopus filmed in the deep sea” (2018); WoRMS, Grimpoteuthis."
+      }
+    },
+
+    "pulpo-dumbo/toallon": {
+      es: {
+        paragraphs: [
+          "El pulpo Dumbo es un pulpo *cirrado*: al lado de las ventosas de sus brazos tiene unos filamentos parecidos a pelos, los *cirros*.",
+          "No se sabe bien para qué sirven, pero se cree que con ellos crea una pequeña corriente que acerca la comida a la boca. Por eso come cosas muy chiquitas, de hasta 1 o 2 milímetros."
+        ],
+        source: "Fuentes: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (Londres); Corinne Klein, “Incirrate vs. Cirrate Octopuses”, OctoNation (2022); National Geographic, “Dumbo Octopus Facts”."
+      },
+      en: {
+        paragraphs: [
+          "*“Cirros que captan”* means “cirri that catch.” The dumbo is a *cirrate* octopus: next to the suckers on its arms it has hair-like filaments called *cirri*.",
+          "Nobody knows exactly what they're for, but scientists think the octopus uses them to create a small current that wafts food towards its mouth. That's why it eats tiny things, no bigger than 1 or 2 millimeters."
+        ],
+        source: "Sources: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (London); Corinne Klein, “Incirrate vs. Cirrate Octopuses”, OctoNation (2022); National Geographic, “Dumbo Octopus Facts”."
+      }
+    },
+
+    "mama-tenazas/taza": {
+      es: {
+        paragraphs: [
+          "El 9 de agosto de 2025, a 1.883 metros de profundidad, el robot SuBastian se acercó a la roca donde una langosta patagónica cuidaba a sus ocho crías.",
+          "La madre volvió rápido, miró de frente a la cámara y atacó al robot una y otra vez con sus tenazas. En el chat la bautizaron enseguida: “El enfrentamiento del año: ROV contra Mamá Tenazas”.",
+          "Antes de tener crías, la hembra de esta especie lleva hasta 380 huevos pegados bajo la cola."
+        ],
+        source: "Fuentes: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 de agosto de 2025; Laptikhovsky y Reyes (2009), Journal of Natural History 43: 35-46, citado en Wikipedia; WoRMS, Thymops birsteini."
+      },
+      en: {
+        paragraphs: [
+          "*“Madre solo una”* means “you only get one mother.” On August 9, 2025, 1,883 meters down, the robot SuBastian got close to a rock where a Patagonian lobsterette was guarding her eight young.",
+          "The mother rushed back, stared straight into the camera and went at the robot again and again with her claws. The chat named her on the spot: “Fight of the year: ROV vs. Mamá Tenazas.”",
+          "Before her young hatch, a female of this species carries up to 380 eggs stuck under her tail."
+        ],
+        source: "Sources: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 August 2025; Laptikhovsky & Reyes (2009), Journal of Natural History 43: 35-46, as cited in Wikipedia; WoRMS, Thymops birsteini."
+      }
+    },
+
+    "mama-tenazas/buzo": {
+      es: {
+        paragraphs: [
+          "Mamá tenazas anda con la armadura puesta: tiene un exoesqueleto sólido, un esqueleto por fuera, hecho de quitina y carbonato de calcio.",
+          "Lo de robusta le viene de familia. Las langostas de su familia, los nefrópidos, suelen tener un cuerpo robusto, antenas largas y dos pinzas distintas: una para triturar y otra para cortar. Con ellas enfrentó al robot para defender a sus crías."
+        ],
+        source: "Fuentes: WoRMS, Thymops birsteini (familia Nephropidae; el exoesqueleto es un dato heredado de su grupo); A-Z Animals, “Lobster” (sitio de divulgación, sobre las langostas en general); Infobae, 9 de agosto de 2025."
+      },
+      en: {
+        paragraphs: [
+          "*“Robusta y acorazada”* means “sturdy and armored.” Mamá tenazas wears her armor at all times: a hard exoskeleton, a skeleton on the outside, made of chitin and calcium carbonate.",
+          "The sturdiness runs in the family. Clawed lobsters (Nephropidae) tend to have stout bodies, long antennae and two different claws, one for crushing and one for cutting. Those are the claws she used to fight off the robot and protect her young."
+        ],
+        source: "Sources: WoRMS, Thymops birsteini (family Nephropidae; the exoskeleton is a trait inherited from her group); A-Z Animals, “Lobster” (a popular-science site, about lobsters in general); Infobae, 9 August 2025."
       }
     }
-
 
   };
 
