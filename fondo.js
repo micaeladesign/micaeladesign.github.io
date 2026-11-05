@@ -80,7 +80,7 @@
           remera: "Remera negra con el pulpo Dumbo en rosa y amarillo. Arriba a la izquierda dice cuerpo encima y abajo a la derecha, devora. Usá los botones o el pellizco para acercarte.",
           taza: "Taza blanca con el interior y el asa rosas. Dice Madre solo una, y abajo está Mamá tenazas, una langosta en rosa y naranja. Usá los botones o el pellizco para acercarte.",
           toallon: "Toallón playero azul con el pulpo Dumbo en rosa y amarillo. Abajo dice cirros que captan. Usá los botones o el pellizco para acercarte.",
-          buzo: "Buzo azul marino con capucha. En el pecho tiene bordada a Mamá tenazas, una langosta roja, y arriba dice robusta y acorazada. Usá los botones o el pellizco para acercarte.",
+          buzo: "Buzo azul marino con capucha. En el pecho tiene bordada a Mamá tenazas, una langosta roja, y arriba, en rosa, dice robusta y acorazada. Usá los botones o el pellizco para acercarte.",
           gorra: "Gorra negra de gabardina lavada con Batatita bordada en violeta. Debajo, también bordado en violeta, dice sobre barro y arena. Usá los botones o el pellizco para acercarte."
         }
       },
@@ -138,7 +138,7 @@
           remera: "Black T-shirt with the dumbo octopus in pink and yellow. Top left it reads cuerpo encima (body on top) and bottom right, devora (devours). Use the buttons or pinch to zoom in.",
           taza: "White mug with a pink inside and handle. It reads Madre solo una (only one mother), and below is Mamá tenazas, a lobster in pink and orange. Use the buttons or pinch to zoom in.",
           toallon: "Blue beach towel with the dumbo octopus in pink and yellow. Below it reads cirros que captan (cirri that capture). Use the buttons or pinch to zoom in.",
-          buzo: "Navy blue hoodie. On the chest it has Mamá tenazas, a red lobster, embroidered, and above it reads robusta y acorazada (sturdy and armoured). Use the buttons or pinch to zoom in.",
+          buzo: "Navy blue hoodie. On the chest it has Mamá tenazas, a red lobster, embroidered, and above it, in pink, reads robusta y acorazada (sturdy and armoured). Use the buttons or pinch to zoom in.",
           gorra: "Washed black cap with Batatita embroidered in purple. Below it, also embroidered in purple, it reads sobre barro y arena (on mud and sand). Use the buttons or pinch to zoom in."
         }
       },
@@ -235,7 +235,7 @@
         {
           id: "buzo", es: "Buzo con capucha", en: "Hoodie",
           kind: "zoom", thumb: "fondo/assets/thumbs/buzo.webp",
-          svg: "fondo/assets/buzo-svg.html", ratio: 1089 / 1414
+          svg: "fondo/assets/buzo-svg.html", ratio: 1089 / 1424
         },
         { id: "postal", es: "Postal", en: "Postcard", kind: "postal", thumb: "fondo/assets/thumbs/postal-mama-tenazas.webp", file: "fondo/assets/postales/postal-mama-tenazas.png" }
       ]
