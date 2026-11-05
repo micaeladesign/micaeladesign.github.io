@@ -357,7 +357,7 @@
       es: {
         paragraphs: [
           "El 9 de agosto de 2025, a 1.883 metros de profundidad, el robot SuBastian se acercó a la roca donde una langosta patagónica cuidaba a sus ocho crías.",
-          "La madre volvió rápido, miró de frente a la cámara y atacó al robot una y otra vez con sus tenazas. En el chat la bautizaron enseguida: “El enfrentamiento del año: ROV contra Mamá Tenazas”.",
+          "La madre volvió rápido, miró de frente a la cámara y atacó al robot una y otra vez con sus tenazas. “El enfrentamiento del año: ROV contra Mamá Tenazas”, lo bautizó el chat del stream.",
           "Antes de tener crías, la hembra de esta especie lleva hasta 380 huevos pegados bajo la cola."
         ],
         source: "Fuentes: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 de agosto de 2025; Laptikhovsky y Reyes (2009), Journal of Natural History 43: 35-46, citado en Wikipedia; WoRMS, Thymops birsteini."
@@ -365,7 +365,7 @@
       en: {
         paragraphs: [
           "*“Madre solo una”* means “you only get one mother.” On August 9, 2025, 1,883 meters down, the robot SuBastian got close to a rock where a Patagonian lobsterette was guarding her eight young.",
-          "The mother rushed back, stared straight into the camera and went at the robot again and again with her claws. The chat named her on the spot: “Fight of the year: ROV vs. Mamá Tenazas.”",
+          "The mother rushed back, stared straight into the camera and went at the robot again and again with her claws. “Fight of the year: ROV vs. Mamá Tenazas,” the stream chat called it.",
           "Before her young hatch, a female of this species carries up to 380 eggs stuck under her tail."
         ],
         source: "Sources: Víctor Ingrassia, “La langosta guerrera que defendió a sus crías y atacó al robot de la expedición científica submarina en Mar del Plata”, Infobae, 9 August 2025; Laptikhovsky & Reyes (2009), Journal of Natural History 43: 35-46, as cited in Wikipedia; WoRMS, Thymops birsteini."
