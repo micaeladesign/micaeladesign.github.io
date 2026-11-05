@@ -286,14 +286,14 @@
     "batatita/iman": {
       es: {
         paragraphs: [
-          "Batatita (*Benthodytes violeta*) tiene cuatro hileras de *pies ambulacrales* en la panza: pies que le sirven para deambular por el fondo. La palabra viene del latín *ambulare*, caminar.",
+          "Batatita (*Benthodytes violeta*) tiene cuatro hileras de *pies ambulacrales* en la panza: pies que le sirven para deambular por el fondo.",
           "También tiene 16 tentáculos con forma de escudo, ocho pares de apéndices en el lomo y los bordes festoneados, como un volado. Su “esqueleto” son los osículos, unas espículas microscópicas con forma de barrotes y de cruces."
         ],
         source: "Fuente: Martinez, M. I., Solís-Marín, F. A. y Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6."
       },
       en: {
         paragraphs: [
-          "*“Pies ambulacrales, 4 hileras”* means “tube feet, 4 rows.” Batatita (*Benthodytes violeta*) has four rows of tube feet on its belly, little feet it uses to wander across the seabed. *Ambulacral* comes from the Latin *ambulare*, to walk.",
+          "*“Pies ambulacrales, 4 hileras”* means “tube feet, 4 rows.” Batatita (*Benthodytes violeta*) has four rows of tube feet on its belly, little feet it uses to wander across the seabed.",
           "It also has 16 shield-shaped tentacles, eight pairs of tiny appendages on its back and scalloped edges, like a ruffle. Its “skeleton” is made of ossicles: microscopic spicules shaped like rods and crosses."
         ],
         source: "Source: Martinez, M. I., Solís-Marín, F. A. & Penchaszadeh, P. E. (2014). Benthodytes violeta, a new species of a deep-sea holothuroid (Elasipodida: Psychropotidae) from Mar del Plata Canyon (south-western Atlantic Ocean). Zootaxa 3760(1): 89-95. doi:10.11646/zootaxa.3760.1.6."
