@@ -340,14 +340,14 @@
       es: {
         paragraphs: [
           "El pulpo Dumbo es un pulpo *cirrado*: al lado de las ventosas de sus brazos tiene unos filamentos parecidos a pelos, los *cirros*.",
-          "No se sabe bien para qué sirven, pero se cree que con ellos crea una pequeña corriente que acerca la comida a la boca. Por eso come cosas muy chiquitas, de hasta 1 o 2 milímetros."
+          "No se sabe bien para qué sirven, pero se cree que con ellos crea una pequeña corriente que acerca la comida a la boca."
         ],
         source: "Fuentes: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (Londres); Corinne Klein, “Incirrate vs. Cirrate Octopuses”, OctoNation (2022); National Geographic, “Dumbo Octopus Facts”."
       },
       en: {
         paragraphs: [
           "*“Cirros que captan”* means “cirri that catch.” The dumbo is a *cirrate* octopus: next to the suckers on its arms it has hair-like filaments called *cirri*.",
-          "Nobody knows exactly what they're for, but scientists think the octopus uses them to create a small current that wafts food towards its mouth. That's why it eats tiny things, no bigger than 1 or 2 millimeters."
+          "Nobody knows exactly what they're for, but scientists think the octopus uses them to create a small current that wafts food towards its mouth."
         ],
         source: "Sources: Holly Chetan-Welsh, “Dumbo octopus: The murky world of the deepest octopus species”, Natural History Museum (London); Corinne Klein, “Incirrate vs. Cirrate Octopuses”, OctoNation (2022); National Geographic, “Dumbo Octopus Facts”."
       }
