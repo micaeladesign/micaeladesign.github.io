@@ -364,7 +364,7 @@
       },
       en: {
         paragraphs: [
-          "*“Madre solo una”* means “you only get one mother.” On August 9, 2025, 1,883 meters down, the robot SuBastian got close to a rock where a Patagonian lobsterette was guarding her eight young.",
+          "*“Madre solo una”* means “there’s no one like Mom.” On August 9, 2025, 1,883 meters down, the robot SuBastian got close to a rock where a Patagonian lobsterette was guarding her eight young.",
           "The mother rushed back, stared straight into the camera and went at the robot again and again with her claws. “Fight of the year: ROV vs. Mamá Tenazas,” the stream chat called it.",
           "Before her young hatch, a female of this species carries up to 380 eggs stuck under her tail."
         ],
