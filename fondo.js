@@ -395,17 +395,20 @@
     "patricio/delantal": {
       es: {
         paragraphs: [
-          "*¿Por qué “voraz”?* Patricio es una estrella de mar depredadora: según el registro mundial de especies marinas (WoRMS), en la adultez se alimenta cazando a otros animales."
+          "*¿Por qué “voraz”?* Patricio es una estrella de mar depredadora: caza a sus presas, las abre con sus piecitos y se las come con el estómago afuera del cuerpo. Según el registro mundial de especies marinas (WoRMS), en la adultez se alimenta cazando a otros animales.",
+          "Como las demás estrellas de mar, no tiene dientes. Se arrastra sobre su presa y usa sus *pies ambulacrales*, miles de piecitos del tamaño de la cabeza de un alfiler, para abrir hasta los caparazones más duros. Después saca el estómago por la boca, envuelve la comida y la digiere fuera de su cuerpo. Cuando termina, vuelve a meter el estómago y sigue con la próxima presa."
         ],
-        source: "Fuente: WoRMS, Hippasteria phrygiana; Le Bourg (2020)."
+        source: "Fuentes: WoRMS, Hippasteria phrygiana; Le Bourg (2020); Ask Dr. Universe, “How do starfish eat?”, Washington State University (2022), sobre las estrellas de mar en general."
       },
       en: {
         paragraphs: [
-          "*Why “voraz” (voracious)?* Patricio is a predatory sea star: according to the World Register of Marine Species (WoRMS), adults feed by hunting other animals."
+          "*Why “voraz” (voracious)?* Patricio is a predatory sea star: it hunts its prey, opens it up with its tiny feet and eats it with its stomach outside its body. According to the World Register of Marine Species (WoRMS), adults feed by hunting other animals.",
+          "Like other sea stars, it has no teeth. It crawls over its prey and uses its *tube feet*, thousands of them, each about the size of a pinhead, to pry open even the toughest shells. Then it pushes its stomach out through its mouth, wraps it around the food and digests it outside its body. Once it's done, it pulls its stomach back in and moves on to the next meal."
         ],
-        source: "Source: WoRMS, Hippasteria phrygiana; Le Bourg (2020)."
+        source: "Sources: WoRMS, Hippasteria phrygiana; Le Bourg (2020); Ask Dr. Universe, “How do starfish eat?”, Washington State University (2022), about sea stars in general."
       }
     }
+
 
   };
 
