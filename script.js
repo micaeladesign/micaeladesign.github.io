@@ -152,10 +152,10 @@ const content = {
       `,
 
       next:
-        "See Ele",
+        "Other projects",
 
       nextHref:
-        "#ele"
+        "#work"
     },
 
 
@@ -255,10 +255,10 @@ const content = {
         `,
 
       next:
-        "See Kombi",
+        "Other projects",
 
       nextHref:
-        "#kombi"
+        "#work"
     }
 
   },
@@ -410,10 +410,10 @@ const content = {
       `,
 
       next:
-        "Ver Ele",
+        "Otros proyectos",
 
       nextHref:
-        "#ele"
+        "#work"
     },
 
 
@@ -513,10 +513,10 @@ const content = {
         `,
 
       next:
-        "Ver Kombi",
+        "Otros proyectos",
 
       nextHref:
-        "#kombi"
+        "#work"
     }
 
   }
