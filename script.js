@@ -11,10 +11,10 @@ const content = {
   en: {
 
     pageTitle:
-      "Micaela Cañal — Conversational UX Designer",
+      "Micaela Cañal — Product Designer",
 
     pageDescription:
-      "Portfolio of Micaela Cañal, Conversational UX Designer: conversational experiences and AI- and agent-based systems, from Kombi at Volkswagen Argentina to Ele, a linguistics chatbot.",
+      "Portfolio of Micaela Cañal, Product Designer: conversational experiences, with and without AI, from Kombi at Volkswagen Argentina to Ele, a linguistics chatbot.",
 
     navLabel:
       "Main",
@@ -39,7 +39,7 @@ const content = {
     homeTitle: "Hello",
 
     homeText:
-      "Explore my background, experience, and approach as a Conversational UX Designer.",
+      "Explore my background, projects, and approach to product design.",
 
     homeAboutChoice:
       "Get to know me",
@@ -48,20 +48,20 @@ const content = {
       "See my work",
 
     aboutTitle:
-      "Conversational UX Designer",
+      "Product Designer",
 
     aboutHtml: `
-        <p class="about-tagline">From words<br>to conversations</p>
+        <p class="about-tagline">Thoughtful<br>by design</p>
 
-        <p><strong>I’m Micaela Cañal.</strong></p>
+        <p><strong>I’m Micaela Cañal.</strong> I’m a Product Designer.</p>
 
-        <p>I wrote my first story when I was six, and I’ve never stopped.</p>
+        <p>When I was 11, I wrote an essay called “The Meaning of Life.” Most of it hasn’t aged well, except for one line: <em>“to get things done, you always need a process.”</em> Today, it’s at the heart of how I design.</p>
 
         <p>I studied <strong>Linguistics</strong> at the University of Buenos Aires and earned a master’s in <strong>Narrative Journalism</strong> at the University of San Martín.</p>
 
-        <p>I bring a research methodology and a curious spirit into the world of design.</p>
+        <p>I bring a research methodology and a curious spirit to every project I take on.</p>
 
-        <p>I design <strong>conversational experiences and AI- and agent-based systems.</strong> I want to understand what people need, what the business needs, and what technology can actually do, so we land on a solution that makes sense.</p>
+        <p>I’ve spent <strong>five years</strong> designing <strong>conversational experiences</strong>, with and without AI. I focus on understanding what people need, what the business needs, and what value technology actually adds. The goal? A product worth building.</p>
     `,
 
     aboutWorkChoice:
@@ -267,10 +267,10 @@ const content = {
   es: {
 
     pageTitle:
-      "Micaela Cañal — Conversational UX Designer",
+      "Micaela Cañal — Product Designer",
 
     pageDescription:
-      "Portfolio de Micaela Cañal, Conversational UX Designer: experiencias conversacionales y sistemas basados en IA y agentes, desde Kombi, de Volkswagen Argentina, hasta Ele, un chatbot de lingüística.",
+      "Portfolio de Micaela Cañal, Product Designer: experiencias conversacionales, con y sin IA, desde Kombi, de Volkswagen Argentina, hasta Ele, un chatbot de lingüística.",
 
     navLabel:
       "Principal",
@@ -297,7 +297,7 @@ const content = {
       "Hola",
 
     homeText:
-      "Explorá mi recorrido, mi experiencia y mi manera de abordar el diseño conversacional.",
+      "Explorá mi recorrido, proyectos y manera de diseñar productos.",
 
     homeAboutChoice:
       "Conoceme",
@@ -306,20 +306,20 @@ const content = {
       "Conocé mi trabajo",
 
     aboutTitle:
-      "Conversational UX Designer",
+      "Product Designer",
 
     aboutHtml: `
-        <p class="about-tagline">De las palabras<br>a las conversaciones</p>
+        <p class="about-tagline">Diseñar<br>con criterio</p>
 
-        <p><strong>Me llamo Micaela Cañal.</strong></p>
+        <p><strong>Me llamo Micaela Cañal.</strong> Soy Product Designer.</p>
 
-        <p>Escribí mi primer cuento a los seis años y jamás dejé de hacerlo.</p>
+        <p>A los 11 años escribí un texto que se llamaba “El sentido de la vida”. Casi nada de lo que dice resiste el paso del tiempo, salvo una frase: <em>“para realizar las cosas siempre uno tiene que tener un proceso”</em>. Hoy es la base de cómo diseño.</p>
 
         <p>Estudié <strong>Lingüística</strong> en la Universidad de Buenos Aires y una maestría en <strong>Periodismo Narrativo</strong> en la Universidad de San Martín.</p>
 
-        <p>Llevo conmigo la metodología de investigación y un espíritu curioso al mundo del diseño.</p>
+        <p>Llevo conmigo la metodología de investigación y un espíritu curioso a cada proyecto en el que me embarco.</p>
 
-        <p>Trabajo diseñando <strong>experiencias conversacionales y sistemas basados en IA y agentes.</strong> Me interesa entender qué necesitan las personas, qué necesita el negocio y qué puede hacer realmente la tecnología para encontrar una solución que tenga sentido.</p>
+        <p>Hace <strong>5 años</strong> que diseño <strong>experiencias conversacionales</strong> (con y sin IA). Me enfoco en entender qué necesitan las personas, qué necesita el negocio y qué valor aporta la tecnología. ¿El objetivo? Crear un producto que valga la pena.</p>
     `,
 
     aboutWorkChoice:
