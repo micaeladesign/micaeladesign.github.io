@@ -31,6 +31,9 @@ const content = {
     navWork:
       "Work",
 
+    navSprint:
+      "Sprint",
+
     navContact:
       "Contact",
 
@@ -46,6 +49,9 @@ const content = {
 
     homeWorkChoice:
       "See my work",
+
+    homeSprintChoice:
+      "Let's work together",
 
     aboutTitle:
       "Product Designer",
@@ -287,6 +293,9 @@ const content = {
     navWork:
       "Trabajo",
 
+    navSprint:
+      "Sprint",
+
     navContact:
       "Contacto",
 
@@ -304,6 +313,9 @@ const content = {
 
     homeWorkChoice:
       "Conocé mi trabajo",
+
+    homeSprintChoice:
+      "Trabajemos juntos",
 
     aboutTitle:
       "Product Designer",
@@ -808,6 +820,10 @@ function setLanguage(language) {
     content[language].navWork;
 
 
+  document.getElementById("nav-sprint").textContent =
+    content[language].navSprint;
+
+
   document.getElementById("nav-contact").textContent =
     content[language].navContact;
 
@@ -830,6 +846,10 @@ function setLanguage(language) {
 
   document.getElementById("home-work-choice").textContent =
     content[language].homeWorkChoice;
+
+
+  document.getElementById("home-sprint-choice").textContent =
+    content[language].homeSprintChoice;
 
 
   document.getElementById("about-title").textContent =

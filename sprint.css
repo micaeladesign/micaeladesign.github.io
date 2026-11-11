@@ -1,0 +1,393 @@
+/* ============================================================
+   SPRINT DE IDEAS — el servicio
+   Usa los mismos tokens de color que style.css.
+   El contenido de la página vive en sprint.js.
+   ============================================================ */
+
+
+/* --------------------------------
+   TEXTO (mismo ritmo que Kombi, Ele y Fondo)
+-------------------------------- */
+
+.sprint-eyebrow {
+  margin: 0 0 12px 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+#sprint h2 {
+  max-width: 1000px;
+
+  margin: 0 0 24px 0;
+
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+
+#sprint h3 {
+  margin: 56px 0 16px 0;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+#sprint h4 {
+  margin: 0 0 8px 0;
+
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+
+#sprint p {
+  max-width: 650px;
+
+  margin: 0 0 20px 0;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+#sprint .sprint-lead {
+  max-width: 720px;
+
+  font-size: 20px;
+  line-height: 32px;
+}
+
+
+/* Dato pendiente: se ve resaltado hasta que se complete en sprint.js */
+.sprint-pending {
+  padding: 0 4px;
+
+  border-radius: 4px;
+
+  background: #FFF3B0;
+  color: #5C4A00;
+
+  font-weight: 600;
+}
+
+
+/* --------------------------------
+   PARA QUIÉN
+-------------------------------- */
+
+.sprint-list {
+  max-width: 650px;
+
+  margin: 0;
+  padding-left: 20px;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+.sprint-list li + li {
+  margin-top: 12px;
+}
+
+
+.sprint-list li::marker {
+  color: var(--color-primary);
+}
+
+
+/* --------------------------------
+   TARJETAS (entregables y extensiones)
+-------------------------------- */
+
+.sprint-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+
+  max-width: 1000px;
+
+  margin: 24px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.sprint-card {
+  padding: 24px;
+
+  background: var(--color-surface-container);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 20px;
+}
+
+
+#sprint .sprint-card p {
+  margin: 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.sprint-card-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-bottom: 16px;
+
+  border-radius: 999px;
+
+  background: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.sprint-cards--more .sprint-card {
+  background: var(--color-background);
+}
+
+
+@media (min-width: 840px) {
+
+  .sprint-cards--get {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sprint-cards--more {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 760px;
+  }
+
+}
+
+
+/* --------------------------------
+   LA SEMANA
+-------------------------------- */
+
+.sprint-week {
+  max-width: 760px;
+
+  margin: 24px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.sprint-week li {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 16px;
+
+  padding: 20px 0;
+
+  border-top: 1px solid var(--color-outline-variant);
+}
+
+
+.sprint-week li:last-child {
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+
+.sprint-day {
+  color: var(--color-primary);
+
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+
+#sprint .sprint-week p {
+  margin: 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* --------------------------------
+   PRECIO
+-------------------------------- */
+
+.sprint-price {
+  max-width: 760px;
+
+  margin: 56px 0 0 0;
+  padding: 28px;
+
+  background: var(--color-primary-container);
+  border-radius: 20px;
+}
+
+
+#sprint .sprint-price p {
+  margin: 0;
+}
+
+
+#sprint .sprint-price-label {
+  color: var(--color-on-primary-container);
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+
+#sprint .sprint-price-amount {
+  margin: 4px 0 8px 0;
+
+  color: var(--color-on-primary-container);
+
+  font-size: clamp(32px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+
+#sprint .sprint-price-note {
+  color: var(--color-on-primary-container);
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* --------------------------------
+   CASOS
+-------------------------------- */
+
+.sprint-cases {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+
+/* Que la flecha siga al texto cuando el título ocupa dos líneas en el celular */
+.sprint-cases .conversation-choice {
+  display: block;
+}
+
+
+.sprint-cases .conversation-choice::after {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+
+/* --------------------------------
+   LLAMADO A LA ACCIÓN
+-------------------------------- */
+
+.sprint-cta {
+  margin-top: 56px;
+}
+
+
+#sprint .sprint-cta h3 {
+  margin-top: 0;
+}
+
+
+.sprint-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+
+  padding: 12px 24px;
+
+  border-radius: 999px;
+
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: background-color 150ms ease;
+}
+
+
+@media (hover: hover) {
+
+  .sprint-cta-button:hover {
+    background: var(--color-on-primary-container);
+  }
+
+}
+
+
+.sprint-cta-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+
+/* Cierre: la misma línea fina que los casos */
+#sprint .conversation-options {
+  margin-top: 56px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--color-outline-variant);
+}
+
+
+@media (max-width: 599px) {
+
+  .sprint-week li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+
+  .sprint-card,
+  .sprint-price {
+    padding: 20px;
+  }
+
+}
+
+
+/* Con "Sprint" el menú tiene cinco opciones: en celulares angostos
+   se achica un poco el espacio entre ellas para que entren en una línea */
+@media (max-width: 420px) {
+
+  .main-nav {
+    gap: 8px 10px;
+  }
+
+}
