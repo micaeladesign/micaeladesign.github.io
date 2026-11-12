@@ -230,6 +230,7 @@
     const text = TEXTOS[lang];
 
     section.innerHTML = `
+      <img src="assets/lab-icono.svg" alt="" class="sprint-logo" width="56" height="72">
       <p class="sprint-eyebrow">${escapeHtml(text.eyebrow)}</p>
       <h2>${escapeHtml(text.title)}</h2>
       ${text.lead.map((line) => `<p class="sprint-lead">${rich(line)}</p>`).join("")}

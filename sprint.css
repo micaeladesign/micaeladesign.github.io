@@ -9,6 +9,17 @@
    TEXTO (mismo ritmo que Kombi, Ele y Fondo)
 -------------------------------- */
 
+/* Ícono del Laboratorio de ideas (archivos del logo en assets/lab-icono.svg) */
+.sprint-logo {
+  display: block;
+
+  width: 56px;
+  height: auto;
+
+  margin: 0 0 16px 0;
+}
+
+
 .sprint-eyebrow {
   margin: 0 0 12px 0;
 
