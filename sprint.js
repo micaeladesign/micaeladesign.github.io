@@ -86,14 +86,14 @@
       priceNote: "5 días de laboratorio y una presentación final con todo el trabajo.",
 
       ctaTitle: "¿Tenés una idea?",
-      ctaText: "Contame en qué estás y vemos si el laboratorio te sirve.",
+      ctaText: "Completá el formulario y vemos si el laboratorio es para vos.",
       ctaButton: "Enviar",
       ctaSubject: "Laboratorio de ideas",
       form: {
         name: "Nombre",
         email: "Mail",
         company: "Marca o empresa (opcional)",
-        message: "Contame tu idea",
+        message: "¿Qué necesitás resolver?",
         sending: "Enviando…",
         success: "¡Gracias! Te respondo en estos días.",
         error: "No se pudo enviar. Probá de nuevo o escribime a {email}."
@@ -161,14 +161,14 @@
       priceNote: "5 days in the lab and a final presentation with all the work.",
 
       ctaTitle: "Got an idea?",
-      ctaText: "Tell me what you're working on and we'll see if the lab is a good fit.",
+      ctaText: "Fill out the form and we'll see if the lab is right for you.",
       ctaButton: "Send",
       ctaSubject: "Idea Lab",
       form: {
         name: "Name",
         email: "Email",
         company: "Brand or company (optional)",
-        message: "Tell me about your idea",
+        message: "What do you need to solve?",
         sending: "Sending…",
         success: "Thank you! I'll get back to you soon.",
         error: "Something went wrong. Please try again or email me at {email}."
