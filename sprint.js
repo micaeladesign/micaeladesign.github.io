@@ -80,7 +80,8 @@
       ],
 
       priceTitle: "Inversión",
-      price: "USD [[monto]]",
+      price: "USD [[monto]]*",
+      priceFootnote: "*También podés pagar en pesos.",
       priceNote: "Una semana de laboratorio, con los tres entregables.",
 
       trustTitle: "Cómo trabajo",
@@ -155,7 +156,8 @@
       ],
 
       priceTitle: "Investment",
-      price: "USD [[amount]]",
+      price: "USD [[amount]]*",
+      priceFootnote: "*You can also pay in Argentine pesos.",
       priceNote: "One week in the lab, with all three deliverables.",
 
       trustTitle: "How I work",
@@ -265,6 +267,7 @@
         <p class="sprint-price-label">${escapeHtml(text.priceTitle)}</p>
         <p class="sprint-price-amount">${rich(text.price)}</p>
         <p class="sprint-price-note">${rich(text.priceNote)}</p>
+        <p class="sprint-price-footnote">${rich(text.priceFootnote)}</p>
       </div>
 
       <h3>${escapeHtml(text.trustTitle)}</h3>

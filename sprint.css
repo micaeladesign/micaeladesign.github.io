@@ -281,6 +281,17 @@
 }
 
 
+/* Aclaración del asterisco: más chica y en gris */
+#lab .sprint-price-footnote {
+  margin-top: 12px;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
 /* --------------------------------
    CASOS
 -------------------------------- */
