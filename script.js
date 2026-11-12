@@ -32,7 +32,7 @@ const content = {
       "Work",
 
     navSprint:
-      "Sprint",
+      "Lab",
 
     navContact:
       "Contact",
@@ -294,7 +294,7 @@ const content = {
       "Trabajo",
 
     navSprint:
-      "Sprint",
+      "Lab",
 
     navContact:
       "Contacto",

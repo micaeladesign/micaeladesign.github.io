@@ -1,5 +1,5 @@
 /* ============================================================
-   SPRINT DE IDEAS — el servicio
+   LABORATORIO DE IDEAS — el servicio de una semana
    Usa los mismos tokens de color que style.css.
    El contenido de la página vive en sprint.js.
    ============================================================ */
@@ -22,7 +22,7 @@
 }
 
 
-#sprint h2 {
+#lab h2 {
   max-width: 1000px;
 
   margin: 0 0 24px 0;
@@ -34,7 +34,7 @@
 }
 
 
-#sprint h3 {
+#lab h3 {
   margin: 56px 0 16px 0;
 
   font-size: 24px;
@@ -43,7 +43,7 @@
 }
 
 
-#sprint h4 {
+#lab h4 {
   margin: 0 0 8px 0;
 
   font-size: 18px;
@@ -52,7 +52,7 @@
 }
 
 
-#sprint p {
+#lab p {
   max-width: 650px;
 
   margin: 0 0 20px 0;
@@ -62,7 +62,7 @@
 }
 
 
-#sprint .sprint-lead {
+#lab .sprint-lead {
   max-width: 720px;
 
   font-size: 20px;
@@ -135,7 +135,7 @@
 }
 
 
-#sprint .sprint-card p {
+#lab .sprint-card p {
   margin: 0;
 
   color: var(--color-on-surface-variant);
@@ -200,7 +200,7 @@
 
 .sprint-week li {
   display: grid;
-  grid-template-columns: 72px minmax(0, 1fr);
+  grid-template-columns: 96px minmax(0, 1fr);
   gap: 16px;
 
   padding: 20px 0;
@@ -223,7 +223,7 @@
 }
 
 
-#sprint .sprint-week p {
+#lab .sprint-week p {
   margin: 0;
 
   color: var(--color-on-surface-variant);
@@ -248,12 +248,12 @@
 }
 
 
-#sprint .sprint-price p {
+#lab .sprint-price p {
   margin: 0;
 }
 
 
-#sprint .sprint-price-label {
+#lab .sprint-price-label {
   color: var(--color-on-primary-container);
 
   font-size: 16px;
@@ -262,7 +262,7 @@
 }
 
 
-#sprint .sprint-price-amount {
+#lab .sprint-price-amount {
   margin: 4px 0 8px 0;
 
   color: var(--color-on-primary-container);
@@ -273,7 +273,7 @@
 }
 
 
-#sprint .sprint-price-note {
+#lab .sprint-price-note {
   color: var(--color-on-primary-container);
 
   font-size: 16px;
@@ -314,7 +314,7 @@
 }
 
 
-#sprint .sprint-cta h3 {
+#lab .sprint-cta h3 {
   margin-top: 0;
 }
 
@@ -359,7 +359,7 @@
 
 
 /* Cierre: la misma línea fina que los casos */
-#sprint .conversation-options {
+#lab .conversation-options {
   margin-top: 56px;
   padding-top: 24px;
 
@@ -382,7 +382,7 @@
 }
 
 
-/* Con "Sprint" el menú tiene cinco opciones: en celulares angostos
+/* Con "Lab" el menú tiene cinco opciones: en celulares angostos
    se achica un poco el espacio entre ellas para que entren en una línea */
 @media (max-width: 420px) {
 

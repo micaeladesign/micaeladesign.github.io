@@ -1,5 +1,5 @@
 // ============================================================
-//  SPRINT DE IDEAS · el servicio
+//  LABORATORIO DE IDEAS · el servicio de una semana
 //
 //  CÓMO EDITAR EL CONTENIDO (todo vive en este archivo, arriba de todo)
 //
@@ -15,7 +15,7 @@
 // ============================================================
 
 (() => {
-  const section = document.getElementById("sprint");
+  const section = document.getElementById("lab");
 
   if (!section) return;
 
@@ -27,44 +27,47 @@
   const TEXTOS = {
 
     es: {
-      eyebrow: "Trabajemos juntos",
-      title: "Sprint de ideas",
-      lead: "Tenés un problema, una idea a medio armar o un producto que no termina de despegar. En *una semana* lo entendemos a fondo y salís con un diagnóstico, tres caminos posibles y uno de ellos listo para mostrar.",
+      eyebrow: "Trabajemos juntos una semana",
+      title: "Laboratorio de ideas",
+      lead: [
+        "¿Tenés un problema, una idea a medio armar o un producto que no termina de despegar?",
+        "En *una semana* lo entendemos a fondo y te llevás un diagnóstico, una propuesta de solución y un mockup de cómo se vería."
+      ],
 
       forTitle: "¿Para quién es?",
       forList: [
-        "*Marcas* que quieren lanzar algo nuevo y necesitan ordenar la idea antes de invertir.",
-        "*Startups chicas* que tienen que decidir qué construir primero.",
-        "*Consultoras* que quieren sumar diseño de producto a una propuesta para su cliente."
+        "*Marcas* que quieren lanzar algo nuevo y ordenar la idea antes de invertir.",
+        "*Startups* que necesiten decidir qué construir primero.",
+        "*Consultoras* que buscan sumar diseño de producto a la propuesta para un cliente."
       ],
 
-      getTitle: "Qué te llevás",
+      getTitle: "¿Qué te llevás?",
       get: [
         {
           title: "Un diagnóstico",
-          text: "Qué está pasando, a quién le pasa y dónde está la oportunidad. Con lo que vimos en la investigación, no con suposiciones."
+          text: "Lo que les pasa a tus usuarios, basado en investigación y no en suposiciones."
         },
         {
-          title: "Tres propuestas de solución",
-          text: "Tres caminos distintos, con lo que tiene a favor y en contra cada uno y lo que haría falta para llevarlo adelante."
+          title: "Una propuesta de solución",
+          text: "Una idea concreta para resolverlo y lo que haría falta para llevarla adelante."
         },
         {
-          title: "Un prototipo o un pitch",
-          text: "La propuesta que elijamos, lista para mostrar: un prototipo para probar con personas o una presentación para convencer a tu equipo."
+          title: "Un mockup",
+          text: "Las pantallas o los flujos que muestran cómo se vería la propuesta. Sirve para mostrarla y probarla con personas antes de invertir en desarrollo."
         }
       ],
 
-      weekTitle: "Cómo es la semana",
+      weekTitle: "¿Cómo es la semana?",
+      weekIntro: "Nos reunimos solo dos veces: al arrancar y al entregar. El resto lo trabajo por mi cuenta y te cuento los avances por escrito.",
       week: [
-        { day: "Día 1", title: "Entender", text: "Charlamos sobre el problema, el negocio y lo que ya probaron. Me pasás todo el material que tengas." },
-        { day: "Día 2", title: "Investigar", text: "Miro a las personas, a la competencia y los datos que haya. Si hay conversaciones con clientes, mejor." },
-        { day: "Día 3", title: "Diagnosticar", text: "Ordeno lo que encontré y defino dónde está el problema real." },
-        { day: "Día 4", title: "Proponer", text: "Te presento tres propuestas y elegimos juntos cuál avanzar." },
-        { day: "Día 5", title: "Mostrar", text: "Armo el prototipo o el pitch de la propuesta elegida y te lo entrego." }
+        { day: "Día 1", title: "Arrancar", text: "En la primera reunión me contás el problema y el negocio. Si te falta material, te paso un cuestionario para conseguirlo." },
+        { day: "Día 2", title: "Investigar", text: "Relevo tu web, las interacciones con la marca y todo el material que tengas." },
+        { day: "Día 3", title: "Diagnosticar y proponer", text: "Ordeno lo que encontré, defino el problema real y te propongo una solución. La validás por escrito." },
+        { day: "Días 4 y 5", title: "Diseñar y entregar", text: "Armo el mockup de la propuesta y te lo presento en la reunión de entrega." }
       ],
 
       moreTitle: "Si querés seguir",
-      moreIntro: "El sprint funciona solo, pero también puede ser el comienzo.",
+      moreIntro: "El laboratorio funciona solo, pero también puede ser el comienzo.",
       more: [
         {
           title: "Pitch deck",
@@ -78,11 +81,11 @@
 
       priceTitle: "Inversión",
       price: "USD [[monto]]",
-      priceNote: "Sprint de una semana, con los tres entregables. Las extensiones se cotizan aparte.",
+      priceNote: "Una semana de laboratorio, con los tres entregables. Las extensiones se cotizan aparte.",
 
       trustTitle: "Cómo trabajo",
       trust: [
-        "Para hacer las cosas siempre hace falta un proceso. Investigo antes de proponer, comparto avances todos los días y cada decisión tiene un porqué que te puedo explicar.",
+        "Para hacer las cosas siempre hace falta un proceso. Investigo antes de proponer, te cuento los avances todos los días y cada decisión tiene un porqué que te puedo explicar.",
         "Así trabajé en estos proyectos:"
       ],
       cases: [
@@ -92,51 +95,54 @@
       ],
 
       ctaTitle: "¿Tenés una idea?",
-      ctaText: "Contame en qué estás y vemos si un sprint te sirve.",
+      ctaText: "Contame en qué estás y vemos si el laboratorio te sirve.",
       ctaButton: "Escribime",
-      ctaSubject: "Sprint de ideas",
+      ctaSubject: "Laboratorio de ideas",
       otherProjects: "Ver mis proyectos"
     },
 
     en: {
-      eyebrow: "Let's work together",
-      title: "Idea sprint",
-      lead: "You have a problem, a half-formed idea or a product that isn't taking off. In *one week*, we get to the bottom of it, and you walk away with a diagnosis, three possible paths and one of them ready to show.",
+      eyebrow: "Let's work together for a week",
+      title: "Idea Lab",
+      lead: [
+        "Do you have a problem, a half-formed idea or a product that isn't taking off?",
+        "In *one week*, we get to the bottom of it, and you walk away with a diagnosis, a solution proposal and a mockup of how it would look."
+      ],
 
       forTitle: "Who is it for?",
       forList: [
-        "*Brands* that want to launch something new and need to shape the idea before investing.",
-        "*Small startups* that need to decide what to build first.",
-        "*Consultancies* that want to add product design to a client proposal."
+        "*Brands* that want to launch something new and shape the idea before investing.",
+        "*Startups* that need to decide what to build first.",
+        "*Consultancies* looking to add product design to a client proposal."
       ],
 
-      getTitle: "What you get",
+      getTitle: "What do you get?",
       get: [
         {
           title: "A diagnosis",
-          text: "What's going on, who it affects and where the opportunity is. Based on what the research shows, not on assumptions."
+          text: "What's happening to your users, based on research, not assumptions."
         },
         {
-          title: "Three solution proposals",
-          text: "Three different paths, each with its pros and cons and what it would take to make it happen."
+          title: "A solution proposal",
+          text: "A concrete idea to solve it and what it would take to make it happen."
         },
         {
-          title: "A prototype or a pitch",
-          text: "The proposal we choose, ready to show: a prototype to test with people or a presentation to win over your team."
+          title: "A mockup",
+          text: "The screens or flows that show how the proposal would look. Use it to present the idea and test it with people before investing in development."
         }
       ],
 
-      weekTitle: "How the week works",
+      weekTitle: "How does the week work?",
+      weekIntro: "We only meet twice: at the start and at the handoff. The rest I do on my own, and I keep you posted in writing.",
       week: [
-        { day: "Day 1", title: "Understand", text: "We talk about the problem, the business and what you've already tried. You share any material you have." },
-        { day: "Day 2", title: "Research", text: "I look at people, competitors and any available data. Customer conversations are a bonus." },
-        { day: "Day 3", title: "Diagnose", text: "I organize the findings and pin down the real problem." },
-        { day: "Day 4", title: "Propose", text: "I present three proposals and we choose one together." },
-        { day: "Day 5", title: "Show", text: "I build the prototype or the pitch for the chosen proposal and hand it over." }
+        { day: "Day 1", title: "Kick off", text: "In our first meeting, you tell me about the problem and the business. If material is missing, I send you a questionnaire to gather it." },
+        { day: "Day 2", title: "Research", text: "I review your website, how people interact with the brand and any material you have." },
+        { day: "Day 3", title: "Diagnose and propose", text: "I organize the findings, pin down the real problem and propose a solution. You sign off on it in writing." },
+        { day: "Days 4–5", title: "Design and deliver", text: "I build the mockup of the proposal and walk you through it in our handoff meeting." }
       ],
 
       moreTitle: "If you want to keep going",
-      moreIntro: "The sprint works on its own, but it can also be a starting point.",
+      moreIntro: "The lab works on its own, but it can also be a starting point.",
       more: [
         {
           title: "Pitch deck",
@@ -150,11 +156,11 @@
 
       priceTitle: "Investment",
       price: "USD [[amount]]",
-      priceNote: "One-week sprint with all three deliverables. Add-ons are quoted separately.",
+      priceNote: "One week in the lab, with all three deliverables. Add-ons are quoted separately.",
 
       trustTitle: "How I work",
       trust: [
-        "To get things done, you always need a process. I research before I propose, share progress every day, and every decision comes with a reason I can explain.",
+        "To get things done, you always need a process. I research before I propose, keep you posted every day, and every decision comes with a reason I can explain.",
         "That's how I worked on these projects:"
       ],
       cases: [
@@ -164,9 +170,9 @@
       ],
 
       ctaTitle: "Got an idea?",
-      ctaText: "Tell me what you're working on and we'll see if a sprint is a good fit.",
+      ctaText: "Tell me what you're working on and we'll see if the lab is a good fit.",
       ctaButton: "Write to me",
-      ctaSubject: "Idea sprint",
+      ctaSubject: "Idea Lab",
       otherProjects: "See my work"
     }
   };
@@ -229,7 +235,7 @@
     section.innerHTML = `
       <p class="sprint-eyebrow">${escapeHtml(text.eyebrow)}</p>
       <h2>${escapeHtml(text.title)}</h2>
-      <p class="sprint-lead">${rich(text.lead)}</p>
+      ${text.lead.map((line) => `<p class="sprint-lead">${rich(line)}</p>`).join("")}
 
       <h3>${escapeHtml(text.forTitle)}</h3>
       <ul class="sprint-list">
@@ -240,6 +246,7 @@
       ${cards(text.get, "get")}
 
       <h3>${escapeHtml(text.weekTitle)}</h3>
+      <p>${rich(text.weekIntro)}</p>
       <ol class="sprint-week">
         ${text.week.map((step) => `
           <li>
