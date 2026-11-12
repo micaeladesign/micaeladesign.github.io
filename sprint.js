@@ -59,11 +59,11 @@
 
       weekTitle: "¿Cómo es la semana?",
       week: [
-        { day: "Día 1", title: "Entender", text: "Nos reunimos 30 minutos para charlar sobre tu necesidad." },
+        { day: "Día 1", title: "Entender", text: "Me contás por escrito qué necesitás y me compartís el material que tengas. Sin reuniones: todo el laboratorio es a distancia." },
         { day: "Día 2", title: "Investigar", text: "Relevo tu web, las interacciones con la marca y todo el material que tengas." },
         { day: "Día 3", title: "Diagnosticar", text: "Ordeno el material y defino el problema." },
         { day: "Día 4", title: "Diseñar", text: "Armo la propuesta de solución y su mockup." },
-        { day: "Día 5", title: "Entregar", text: "Nos reunimos 30 minutos para presentarte el diagnóstico, la propuesta y el mockup." }
+        { day: "Día 5", title: "Entregar", text: "Te mando por mail el diagnóstico, la propuesta y el mockup." }
       ],
 
       moreTitle: "¿Y después?",
@@ -135,11 +135,11 @@
 
       weekTitle: "How does the week work?",
       week: [
-        { day: "Day 1", title: "Understand", text: "We meet for 30 minutes to talk about what you need." },
+        { day: "Day 1", title: "Understand", text: "You tell me in writing what you need and share any material you have. No meetings: the whole lab is remote." },
         { day: "Day 2", title: "Research", text: "I review your website, how people interact with the brand and any material you have." },
         { day: "Day 3", title: "Diagnose", text: "I organize the material and define the problem." },
         { day: "Day 4", title: "Design", text: "I put together the solution proposal and its mockup." },
-        { day: "Day 5", title: "Deliver", text: "We meet for 30 minutes so I can walk you through the diagnosis, the proposal and the mockup." }
+        { day: "Day 5", title: "Deliver", text: "I email you the diagnosis, the proposal and the mockup." }
       ],
 
       moreTitle: "What's next?",
