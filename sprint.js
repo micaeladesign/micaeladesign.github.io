@@ -27,7 +27,7 @@
   const TEXTOS = {
 
     es: {
-      eyebrow: "Trabajemos juntos una semana",
+      eyebrow: "Hagamos un proyecto juntos",
       title: "Laboratorio de ideas",
       lead: [
         "¿Tenés un problema, una idea a medio armar o un producto que no termina de despegar?",
@@ -103,7 +103,7 @@
     },
 
     en: {
-      eyebrow: "Let's work together for a week",
+      eyebrow: "Let's build something together",
       title: "Idea Lab",
       lead: [
         "Do you have a problem, a half-formed idea or a product that isn't taking off?",
