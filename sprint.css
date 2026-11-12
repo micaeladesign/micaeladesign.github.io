@@ -1,0 +1,489 @@
+/* ============================================================
+   LABORATORIO DE IDEAS — el servicio de una semana
+   Usa los mismos tokens de color que style.css.
+   El contenido de la página vive en sprint.js.
+   ============================================================ */
+
+
+/* --------------------------------
+   TEXTO (mismo ritmo que Kombi, Ele y Fondo)
+-------------------------------- */
+
+/* Ícono del Laboratorio de ideas (archivos del logo en assets/lab-icono.svg) */
+.sprint-logo {
+  display: block;
+
+  width: 56px;
+  height: auto;
+
+  margin: 0 0 16px 0;
+}
+
+
+.sprint-eyebrow {
+  margin: 0 0 12px 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+#lab h2 {
+  max-width: 1000px;
+
+  margin: 0 0 24px 0;
+
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+
+#lab h3 {
+  margin: 56px 0 16px 0;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+#lab h4 {
+  margin: 0 0 8px 0;
+
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+
+#lab p {
+  max-width: 650px;
+
+  margin: 0 0 20px 0;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+#lab .sprint-lead {
+  max-width: 720px;
+
+  font-size: 20px;
+  line-height: 32px;
+}
+
+
+/* Dato pendiente: se ve resaltado hasta que se complete en sprint.js */
+.sprint-pending {
+  padding: 0 4px;
+
+  border-radius: 4px;
+
+  background: #FFF3B0;
+  color: #5C4A00;
+
+  font-weight: 600;
+}
+
+
+/* --------------------------------
+   PARA QUIÉN
+-------------------------------- */
+
+.sprint-list {
+  max-width: 650px;
+
+  margin: 0;
+  padding-left: 20px;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+.sprint-list li + li {
+  margin-top: 12px;
+}
+
+
+.sprint-list li::marker {
+  color: var(--color-primary);
+}
+
+
+/* --------------------------------
+   TARJETAS (entregables y extensiones)
+-------------------------------- */
+
+.sprint-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+
+  max-width: 1000px;
+
+  margin: 24px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.sprint-card {
+  padding: 24px;
+
+  background: var(--color-surface-container);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 20px;
+}
+
+
+#lab .sprint-card p {
+  margin: 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.sprint-card-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-bottom: 16px;
+
+  border-radius: 999px;
+
+  background: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.sprint-cards--more .sprint-card {
+  background: var(--color-background);
+}
+
+
+@media (min-width: 840px) {
+
+  .sprint-cards--get {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sprint-cards--more {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 760px;
+  }
+
+}
+
+
+/* --------------------------------
+   LA SEMANA
+-------------------------------- */
+
+.sprint-week {
+  max-width: 760px;
+
+  margin: 24px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.sprint-week li {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 16px;
+
+  padding: 20px 0;
+
+  border-top: 1px solid var(--color-outline-variant);
+}
+
+
+.sprint-week li:last-child {
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+
+.sprint-day {
+  color: var(--color-primary);
+
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+
+#lab .sprint-week p {
+  margin: 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* --------------------------------
+   PRECIO
+-------------------------------- */
+
+.sprint-price {
+  max-width: 760px;
+
+  margin: 56px 0 0 0;
+  padding: 28px;
+
+  background: var(--color-primary-container);
+  border-radius: 20px;
+}
+
+
+#lab .sprint-price p {
+  margin: 0;
+}
+
+
+#lab .sprint-price-label {
+  color: var(--color-on-primary-container);
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+
+#lab .sprint-price-amount {
+  margin: 4px 0 8px 0;
+
+  color: var(--color-on-primary-container);
+
+  font-size: clamp(32px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+
+#lab .sprint-price-note {
+  color: var(--color-on-primary-container);
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* Aclaración del asterisco: más chica y en gris */
+#lab .sprint-price-footnote {
+  margin-top: 12px;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+/* --------------------------------
+   LLAMADO A LA ACCIÓN
+-------------------------------- */
+
+.sprint-cta {
+  margin-top: 56px;
+}
+
+
+#lab .sprint-cta h3 {
+  margin-top: 0;
+}
+
+
+.sprint-form {
+  display: grid;
+  gap: 16px;
+
+  max-width: 560px;
+
+  margin-top: 24px;
+}
+
+
+.sprint-form label {
+  display: grid;
+  gap: 6px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+
+.sprint-form input,
+.sprint-form textarea {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid var(--color-outline);
+  border-radius: 12px;
+
+  background: var(--color-background);
+  color: var(--color-on-background);
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
+.sprint-form textarea {
+  resize: vertical;
+}
+
+
+.sprint-form input:focus-visible,
+.sprint-form textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+  border-color: var(--color-primary);
+}
+
+
+/* Casillero trampa para robots: invisible para las personas */
+.sprint-form .sprint-form-trap {
+  position: absolute;
+  left: -9999px;
+}
+
+
+.sprint-form .sprint-cta-button {
+  justify-self: start;
+
+  border: 0;
+
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+
+.sprint-form .sprint-cta-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+
+#lab .sprint-form-status {
+  min-height: 24px;
+
+  margin: 0;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+#lab .sprint-form-status.is-success {
+  color: #1E7A3C;
+}
+
+
+#lab .sprint-form-status.is-error {
+  color: #B3261E;
+}
+
+
+.sprint-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+
+  padding: 12px 24px;
+
+  border-radius: 999px;
+
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: background-color 150ms ease;
+}
+
+
+@media (hover: hover) {
+
+  .sprint-cta-button:hover {
+    background: var(--color-on-primary-container);
+  }
+
+}
+
+
+.sprint-cta-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+
+/* Cierre: la misma línea fina que los casos */
+#lab .conversation-options {
+  margin-top: 56px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--color-outline-variant);
+}
+
+
+@media (max-width: 599px) {
+
+  .sprint-week li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+
+  .sprint-card,
+  .sprint-price {
+    padding: 20px;
+  }
+
+}
+
+
+/* Con "Lab" el menú tiene cinco opciones: en celulares angostos
+   se achica un poco el espacio entre ellas para que entren en una línea */
+@media (max-width: 420px) {
+
+  .main-nav {
+    gap: 8px 10px;
+  }
+
+}
