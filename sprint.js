@@ -81,7 +81,7 @@
       ],
 
       priceTitle: "Inversión",
-      price: "USD [[monto]]*",
+      price: "USD 50*",
       priceFootnote: "*También podés pagar en pesos.",
       priceNote: "5 días de laboratorio y una presentación final con todo el trabajo.",
 
@@ -156,7 +156,7 @@
       ],
 
       priceTitle: "Investment",
-      price: "USD [[amount]]*",
+      price: "USD 50*",
       priceFootnote: "*You can also pay in Argentine pesos.",
       priceNote: "5 days in the lab and a final presentation with all the work.",
 
