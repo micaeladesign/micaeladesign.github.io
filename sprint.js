@@ -87,8 +87,17 @@
 
       ctaTitle: "¿Tenés una idea?",
       ctaText: "Contame en qué estás y vemos si el laboratorio te sirve.",
-      ctaButton: "Escribime",
+      ctaButton: "Enviar",
       ctaSubject: "Laboratorio de ideas",
+      form: {
+        name: "Nombre",
+        email: "Mail",
+        company: "Marca o empresa (opcional)",
+        message: "Contame tu idea",
+        sending: "Enviando…",
+        success: "¡Gracias! Te respondo en estos días.",
+        error: "No se pudo enviar. Probá de nuevo o escribime a {email}."
+      },
       otherProjects: "Ver mis proyectos"
     },
 
@@ -153,14 +162,27 @@
 
       ctaTitle: "Got an idea?",
       ctaText: "Tell me what you're working on and we'll see if the lab is a good fit.",
-      ctaButton: "Write to me",
+      ctaButton: "Send",
       ctaSubject: "Idea Lab",
+      form: {
+        name: "Name",
+        email: "Email",
+        company: "Brand or company (optional)",
+        message: "Tell me about your idea",
+        sending: "Sending…",
+        success: "Thank you! I'll get back to you soon.",
+        error: "Something went wrong. Please try again or email me at {email}."
+      },
       otherProjects: "See my work"
     }
   };
 
 
   const EMAIL = "micaelacanal7@gmail.com";
+
+  // Formulario: los mensajes llegan por mail a través de Web3Forms (web3forms.com).
+  // Esta clave es pública por diseño: solo sirve para mandarte mensajes a vos.
+  const WEB3FORMS_KEY = "1868d9a2-faff-4bb5-a72d-20b61a4f622c";
 
   let lang = null;
 
@@ -207,8 +229,6 @@
 
     const text = TEXTOS[lang];
 
-    const mailto = `mailto:${EMAIL}?subject=${encodeURIComponent(text.ctaSubject)}`;
-
     section.innerHTML = `
       <p class="sprint-eyebrow">${escapeHtml(text.eyebrow)}</p>
       <h2>${escapeHtml(text.title)}</h2>
@@ -250,13 +270,92 @@
       <div class="sprint-cta">
         <h3>${escapeHtml(text.ctaTitle)}</h3>
         <p>${rich(text.ctaText)}</p>
-        <a class="sprint-cta-button" href="${mailto}">${escapeHtml(text.ctaButton)}</a>
+        <form class="sprint-form" id="lab-form" novalidate>
+          <label>
+            <span>${escapeHtml(text.form.name)}</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>${escapeHtml(text.form.email)}</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>${escapeHtml(text.form.company)}</span>
+            <input type="text" name="company" autocomplete="organization">
+          </label>
+          <label>
+            <span>${escapeHtml(text.form.message)}</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <input type="checkbox" name="botcheck" class="sprint-form-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="sprint-cta-button">${escapeHtml(text.ctaButton)}</button>
+          <p class="sprint-form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
 
       <div class="conversation-options">
         <a href="#work" class="conversation-choice">${escapeHtml(text.otherProjects)}</a>
       </div>`;
   }
+
+
+  // ------------------------------------------------------------
+  //  Envío del formulario
+  // ------------------------------------------------------------
+
+  section.addEventListener("submit", async (event) => {
+
+    const form = event.target.closest("#lab-form");
+
+    if (!form) return;
+
+    event.preventDefault();
+
+    const text = TEXTOS[lang];
+    const status = form.querySelector(".sprint-form-status");
+    const button = form.querySelector("button[type=submit]");
+
+    if (!form.reportValidity()) return;
+
+    const data = Object.fromEntries(new FormData(form));
+
+    // Si el casillero oculto está marcado, lo completó un robot
+    if (data.botcheck) return;
+
+    delete data.botcheck;
+
+    button.disabled = true;
+    status.className = "sprint-form-status";
+    status.textContent = text.form.sending;
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: `${text.ctaSubject}: ${data.name}`,
+          from_name: "Portfolio · Laboratorio de ideas",
+          ...data
+        })
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) throw new Error(result.message);
+
+      form.reset();
+      status.classList.add("is-success");
+      status.textContent = text.form.success;
+
+    } catch (error) {
+      status.classList.add("is-error");
+      status.textContent = text.form.error.replace("{email}", EMAIL);
+
+    } finally {
+      button.disabled = false;
+    }
+  });
 
 
   // ------------------------------------------------------------
