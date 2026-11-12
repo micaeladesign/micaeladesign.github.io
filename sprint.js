@@ -58,12 +58,12 @@
       ],
 
       weekTitle: "¿Cómo es la semana?",
-      weekIntro: "Nos reunimos solo dos veces: al arrancar y al entregar. El resto lo trabajo por mi cuenta y te cuento los avances por escrito.",
       week: [
-        { day: "Día 1", title: "Arrancar", text: "En la primera reunión me contás el problema y el negocio. Si te falta material, te paso un cuestionario para conseguirlo." },
+        { day: "Día 1", title: "Entender", text: "Nos reunimos 30 minutos para charlar sobre tu necesidad. Si te falta material, te paso un cuestionario para conseguirlo." },
         { day: "Día 2", title: "Investigar", text: "Relevo tu web, las interacciones con la marca y todo el material que tengas." },
         { day: "Día 3", title: "Diagnosticar y proponer", text: "Ordeno lo que encontré, defino el problema real y te propongo una solución. La validás por escrito." },
-        { day: "Días 4 y 5", title: "Diseñar y entregar", text: "Armo el mockup de la propuesta y te lo presento en la reunión de entrega." }
+        { day: "Día 4", title: "Diseñar", text: "Armo el mockup de la propuesta." },
+        { day: "Día 5", title: "Entregar", text: "Nos reunimos 30 minutos para presentarte el diagnóstico, la propuesta y el mockup." }
       ],
 
       moreTitle: "Si querés seguir",
@@ -133,12 +133,12 @@
       ],
 
       weekTitle: "How does the week work?",
-      weekIntro: "We only meet twice: at the start and at the handoff. The rest I do on my own, and I keep you posted in writing.",
       week: [
-        { day: "Day 1", title: "Kick off", text: "In our first meeting, you tell me about the problem and the business. If material is missing, I send you a questionnaire to gather it." },
+        { day: "Day 1", title: "Understand", text: "We meet for 30 minutes to talk about what you need. If material is missing, I send you a questionnaire to gather it." },
         { day: "Day 2", title: "Research", text: "I review your website, how people interact with the brand and any material you have." },
         { day: "Day 3", title: "Diagnose and propose", text: "I organize the findings, pin down the real problem and propose a solution. You sign off on it in writing." },
-        { day: "Days 4–5", title: "Design and deliver", text: "I build the mockup of the proposal and walk you through it in our handoff meeting." }
+        { day: "Day 4", title: "Design", text: "I build the mockup of the proposal." },
+        { day: "Day 5", title: "Deliver", text: "We meet for 30 minutes so I can walk you through the diagnosis, the proposal and the mockup." }
       ],
 
       moreTitle: "If you want to keep going",
@@ -246,7 +246,6 @@
       ${cards(text.get, "get")}
 
       <h3>${escapeHtml(text.weekTitle)}</h3>
-      <p>${rich(text.weekIntro)}</p>
       <ol class="sprint-week">
         ${text.week.map((step) => `
           <li>
