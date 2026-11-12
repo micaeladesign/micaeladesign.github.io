@@ -53,7 +53,7 @@
         },
         {
           title: "Un mockup",
-          text: "Las pantallas o los flujos que muestran cómo se vería la propuesta. Sirve para mostrarla y probarla con personas antes de invertir en desarrollo."
+          text: "Las pantallas o los flujos que muestran cómo se vería la propuesta. Te sirve para presentarla a tu equipo y a otros stakeholders, y tomar decisiones con evidencia antes de invertir en desarrollo."
         }
       ],
 
@@ -128,7 +128,7 @@
         },
         {
           title: "A mockup",
-          text: "The screens or flows that show how the proposal would look. Use it to present the idea and test it with people before investing in development."
+          text: "The screens or flows that show how the proposal would look. Use it to present the idea to your team and other stakeholders, and make evidence-based decisions before investing in development."
         }
       ],
 
