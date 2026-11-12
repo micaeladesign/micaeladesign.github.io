@@ -66,8 +66,8 @@
         { day: "Día 5", title: "Entregar", text: "Nos reunimos 30 minutos para presentarte el diagnóstico, la propuesta y el mockup." }
       ],
 
-      moreTitle: "Si querés seguir",
-      moreIntro: "El laboratorio funciona solo, pero también puede ser el comienzo.",
+      moreTitle: "¿Y después?",
+      moreIntro: "El laboratorio puede ser solo el comienzo. Estos servicios se cotizan aparte.",
       more: [
         {
           title: "Pitch deck",
@@ -81,7 +81,7 @@
 
       priceTitle: "Inversión",
       price: "USD [[monto]]",
-      priceNote: "Una semana de laboratorio, con los tres entregables. Las extensiones se cotizan aparte.",
+      priceNote: "Una semana de laboratorio, con los tres entregables.",
 
       trustTitle: "Cómo trabajo",
       trust: [
@@ -141,8 +141,8 @@
         { day: "Day 5", title: "Deliver", text: "We meet for 30 minutes so I can walk you through the diagnosis, the proposal and the mockup." }
       ],
 
-      moreTitle: "If you want to keep going",
-      moreIntro: "The lab works on its own, but it can also be a starting point.",
+      moreTitle: "What's next?",
+      moreIntro: "The lab can be just the beginning. These services are quoted separately.",
       more: [
         {
           title: "Pitch deck",
@@ -156,7 +156,7 @@
 
       priceTitle: "Investment",
       price: "USD [[amount]]",
-      priceNote: "One week in the lab, with all three deliverables. Add-ons are quoted separately.",
+      priceNote: "One week in the lab, with all three deliverables.",
 
       trustTitle: "How I work",
       trust: [
