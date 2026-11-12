@@ -31,7 +31,7 @@
       title: "Laboratorio de ideas",
       lead: [
         "¿Tenés un problema, una idea a medio armar o un producto que no termina de despegar?",
-        "En *una semana* lo entendemos a fondo y te llevás un diagnóstico, una propuesta de solución y un mockup de cómo se vería."
+        "En *5 días* y *sin reuniones* te llevás una propuesta completa."
       ],
 
       forTitle: "¿Para quién es?",
@@ -59,7 +59,7 @@
 
       weekTitle: "¿Cómo es la semana?",
       week: [
-        { day: "Día 1", title: "Entender", text: "Me contás por escrito qué necesitás y me compartís el material que tengas. Sin reuniones: todo el laboratorio es a distancia." },
+        { day: "Día 1", title: "Entender", text: "Me contás por escrito qué necesitás y me compartís el material que tengas." },
         { day: "Día 2", title: "Investigar", text: "Relevo tu web, las interacciones con la marca y todo el material que tengas." },
         { day: "Día 3", title: "Diagnosticar", text: "Ordeno el material y defino el problema." },
         { day: "Día 4", title: "Diseñar", text: "Armo la propuesta de solución y su mockup." },
@@ -107,7 +107,7 @@
       title: "Idea Lab",
       lead: [
         "Do you have a problem, a half-formed idea or a product that isn't taking off?",
-        "In *one week*, we get to the bottom of it, and you walk away with a diagnosis, a solution proposal and a mockup of how it would look."
+        "In *5 days*, with *no meetings*, you get a complete proposal."
       ],
 
       forTitle: "Who is it for?",
@@ -135,7 +135,7 @@
 
       weekTitle: "How does the week work?",
       week: [
-        { day: "Day 1", title: "Understand", text: "You tell me in writing what you need and share any material you have. No meetings: the whole lab is remote." },
+        { day: "Day 1", title: "Understand", text: "You tell me in writing what you need and share any material you have." },
         { day: "Day 2", title: "Research", text: "I review your website, how people interact with the brand and any material you have." },
         { day: "Day 3", title: "Diagnose", text: "I organize the material and define the problem." },
         { day: "Day 4", title: "Design", text: "I put together the solution proposal and its mockup." },
