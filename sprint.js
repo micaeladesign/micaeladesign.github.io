@@ -54,7 +54,7 @@
         },
         {
           title: "La solución",
-          text: "Una propuesta concreta con su mockup, para mostrarla a otros stakeholders y tomar decisiones antes de invertir en desarrollo."
+          text: "Una propuesta concreta con su mockup."
         }
       ],
 
@@ -120,7 +120,7 @@
         },
         {
           title: "The solution",
-          text: "A concrete proposal with its mockup, so you can show it to other stakeholders and make decisions before investing in development."
+          text: "A concrete proposal with its mockup."
         }
       ],
 
