@@ -84,17 +84,6 @@
       priceFootnote: "*También podés pagar en pesos.",
       priceNote: "Una semana de laboratorio, con los tres entregables.",
 
-      trustTitle: "Cómo trabajo",
-      trust: [
-        "Para hacer las cosas siempre hace falta un proceso. Investigo antes de proponer y cada decisión tiene un porqué que te puedo explicar.",
-        "Así trabajé en estos proyectos:"
-      ],
-      cases: [
-        { href: "#fondo", label: "Fondo, de un stream de ciencia a una tienda de souvenirs" },
-        { href: "#kombi", label: "Kombi, el asistente de Volkswagen Argentina" },
-        { href: "#ele", label: "Ele, un chatbot de divulgación científica" }
-      ],
-
       ctaTitle: "¿Tenés una idea?",
       ctaText: "Contame en qué estás y vemos si el laboratorio te sirve.",
       ctaButton: "Escribime",
@@ -160,17 +149,6 @@
       priceFootnote: "*You can also pay in Argentine pesos.",
       priceNote: "One week in the lab, with all three deliverables.",
 
-      trustTitle: "How I work",
-      trust: [
-        "To get things done, you always need a process. I research before I propose, and every decision comes with a reason I can explain.",
-        "That's how I worked on these projects:"
-      ],
-      cases: [
-        { href: "#fondo", label: "Fondo, from a science stream to a souvenir shop" },
-        { href: "#kombi", label: "Kombi, Volkswagen Argentina's assistant" },
-        { href: "#ele", label: "Ele, a science communication chatbot" }
-      ],
-
       ctaTitle: "Got an idea?",
       ctaText: "Tell me what you're working on and we'll see if the lab is a good fit.",
       ctaButton: "Write to me",
@@ -203,11 +181,6 @@
     return escapeHtml(text)
       .replace(/\*(.+?)\*/g, "<strong>$1</strong>")
       .replace(/\[\[(.+?)\]\]/g, '<mark class="sprint-pending" title="Pendiente">$1</mark>');
-  }
-
-
-  function paragraphs(list) {
-    return list.map((text) => `<p>${rich(text)}</p>`).join("");
   }
 
 
@@ -270,11 +243,6 @@
         <p class="sprint-price-footnote">${rich(text.priceFootnote)}</p>
       </div>
 
-      <h3>${escapeHtml(text.trustTitle)}</h3>
-      ${paragraphs(text.trust)}
-      <div class="sprint-cases">
-        ${text.cases.map((item) => `<a href="${item.href}" class="conversation-choice">${escapeHtml(item.label)}</a>`).join("")}
-      </div>
 
       <div class="sprint-cta">
         <h3>${escapeHtml(text.ctaTitle)}</h3>

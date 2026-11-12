@@ -293,30 +293,6 @@
 
 
 /* --------------------------------
-   CASOS
--------------------------------- */
-
-.sprint-cases {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-}
-
-
-/* Que la flecha siga al texto cuando el título ocupa dos líneas en el celular */
-.sprint-cases .conversation-choice {
-  display: block;
-}
-
-
-.sprint-cases .conversation-choice::after {
-  display: inline-block;
-  margin-left: 8px;
-}
-
-
-/* --------------------------------
    LLAMADO A LA ACCIÓN
 -------------------------------- */
 
