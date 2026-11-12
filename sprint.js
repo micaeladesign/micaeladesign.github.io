@@ -42,18 +42,19 @@
       ],
 
       getTitle: "¿Qué te llevás?",
+      getIntro: "Una presentación con todo el trabajo, lista para compartir con tu equipo. Tiene tres partes:",
       get: [
         {
-          title: "Un diagnóstico",
-          text: "Lo que les pasa a tus usuarios, basado en investigación y no en suposiciones."
+          title: "Discovery",
+          text: "Lo que encontré al investigar a tus usuarios, basado en evidencia y no en suposiciones."
         },
         {
-          title: "Una propuesta de solución",
-          text: "Una idea concreta para resolverlo y lo que haría falta para llevarla adelante."
+          title: "El problema",
+          text: "Qué es lo que realmente hay que resolver."
         },
         {
-          title: "Un mockup",
-          text: "Las pantallas o los flujos que muestran cómo se vería la propuesta. Te sirve para presentarla a tu equipo y a otros stakeholders, y tomar decisiones con evidencia antes de invertir en desarrollo."
+          title: "La solución",
+          text: "Una propuesta concreta con su mockup, para mostrarla a otros stakeholders y tomar decisiones antes de invertir en desarrollo."
         }
       ],
 
@@ -63,7 +64,7 @@
         { day: "Día 2", title: "Investigar", text: "Relevo tu web, las interacciones con la marca y todo el material que tengas." },
         { day: "Día 3", title: "Diagnosticar", text: "Ordeno el material y defino el problema." },
         { day: "Día 4", title: "Diseñar", text: "Armo la propuesta de solución y su mockup." },
-        { day: "Día 5", title: "Entregar", text: "Te mando por mail el diagnóstico, la propuesta y el mockup." }
+        { day: "Día 5", title: "Entregar", text: "Te mando por mail la presentación final." }
       ],
 
       moreTitle: "¿Y después?",
@@ -82,7 +83,7 @@
       priceTitle: "Inversión",
       price: "USD [[monto]]*",
       priceFootnote: "*También podés pagar en pesos.",
-      priceNote: "Una semana de laboratorio, con los tres entregables.",
+      priceNote: "5 días de laboratorio y una presentación final con todo el trabajo.",
 
       ctaTitle: "¿Tenés una idea?",
       ctaText: "Contame en qué estás y vemos si el laboratorio te sirve.",
@@ -107,18 +108,19 @@
       ],
 
       getTitle: "What do you get?",
+      getIntro: "A presentation with all the work, ready to share with your team. It has three parts:",
       get: [
         {
-          title: "A diagnosis",
-          text: "What's happening to your users, based on research, not assumptions."
+          title: "Discovery",
+          text: "What I found while researching your users, based on evidence, not assumptions."
         },
         {
-          title: "A solution proposal",
-          text: "A concrete idea to solve it and what it would take to make it happen."
+          title: "The problem",
+          text: "What really needs to be solved."
         },
         {
-          title: "A mockup",
-          text: "The screens or flows that show how the proposal would look. Use it to present the idea to your team and other stakeholders, and make evidence-based decisions before investing in development."
+          title: "The solution",
+          text: "A concrete proposal with its mockup, so you can show it to other stakeholders and make decisions before investing in development."
         }
       ],
 
@@ -128,7 +130,7 @@
         { day: "Day 2", title: "Research", text: "I review your website, how people interact with the brand and any material you have." },
         { day: "Day 3", title: "Diagnose", text: "I organize the material and define the problem." },
         { day: "Day 4", title: "Design", text: "I put together the solution proposal and its mockup." },
-        { day: "Day 5", title: "Deliver", text: "I email you the diagnosis, the proposal and the mockup." }
+        { day: "Day 5", title: "Deliver", text: "I email you the final presentation." }
       ],
 
       moreTitle: "What's next?",
@@ -147,7 +149,7 @@
       priceTitle: "Investment",
       price: "USD [[amount]]*",
       priceFootnote: "*You can also pay in Argentine pesos.",
-      priceNote: "One week in the lab, with all three deliverables.",
+      priceNote: "5 days in the lab and a final presentation with all the work.",
 
       ctaTitle: "Got an idea?",
       ctaText: "Tell me what you're working on and we'll see if the lab is a good fit.",
@@ -218,6 +220,7 @@
       </ul>
 
       <h3>${escapeHtml(text.getTitle)}</h3>
+      <p>${rich(text.getIntro)}</p>
       ${cards(text.get, "get")}
 
       <h3>${escapeHtml(text.weekTitle)}</h3>
