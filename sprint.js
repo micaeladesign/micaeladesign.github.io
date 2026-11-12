@@ -36,7 +36,7 @@
 
       forTitle: "¿Para quién es?",
       forList: [
-        "*Marcas* que quieren lanzar algo nuevo y ordenar la idea antes de invertir.",
+        "*Marcas* que quieren ordenar una idea antes de invertir y lanzarla.",
         "*Startups* que necesiten decidir qué construir primero.",
         "*Consultoras* que buscan sumar diseño de producto a la propuesta para un cliente."
       ],
@@ -111,7 +111,7 @@
 
       forTitle: "Who is it for?",
       forList: [
-        "*Brands* that want to launch something new and shape the idea before investing.",
+        "*Brands* that want to shape an idea before investing in it and launching it.",
         "*Startups* that need to decide what to build first.",
         "*Consultancies* looking to add product design to a client proposal."
       ],
