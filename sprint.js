@@ -86,16 +86,15 @@
       priceNote: "5 días de laboratorio y una presentación final con todo el trabajo.",
 
       ctaTitle: "¿Tenés una idea?",
-      ctaText: "Completá el formulario y vemos si el laboratorio es para vos.",
+      ctaText: "Dejá tus datos y te escribo con los próximos pasos para empezar.",
       ctaButton: "Enviar",
       ctaSubject: "Laboratorio de ideas",
       form: {
         name: "Nombre",
         email: "Mail",
         company: "Marca o empresa (opcional)",
-        message: "¿Qué necesitás resolver?",
         sending: "Enviando…",
-        success: "¡Gracias! Te respondo en estos días.",
+        success: "¡Gracias! Te escribo en estos días con los próximos pasos.",
         error: "No se pudo enviar. Probá de nuevo o escribime a {email}."
       },
       otherProjects: "Ver mis proyectos"
@@ -161,16 +160,15 @@
       priceNote: "5 days in the lab and a final presentation with all the work.",
 
       ctaTitle: "Got an idea?",
-      ctaText: "Fill out the form and we'll see if the lab is right for you.",
+      ctaText: "Leave your details and I'll write back with the next steps.",
       ctaButton: "Send",
       ctaSubject: "Idea Lab",
       form: {
         name: "Name",
         email: "Email",
         company: "Brand or company (optional)",
-        message: "What do you need to solve?",
         sending: "Sending…",
-        success: "Thank you! I'll get back to you soon.",
+        success: "Thank you! I'll write to you soon with the next steps.",
         error: "Something went wrong. Please try again or email me at {email}."
       },
       otherProjects: "See my work"
@@ -283,10 +281,6 @@
           <label>
             <span>${escapeHtml(text.form.company)}</span>
             <input type="text" name="company" autocomplete="organization">
-          </label>
-          <label>
-            <span>${escapeHtml(text.form.message)}</span>
-            <textarea name="message" rows="5" required></textarea>
           </label>
           <input type="checkbox" name="botcheck" class="sprint-form-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
           <button type="submit" class="sprint-cta-button">${escapeHtml(text.ctaButton)}</button>
