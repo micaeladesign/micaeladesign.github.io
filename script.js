@@ -159,6 +159,46 @@ const content = {
     },
 
 
+    google: {
+
+      title:
+        "Google, Trust & Safety",
+
+      content: `
+        <p class="case-kicker">Conversational Strategy</p>
+
+        <p><strong>From a static form to an assisted conversational experience.</strong></p>
+
+        <p>Google Trust & Safety wanted to turn a sensitive reporting process into a more human, clear, and easy-to-navigate experience, reducing cognitive load in emotionally complex situations.</p>
+
+        <p>I worked on this project as part of the <strong>BeBot</strong> team. Google was a BeBot client.</p>
+
+        <h3>The project</h3>
+
+        <p>Together with Google’s team, we researched the reporting experience, defined design principles, personality, and structure, and developed a functional conversational prototype to validate the proposal.</p>
+
+        <h3>My role</h3>
+
+        <ul class="case-role-list">
+          <li>I built the conversational experience end to end.</li>
+          <li>I planned the AI-powered NLU strategy.</li>
+          <li>I led meetings with the client, in English.</li>
+          <li>I built the functional prototype in Voiceflow.</li>
+        </ul>
+
+        <h3>What it opened up</h3>
+
+        <p>The work made it possible to explore how a conversation can guide people better than a form in this kind of experience.</p>
+      `,
+
+      next:
+        "Other projects",
+
+      nextHref:
+        "#work"
+    },
+
+
     ele: {
 
       title:
@@ -417,6 +457,46 @@ const content = {
     },
 
 
+    google: {
+
+      title:
+        "Google, Trust & Safety",
+
+      content: `
+        <p class="case-kicker">Conversational Strategy</p>
+
+        <p><strong>De formulario estático a experiencia conversacional asistida.</strong></p>
+
+        <p>Google Trust & Safety buscaba transformar un proceso de reporting sensible en una experiencia más humana, clara y fácil de atravesar, reduciendo la carga cognitiva en situaciones emocionalmente complejas.</p>
+
+        <p>Trabajé en este proyecto como parte del equipo de <strong>BeBot</strong>. Google fue cliente de BeBot.</p>
+
+        <h3>El proyecto</h3>
+
+        <p>Junto al equipo de Google, investigamos la experiencia de reporting, definimos principios de diseño, personalidad y estructura, y desarrollamos un prototipo conversacional funcional para validar la propuesta.</p>
+
+        <h3>Mi rol</h3>
+
+        <ul class="case-role-list">
+          <li>Construí la experiencia conversacional de punta a punta.</li>
+          <li>Planifiqué la estrategia de NLU con IA.</li>
+          <li>Lideré las reuniones con el cliente, en inglés.</li>
+          <li>Monté el prototipo funcional en Voiceflow.</li>
+        </ul>
+
+        <h3>Lo que abrió</h3>
+
+        <p>El trabajo permitió explorar cómo una conversación puede guiar mejor que un formulario en este tipo de experiencias.</p>
+      `,
+
+      next:
+        "Otros proyectos",
+
+      nextHref:
+        "#work"
+    },
+
+
     ele: {
 
       title:
@@ -648,6 +728,9 @@ function renderCaseStudies(language) {
   const eleSection =
     document.getElementById("ele");
 
+  const googleSection =
+    document.getElementById("google");
+
 
   if (kombiSection) {
 
@@ -674,6 +757,37 @@ function renderCaseStudies(language) {
           class="conversation-choice"
         >
           ${content[language].kombi.next}
+        </a>
+
+        <a
+          href="#contact"
+          class="conversation-choice"
+        >
+          ${language === "en" ? "Let's talk" : "Charlemos"}
+        </a>
+
+      </div>
+
+    `;
+
+  }
+
+
+  if (googleSection) {
+
+    googleSection.innerHTML = `
+
+      <h2>${content[language].google.title}</h2>
+
+      ${content[language].google.content}
+
+      <div class="conversation-options">
+
+        <a
+          href="${content[language].google.nextHref}"
+          class="conversation-choice"
+        >
+          ${content[language].google.next}
         </a>
 
         <a

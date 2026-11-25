@@ -491,6 +491,7 @@ main {
 -------------------------------- */
 
 #kombi h2,
+#google h2,
 #ele h2 {
   max-width: 1000px;
 
@@ -507,6 +508,7 @@ main {
 
 /* Mismo tamaño y ritmo de lectura que About (18/28) */
 #kombi p,
+#google p,
 #ele p {
   max-width: 650px;
 
@@ -518,6 +520,7 @@ main {
 
 
 #kombi h3,
+#google h3,
 #ele h3 {
   margin: 48px 0 16px 0;
 
@@ -540,11 +543,41 @@ main {
 
 /* Cierre de cada caso: una línea fina separa el contenido del próximo paso */
 #kombi .conversation-options,
+#google .conversation-options,
 #ele .conversation-options {
   margin-top: 56px;
   padding-top: 24px;
 
   border-top: 1px solid var(--color-outline-variant);
+}
+
+
+/* --------------------------------
+   GOOGLE (caso breve, sin imágenes)
+-------------------------------- */
+
+#google .case-kicker {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-on-surface-variant);
+}
+
+#google .case-role-list {
+  max-width: 650px;
+  margin: 0 0 20px 0;
+  padding-left: 22px;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#google .case-role-list li {
+  margin-bottom: 8px;
 }
 
 
