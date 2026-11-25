@@ -189,8 +189,6 @@ const content = {
         <h3>What it opened up</h3>
 
         <p>The work made it possible to explore how a conversation can guide people better than a form in this kind of experience.</p>
-
-        <p class="case-note">For confidentiality reasons, I don’t share flows or screenshots from this project.</p>
       `,
 
       next:
@@ -489,8 +487,6 @@ const content = {
         <h3>Lo que abrió</h3>
 
         <p>El trabajo permitió explorar cómo una conversación puede guiar mejor que un formulario en este tipo de experiencias.</p>
-
-        <p class="case-note">Por confidencialidad, no comparto flujos ni capturas de este proyecto.</p>
       `,
 
       next:
