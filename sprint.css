@@ -120,7 +120,7 @@
 
 
 /* --------------------------------
-   TARJETAS (entregables y extensiones)
+   TARJETAS (entregables)
 -------------------------------- */
 
 .sprint-cards {
@@ -176,20 +176,19 @@
 }
 
 
-.sprint-cards--more .sprint-card {
-  background: var(--color-background);
+@media (min-width: 600px) {
+
+  .sprint-cards--get {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
 }
 
 
-@media (min-width: 840px) {
+@media (min-width: 1000px) {
 
   .sprint-cards--get {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .sprint-cards--more {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 760px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
 }
@@ -245,6 +244,121 @@
 
 
 /* --------------------------------
+   EJEMPLO (Brote, cliente ficticio)
+-------------------------------- */
+
+#lab .sprint-example-badge {
+  display: inline-block;
+
+  margin: 0 0 16px 0;
+  padding: 4px 12px;
+
+  border-radius: 999px;
+
+  background: var(--color-surface-container);
+  border: 1px solid var(--color-outline-variant);
+  color: var(--color-on-surface-variant);
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+.sprint-example-pages {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+
+  max-width: 1000px;
+
+  margin: 8px 0 24px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.sprint-example-pages a {
+  display: block;
+
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 12px;
+  overflow: hidden;
+
+  transition: transform 150ms ease;
+}
+
+
+.sprint-example-pages img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+
+.sprint-example-pages span {
+  display: block;
+
+  margin-top: 8px;
+
+  color: var(--color-on-surface-variant);
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+@media (hover: hover) {
+
+  .sprint-example-pages a:hover {
+    transform: translateY(-2px);
+  }
+
+}
+
+
+@media (min-width: 600px) {
+
+  .sprint-example-pages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* Botón secundario: contorno, para no competir con el formulario */
+.sprint-example-button {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 48px;
+
+  padding: 12px 24px;
+
+  border: 1px solid var(--color-outline);
+  border-radius: 999px;
+
+  color: var(--color-primary);
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.sprint-example-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+
+/* --------------------------------
    PRECIO
 -------------------------------- */
 
@@ -289,17 +403,6 @@
 
   font-size: 16px;
   line-height: 24px;
-}
-
-
-/* Aclaración del asterisco: más chica y en gris */
-#lab .sprint-price-footnote {
-  margin-top: 12px;
-
-  color: var(--color-on-surface-variant);
-
-  font-size: 14px;
-  line-height: 20px;
 }
 
 

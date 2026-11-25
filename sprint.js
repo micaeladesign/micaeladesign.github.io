@@ -31,7 +31,8 @@
       title: "Laboratorio de ideas",
       lead: [
         "¿Tenés un problema, una idea a medio armar o un producto que no termina de despegar?",
-        "En *5 días* y *sin reuniones* te llevás una propuesta completa."
+        "En *5 días* y *sin reuniones* te llevás un *plan de acción*.",
+        "Recibís el informe el viernes. El lunes ya podés poner a tu equipo a trabajar en una dirección clara."
       ],
 
       forTitle: "¿Para quién es?",
@@ -42,48 +43,50 @@
       ],
 
       getTitle: "¿Qué te llevás?",
-      getIntro: "Una presentación con todo el trabajo, lista para compartir con tu equipo. Tiene tres partes:",
+      getIntro: "Un informe con decisiones, no con opiniones. Cuatro partes:",
       get: [
         {
           title: "Discovery",
-          text: "Lo que encontré al investigar a tus usuarios, basado en evidencia y no en suposiciones."
+          text: "Qué hacen y qué necesitan tus usuarios. Con evidencia, no con suposiciones."
         },
         {
           title: "El problema",
-          text: "Qué es lo que realmente hay que resolver."
+          text: "Lo que realmente hay que resolver, en una frase."
         },
         {
           title: "La solución",
-          text: "Una propuesta concreta con su mockup."
+          text: "Una propuesta concreta, con su mockup."
+        },
+        {
+          title: "Plan de acción",
+          text: "Qué construir, en qué orden y cómo medir si funciona."
         }
       ],
 
       weekTitle: "¿Cómo es la semana?",
       week: [
-        { day: "Día 1", title: "Entender", text: "Me contás por escrito qué necesitás y me compartís el material que tengas." },
-        { day: "Día 2", title: "Investigar", text: "Relevo tu web, las interacciones con la marca y todo el material que tengas." },
-        { day: "Día 3", title: "Diagnosticar", text: "Ordeno el material y defino el problema." },
-        { day: "Día 4", title: "Diseñar", text: "Armo la propuesta de solución y su mockup." },
-        { day: "Día 5", title: "Entregar", text: "Te mando por mail la presentación final." }
+        { day: "Día 1", title: "Entender", text: "Me contás por escrito qué necesitás y me pasás el material que tengas." },
+        { day: "Día 2", title: "Investigar", text: "Reviso tu web, cómo interactúan con tu marca y todo tu material." },
+        { day: "Día 3", title: "Diagnosticar", text: "Ordeno lo que encontré y defino el problema." },
+        { day: "Día 4", title: "Diseñar", text: "Armo la solución, su mockup y el plan de acción." },
+        { day: "Día 5", title: "Entregar", text: "Te mando el informe. Tu equipo ya sabe qué hacer." }
       ],
 
-      moreTitle: "¿Y después?",
-      moreIntro: "El laboratorio puede ser solo el comienzo. Estos servicios se cotizan aparte.",
-      more: [
-        {
-          title: "Pitch deck",
-          text: "Convierto la propuesta en una presentación para inversores, socios o tu propio directorio."
-        },
-        {
-          title: "Equipo para ejecutar",
-          text: "Te ayudo a definir qué perfiles necesitás y a armar el equipo para llevar la idea a producto."
-        }
+      exampleTitle: "¿Querés ver un ejemplo?",
+      exampleBadge: "Demo · cliente ficticio",
+      exampleText: "*Brote* es un vivero online inventado para mostrarte cómo trabajo. La marca y los datos son ficticios. El formato es el mismo que recibís vos.",
+      examplePages: [
+        { src: "assets/lab/brote-portada.webp", caption: "El punto de partida" },
+        { src: "assets/lab/brote-problema.webp", caption: "El problema, en una frase" },
+        { src: "assets/lab/brote-solucion.webp", caption: "La solución, con su mockup" },
+        { src: "assets/lab/brote-proximos-pasos.webp", caption: "El plan de acción" }
       ],
+      examplePdf: "assets/lab/ejemplo-brote.pdf",
+      exampleButton: "Ver el informe completo (PDF)",
 
       priceTitle: "Inversión",
-      price: "USD 50*",
-      priceFootnote: "*También podés pagar en pesos.",
-      priceNote: "5 días de laboratorio y una presentación final con todo el trabajo.",
+      price: "USD 49",
+      priceNote: "5 días de trabajo y un informe con tu plan de acción.",
 
       ctaTitle: "¿Tenés una idea?",
       ctaText: "Dejá tus datos y te escribo con los próximos pasos para empezar.",
@@ -105,7 +108,8 @@
       title: "Idea Lab",
       lead: [
         "Do you have a problem, a half-formed idea or a product that isn't taking off?",
-        "In *5 days*, with *no meetings*, you get a complete proposal."
+        "In *5 days*, with *no meetings*, you get an *action plan*.",
+        "You get the report on Friday. On Monday your team can start working in a clear direction."
       ],
 
       forTitle: "Who is it for?",
@@ -116,48 +120,50 @@
       ],
 
       getTitle: "What do you get?",
-      getIntro: "A presentation with all the work, ready to share with your team. It has three parts:",
+      getIntro: "A report with decisions, not opinions. Four parts:",
       get: [
         {
           title: "Discovery",
-          text: "What I found while researching your users, based on evidence, not assumptions."
+          text: "What your users do and need. Based on evidence, not assumptions."
         },
         {
           title: "The problem",
-          text: "What really needs to be solved."
+          text: "What really needs to be solved, in one sentence."
         },
         {
           title: "The solution",
-          text: "A concrete proposal with its mockup."
+          text: "A concrete proposal, with its mockup."
+        },
+        {
+          title: "Action plan",
+          text: "What to build, in what order and how to measure if it works."
         }
       ],
 
       weekTitle: "How does the week work?",
       week: [
         { day: "Day 1", title: "Understand", text: "You tell me in writing what you need and share any material you have." },
-        { day: "Day 2", title: "Research", text: "I review your website, how people interact with the brand and any material you have." },
-        { day: "Day 3", title: "Diagnose", text: "I organize the material and define the problem." },
-        { day: "Day 4", title: "Design", text: "I put together the solution proposal and its mockup." },
-        { day: "Day 5", title: "Deliver", text: "I email you the final presentation." }
+        { day: "Day 2", title: "Research", text: "I review your website, how people interact with your brand and all your material." },
+        { day: "Day 3", title: "Diagnose", text: "I organize what I found and define the problem." },
+        { day: "Day 4", title: "Design", text: "I build the solution, its mockup and the action plan." },
+        { day: "Day 5", title: "Deliver", text: "I send you the report. Your team knows what to do next." }
       ],
 
-      moreTitle: "What's next?",
-      moreIntro: "The lab can be just the beginning. These services are quoted separately.",
-      more: [
-        {
-          title: "Pitch deck",
-          text: "I turn the proposal into a deck for investors, partners or your own board."
-        },
-        {
-          title: "A team to build it",
-          text: "I help you define the roles you need and put together the team to turn the idea into a product."
-        }
+      exampleTitle: "Want to see an example?",
+      exampleBadge: "Demo · fictional client",
+      exampleText: "*Brote* is a made-up online plant shop, created to show you how I work. The brand and the data are fictional. The format is the same one you get. (The example is in Spanish.)",
+      examplePages: [
+        { src: "assets/lab/brote-portada.webp", caption: "The starting point" },
+        { src: "assets/lab/brote-problema.webp", caption: "The problem, in one sentence" },
+        { src: "assets/lab/brote-solucion.webp", caption: "The solution, with its mockup" },
+        { src: "assets/lab/brote-proximos-pasos.webp", caption: "The action plan" }
       ],
+      examplePdf: "assets/lab/ejemplo-brote.pdf",
+      exampleButton: "See the full report (PDF)",
 
       priceTitle: "Investment",
-      price: "USD 50*",
-      priceFootnote: "*You can also pay in Argentine pesos.",
-      priceNote: "5 days in the lab and a final presentation with all the work.",
+      price: "USD 49",
+      priceNote: "5 days of work and a report with your action plan.",
 
       ctaTitle: "Got an idea?",
       ctaText: "Leave your details and I'll write back with the next steps.",
@@ -254,15 +260,26 @@
           </li>`).join("")}
       </ol>
 
-      <h3>${escapeHtml(text.moreTitle)}</h3>
-      <p>${rich(text.moreIntro)}</p>
-      ${cards(text.more, "more")}
+      <div class="sprint-example">
+        <h3>${escapeHtml(text.exampleTitle)}</h3>
+        <p class="sprint-example-badge">${escapeHtml(text.exampleBadge)}</p>
+        <p>${rich(text.exampleText)}</p>
+        <ul class="sprint-example-pages">
+          ${text.examplePages.map((page) => `
+            <li>
+              <a href="${text.examplePdf}" target="_blank" rel="noopener">
+                <img src="${page.src}" alt="${escapeHtml(page.caption)}" width="1200" height="676" loading="lazy">
+              </a>
+              <span>${escapeHtml(page.caption)}</span>
+            </li>`).join("")}
+        </ul>
+        <a class="sprint-example-button" href="${text.examplePdf}" target="_blank" rel="noopener">${escapeHtml(text.exampleButton)}</a>
+      </div>
 
       <div class="sprint-price">
         <p class="sprint-price-label">${escapeHtml(text.priceTitle)}</p>
         <p class="sprint-price-amount">${rich(text.price)}</p>
         <p class="sprint-price-note">${rich(text.priceNote)}</p>
-        <p class="sprint-price-footnote">${rich(text.priceFootnote)}</p>
       </div>
 
 
