@@ -32,7 +32,7 @@
       lead: [
         "¿Tenés un problema, una idea a medio armar o un producto que no termina de despegar?",
         "En *5 días* y *sin reuniones* te llevás un *plan de acción*.",
-        "Recibís el informe el viernes. El lunes ya podés poner a tu equipo a trabajar en una dirección clara."
+        "Si arrancás un lunes, el viernes tenés el informe. Y el lunes siguiente tu equipo ya trabaja en una dirección clara."
       ],
 
       forTitle: "¿Para quién es?",
@@ -109,7 +109,7 @@
       lead: [
         "Do you have a problem, a half-formed idea or a product that isn't taking off?",
         "In *5 days*, with *no meetings*, you get an *action plan*.",
-        "You get the report on Friday. On Monday your team can start working in a clear direction."
+        "Start on a Monday and you get the report on Friday. The next Monday, your team is already working in a clear direction."
       ],
 
       forTitle: "Who is it for?",
